@@ -5,7 +5,7 @@ export function LandingPage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="w-full transition-colors duration-300 bg-transparent">
+      <header className="w-full transition-colors duration-300 bg-transparent pt-4">
         <div className="container mx-auto px-4 h-16 flex items-center">
           <Link href="/" className="flex items-center space-x-2 w-1/3">
             <div className="text-xl font-bold">MVP AGENCY</div>

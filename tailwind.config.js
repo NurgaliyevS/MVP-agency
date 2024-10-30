@@ -8,7 +8,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: false,
-  plugins: [daisyui, require("tailwindcss-animate")],
+  plugins: [daisyui],
   daisyui: {
     themes: true
   },
