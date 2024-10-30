@@ -15,9 +15,9 @@ export default function Home() {
         <title>{customConfig.documentTitle}</title>
         <link rel="canonical" href={customConfig.domainWithHttps} />
       </Head>
-      <main>
+      <div>
         <LandingPage />
-      </main>
+      </div>
       {/* <main className={`flex flex-col min-h-screen mx-auto ${lato.className}`}>
       </main> */}
     </>
