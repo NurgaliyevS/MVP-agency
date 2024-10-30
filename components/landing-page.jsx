@@ -52,7 +52,7 @@ export function LandingPage() {
       </section>
 
       {/* Latest Work Section */}
-      <section className="py-16 px-4 bg-base-200">
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Our Latest Work</h2>
           <div className="max-w-4xl mx-auto">
@@ -105,7 +105,7 @@ export function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 px-4 bg-base-200">
+      <section id="features" className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose MVP AGENCY?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -148,7 +148,7 @@ export function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-neutral text-neutral-content py-12 px-4">
+      <footer className="py-12 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -177,7 +177,7 @@ export function LandingPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-neutral-focus mt-8 pt-8 text-center text-sm opacity-70">
+          <div className="mt-8 pt-8 text-center text-sm opacity-70">
             © {new Date().getFullYear()} MVP AGENCY. All rights reserved.
           </div>
         </div>
