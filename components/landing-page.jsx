@@ -5,31 +5,25 @@ export function LandingPage() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="absolute top-0 w-full z-50 transition-colors duration-300 bg-transparent">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+      <header className="w-full transition-colors duration-300 bg-transparent">
+        <div className="container mx-auto px-4 h-16 flex items-center">
+          <Link href="/" className="flex items-center space-x-2 w-1/3">
             <div className="text-xl font-bold">MVP AGENCY</div>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#how-it-works" className="text-sm font-medium hover:text-primary">
+            <Link href="#how-it-works" className="text-sm hover:text-primary">
               How It Works
             </Link>
-            <Link href="#features" className="text-sm font-medium hover:text-primary">
+            <Link href="#features" className="text-sm hover:text-primary">
               Features
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:text-primary">
+            <Link href="#pricing" className="text-sm hover:text-primary">
               Pricing
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-primary">
+            <Link href="#contact" className="text-sm hover:text-primary">
               Contact Us
             </Link>
           </nav>
-          <button className="btn btn-primary btn-sm hidden md:inline-flex">
-            Get Started
-          </button>
-          <button className="btn btn-ghost btn-square md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          </button>
         </div>
       </header>
 
