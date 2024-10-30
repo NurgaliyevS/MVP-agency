@@ -15,3 +15,9 @@ body {
   margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5rem * var(--tw-space-y-reverse));
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
