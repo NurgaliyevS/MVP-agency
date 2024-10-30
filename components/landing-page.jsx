@@ -46,20 +46,40 @@ export function LandingPage() {
       </section>
 
       {/* Latest Work Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Latest Work</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="card bg-base-100 shadow-xl overflow-hidden">
-              <figure>
+      <section className="py-16">
+        <div className="mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Latest Work
+          </h2>
+          <div className="mx-auto">
+            <div className="carousel w-full rounded-box">
+              <div id="slide1" className="carousel-item relative w-full">
                 <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Project screenshot"
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto"
+                  src="/placeholder.svg?height=400&width=800"
+                  alt="Project 1"
+                  width={800}
+                  height={400}
+                  className="w-full"
                 />
-              </figure>
+              </div>
+              <div id="slide2" className="carousel-item relative w-full">
+                <Image
+                  src="/placeholder.svg?height=400&width=800"
+                  alt="Project 2"
+                  width={800}
+                  height={400}
+                  className="w-full"
+                />
+              </div>
+              <div id="slide3" className="carousel-item relative w-full">
+                <Image
+                  src="/placeholder.svg?height=400&width=800"
+                  alt="Project 3"
+                  width={800}
+                  height={400}
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -73,23 +93,28 @@ export function LandingPage() {
             {[
               {
                 title: "Describe your idea",
-                description: "Share your vision and requirements with our expert team",
+                description:
+                  "Share your vision and requirements with our expert team",
               },
               {
                 title: "Select your features",
-                description: "Choose the essential features for your MVP launch",
+                description:
+                  "Choose the essential features for your MVP launch",
               },
               {
                 title: "Launch with confidence",
                 description: "Get your product to market in record time",
               },
             ].map((step, index) => (
-              <div key={index} className="card bg-base-100 shadow-xl text-center">
+              <div
+                key={index}
+                className="card bg-base-100 shadow-xl text-center hover:shadow-2xl transition-shadow duration-300"
+              >
                 <div className="card-body">
                   <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-primary font-bold">{index + 1}</span>
                   </div>
-                  <h3 className="font-bold mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                   <p className="text-base-content/70">{step.description}</p>
                 </div>
               </div>
@@ -101,7 +126,9 @@ export function LandingPage() {
       {/* Features Section */}
       <section id="features" className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose MVP AGENCY?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Why Choose MVP AGENCY?
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
@@ -114,16 +141,20 @@ export function LandingPage() {
               },
               {
                 title: "AI-Powered Tools",
-                description: "Leverage the latest in AI for building and testing",
+                description:
+                  "Leverage the latest in AI for building and testing",
               },
               {
                 title: "Scalable Solutions",
                 description: "Build a solid foundation for future growth",
               },
             ].map((feature, index) => (
-              <div key={index} className="card bg-base-100 shadow-xl">
+              <div
+                key={index}
+                className="card bg-base-300 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              >
                 <div className="card-body">
-                  <h3 className="font-bold mb-2">{feature.title}</h3>
+                  <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                   <p className="text-base-content/70">{feature.description}</p>
                 </div>
               </div>
@@ -135,8 +166,12 @@ export function LandingPage() {
       {/* CTA Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-2xl">
-          <h2 className="text-3xl font-bold mb-4">Ready to Bring Your Idea to Life?</h2>
-          <p className="text-base-content/70 mb-8">Get started with MVP AGENCY today!</p>
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Bring Your Idea to Life?
+          </h2>
+          <p className="text-base-content/70 mb-8">
+            Get started with MVP AGENCY today!
+          </p>
           <button className="btn btn-primary btn-lg px-8">Get Started</button>
         </div>
       </section>
@@ -147,31 +182,57 @@ export function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="font-bold mb-4">MVP AGENCY</h3>
-              <p className="text-sm opacity-70">Building the future of rapid product development</p>
+              <p className="text-sm opacity-70">
+                Building the future of rapid product development
+              </p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm hover:text-primary">About Us</Link></li>
-                <li><Link href="#" className="text-sm hover:text-primary">How It Works</Link></li>
-                <li><Link href="#" className="text-sm hover:text-primary">Pricing</Link></li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    How It Works
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    Pricing
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Legal</h4>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm hover:text-primary">Privacy Policy</Link></li>
-                <li><Link href="#" className="text-sm hover:text-primary">Terms of Service</Link></li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    Terms of Service
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm hover:text-primary">hello@mvpagency.com</Link></li>
+                <li>
+                  <Link href="#" className="text-sm hover:text-primary">
+                    hello@mvpagency.com
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="mt-8 pt-8 text-center text-sm opacity-70">
+          <div className="mt-8 pt-8 text-center text-sm opacity-70 border-t border-neutral-content/20">
             © {new Date().getFullYear()} MVP AGENCY. All rights reserved.
           </div>
         </div>
