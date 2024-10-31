@@ -13,7 +13,6 @@ import rehypeParse from "rehype-parse";
 import rehypeRaw from "rehype-raw";
 import rehypeReact from "rehype-react";
 import React from "react";
-import Footer from "@/components/Footer";
 
 const renderAst = (content) =>
   unified()
@@ -215,7 +214,6 @@ export default function BlogPost({ post }) {
         </article>
       </main>
       <footer>
-        <Footer bgColor={"bg-slate-200"} />
       </footer>
     </div>
   );

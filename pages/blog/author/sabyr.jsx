@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import BlogHeader from "../BlogHeader";
 import Head from "next/head";
 import Image from "next/image";
@@ -98,7 +97,6 @@ function Sabyr({ posts }) {
         </section>
       </main>
       <footer>
-        <Footer bgColor={"bg-slate-200"} />
       </footer>
     </div>
   );

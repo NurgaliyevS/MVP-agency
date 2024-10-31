@@ -1,6 +1,5 @@
 "use client";
 
-import { signIn } from "next-auth/react";
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
@@ -16,17 +15,7 @@ const Blocked = () => {
         <p>Try again in 1 minute</p>
 
         <div>
-          <button
-            onClick={() =>
-              signIn(undefined, {
-                callbackUrl: "/meal",
-              })
-            }
-            className="link"
-          >
-            Login
-          </button>{" "}
-          or{" "}
+          <button className="link">Login</button> or{" "}
           <Link className="link" href="/">
             Home
           </Link>

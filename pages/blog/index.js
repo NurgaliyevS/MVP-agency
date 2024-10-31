@@ -7,10 +7,7 @@ import matter from "gray-matter";
 import { format } from "date-fns";
 import BlogHeader from "./BlogHeader";
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import { isDevelopment } from "@/utils/isDevelopment";
 import { customConfig } from "@/project.custom.config";
-
 
 export default function BlogIndex({ posts }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,14 +25,8 @@ export default function BlogIndex({ posts }) {
     <div className="mx-auto">
       <Head>
         <title>PregnantMeal Blog</title>
-        <meta
-          name="description"
-          content={customConfig.seo.description}
-        />
-        <meta
-          name="keywords"
-          content={customConfig.seo.keywords}
-        />
+        <meta name="description" content={customConfig.seo.description} />
+        <meta name="keywords" content={customConfig.seo.keywords} />
         <link rel="canonical" href={`https://pregnantmeal.com/blog`} />
       </Head>
       <BlogHeader />
@@ -82,11 +73,7 @@ export default function BlogIndex({ posts }) {
                 </div>
                 <h2 className="mb-1 text-xl md:text-2xl font-bold">
                   <Link
-                    href={`${
-                      isDevelopment()
-                        ? `/blog/${post.slug}`
-                        : `https://pregnantmeal.com/blog/${post.slug}`
-                    }`}
+                    href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
                     className="link link-hover hover:link-primary"
                     title={post.title}
                   >
@@ -126,9 +113,7 @@ export default function BlogIndex({ posts }) {
           ))}
         </section>
       </main>
-      <footer>
-        <Footer bgColor={"bg-slate-200"} />
-      </footer>
+      <footer></footer>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { handleSignIn } from "../../components/handleSignIn";
 
 function BlogHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +65,6 @@ function BlogHeader() {
             className="btn btn-primary md:btn-sm no-underline"
             onClick={(e) => {
               e.preventDefault();
-              handleSignIn(e);
             }}
           >
             Get Started
@@ -139,7 +137,6 @@ function BlogHeader() {
                 className="btn btn-primary md:btn-sm btn-full no-underline"
                 onClick={(e) => {
                   e.preventDefault();
-                  handleSignIn(e);
                 }}
               >
                 Get Started
