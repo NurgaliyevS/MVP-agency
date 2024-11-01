@@ -61,7 +61,7 @@ function Footer(props) {
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 text-center text-sm opacity-70 border-t border-neutral-content/20">
+        <div className="mt-8 pt-8 text-center text-sm opacity-70">
           © {new Date().getFullYear()} MVP AGENCY. All rights reserved.
         </div>
       </div>
