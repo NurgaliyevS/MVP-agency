@@ -15,9 +15,6 @@ function Header(props) {
           <Link href="#pricing" className="text-sm hover:text-primary">
             Pricing
           </Link>
-          <Link href="#features" className="text-sm hover:text-primary">
-            Features
-          </Link>
           <Link href="https://cal.com/sabyr-nurgaliyev/15min" className="text-sm hover:text-primary">
             Book a Call
           </Link>

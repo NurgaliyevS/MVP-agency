@@ -24,7 +24,7 @@ function HowItWorks(props) {
           ].map((step, index) => (
             <div
               key={index}
-              className="card bg-base-100 shadow-xl text-center hover:shadow-2xl transition-shadow duration-300"
+              className="card bg-white text-center shadow-inner border border-gray-200 text-black"
             >
               <div className="card-body">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
