@@ -24,7 +24,7 @@ const MarqueeCarousel = ({ projects }) => {
           slidesPerView: 3,
         },
       }}
-      className="w-full"
+      className="w-full max-h-[400px] mx-auto"
     >
       {projects.map((project, index) => (
         <SwiperSlide
