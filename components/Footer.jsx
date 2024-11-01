@@ -8,25 +8,18 @@ function Footer(props) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-bold mb-4">MVP AGENCY</h3>
-            <p className="text-sm opacity-70">
-              Building the future of rapid product development
-            </p>
+            <p className="text-sm opacity-70">Let's work together!</p>
           </div>
           <div>
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-primary">
-                  About Us
+                <Link href="#work" className="text-sm hover:text-primary">
+                  Work
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-primary">
-                  How It Works
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-sm hover:text-primary">
+                <Link href="#pricing" className="text-sm hover:text-primary">
                   Pricing
                 </Link>
               </li>
