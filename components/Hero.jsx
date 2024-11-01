@@ -10,9 +10,13 @@ function Hero(props) {
           <span className="text-primary inline-block">launch in 7 days</span>
         </h1>
         <div className="max-w-3xl mx-auto mb-8"></div>
-        <button className="btn btn-primary btn-md lg:btn-lg px-8">
-          Book a Discovery Call
-        </button>
+        <a
+          href="https://cal.com/sabyr-nurgaliyev/15min"
+          className="btn btn-primary btn-md lg:btn-lg px-8"
+          role="button"
+        >
+          Book a Call
+        </a>
         <p className="text-sm text-base-content/70 mt-4">
           No commitment, learn how we can help you launch faster
         </p>
