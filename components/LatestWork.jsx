@@ -1,4 +1,5 @@
 import React from "react";
+import MarqueeCarousel from "./MarqueeCarousel";
 
 const LatestWork = () => {
   const projects = [
@@ -45,24 +46,7 @@ const LatestWork = () => {
       <h2 className="text-3xl font-bold text-center mb-12 mx-auto">
         Our Latest Work
       </h2>
-      <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="flex-shrink-0 w-[600px] h-[300px] mx-4"
-            >
-              <div className="overflow-hidden h-full relative group rounded-xl">
-                <img
-                  src={project.image}
-                  alt={project.alt}
-                  className="w-full h-full object-cover hover:scale-105 rounded-xl"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <MarqueeCarousel projects={projects} />
     </div>
   );
 };
