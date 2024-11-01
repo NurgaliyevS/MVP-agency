@@ -9,17 +9,17 @@ function Header(props) {
           <div className="text-xl font-bold text-black">MVP AGENCY</div>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="#how-it-works" className="text-sm hover:text-primary">
-            How It Works
-          </Link>
-          <Link href="#features" className="text-sm hover:text-primary">
-            Features
+          <Link href="#work" className="text-sm hover:text-primary">
+            Work
           </Link>
           <Link href="#pricing" className="text-sm hover:text-primary">
             Pricing
           </Link>
-          <Link href="#contact" className="text-sm hover:text-primary">
-            Contact Us
+          <Link href="#features" className="text-sm hover:text-primary">
+            Features
+          </Link>
+          <Link href="https://cal.com/sabyr-nurgaliyev/15min" className="text-sm hover:text-primary">
+            Book a Call
           </Link>
         </nav>
       </div>

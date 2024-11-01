@@ -12,7 +12,7 @@ function Hero(props) {
         <div className="max-w-3xl mx-auto mb-8"></div>
         <a
           href="https://cal.com/sabyr-nurgaliyev/15min"
-          className="btn btn-primary btn-md lg:btn-lg px-8"
+          className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
           role="button"
         >
           Book a Call

@@ -2,51 +2,47 @@ function Features() {
   const comparisonData = [
     {
       traditional: "6-12 months of development time",
-      astroMVP: "MVP ready in 7 days",
+      mvpAgency: "MVP ready in 7 days",
     },
     {
       traditional: "$50,000+ for a basic MVP",
-      astroMVP: "Fixed price starting at $3,000",
+      mvpAgency: "Fixed price starting at $3,000",
     },
     {
       traditional: "Hiring 3-5 developers at $100k+/year each",
-      astroMVP: "Experienced full-stack developer",
+      mvpAgency: "Experienced full-stack developer with 5+ years",
     },
     {
       traditional: "Endless meetings and slow progress",
-      astroMVP: "Weekly updates and rapid iterations",
+      mvpAgency: "Weekly updates and rapid iterations",
     },
     {
       traditional: "Constant tech stack debates and changes",
-      astroMVP: "Optimized, modern tech stack (Next.js, React)",
+      mvpAgency: "Optimized, modern tech stack (Next.js, React)",
     },
     {
       traditional: "Security vulnerabilities from inexperience",
-      astroMVP: "Enterprise-grade security measures",
+      mvpAgency: "Enterprise-grade security measures",
     },
     {
       traditional: "Scalability issues as users grow",
-      astroMVP: "Built to scale to 100,000 of users",
+      mvpAgency: "Built to scale to 100,000 of users",
     },
     {
       traditional: "Painful deployment process taking days",
-      astroMVP: "One-click Vercel deployment",
+      mvpAgency: "One-click Vercel deployment",
     },
     {
       traditional: "Limited support during critical times",
-      astroMVP: "24/7 tech support for 30 days post-launch",
+      mvpAgency: "24/7 tech support for 30 days post-launch",
     },
     {
       traditional: "Hidden costs and scope creep",
-      astroMVP: "Transparent, all-inclusive pricing",
-    },
-    {
-      traditional: "High risk of project failure (>60%)",
-      astroMVP: "95% client satisfaction rate",
+      mvpAgency: "Transparent, all-inclusive pricing",
     },
     {
       traditional: "Outdated tech by launch time",
-      astroMVP: "Cutting-edge tech (AI integration ready)",
+      mvpAgency: "Cutting-edge tech (AI integration ready)",
     },
   ];
 
@@ -57,7 +53,7 @@ function Features() {
           Why MVP Agency?
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="bg-red-600 text-white p-6">
               <h3 className="text-2xl font-bold mb-2 text-center line-through">
                 Traditional Approach
@@ -85,7 +81,7 @@ function Features() {
               ))}
             </ul>
           </div>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="bg-green-600 text-white p-6">
               <h3 className="text-2xl font-bold mb-2 text-center">
                 With MVP Agency
@@ -108,12 +104,21 @@ function Features() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span>{item.astroMVP}</span>
+                  <span>{item.mvpAgency}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
+      </div>
+      <div className="text-center py-8 my-8">
+        <a
+          href="https://cal.com/sabyr-nurgaliyev/15min"
+          className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+          role="button"
+        >
+          Book a Call
+        </a>
       </div>
     </section>
   );

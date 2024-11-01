@@ -42,7 +42,7 @@ const LatestWork = () => {
   ];
 
   return (
-    <div className="w-full py-8 mx-auto">
+    <div className="w-full py-8 mx-auto" id="work">
       <h2 className="text-3xl font-bold text-center mb-12 mx-auto text-black">
         Our Work
       </h2>
