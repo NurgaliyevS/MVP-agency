@@ -10,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        carousel: "carousel 40s linear infinite",
+        marquee: "marquee 9s linear infinite",
       },
       keyframes: {
-        carousel: {
+        marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
