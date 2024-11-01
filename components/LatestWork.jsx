@@ -29,7 +29,7 @@ const LatestWork = () => {
     {
       id: 5,
       title: "SubPage",
-      image: "/latest-work/subpage.png",
+      image: "/latest-work/subpage2.png",
       alt: "SubPage Image",
     },
     {
@@ -41,7 +41,7 @@ const LatestWork = () => {
   ];
 
   return (
-    <div className="w-full py-8">
+    <div className="w-full py-8 mx-auto">
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-marquee">
           {projects.map((project) => (
