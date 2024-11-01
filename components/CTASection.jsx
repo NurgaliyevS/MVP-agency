@@ -10,7 +10,13 @@ function CTASection(props) {
         <p className="text-base-content/70 mb-8">
           Get started with MVP AGENCY today!
         </p>
-        <button className="btn btn-primary btn-lg px-8">Get Started</button>
+        <a
+          href="https://cal.com/sabyr-nurgaliyev/15min"
+          className="btn btn-primary btn-md lg:btn-lg px-8"
+          role="button"
+        >
+          Book a Call
+        </a>
       </div>
     </section>
   );
