@@ -4,7 +4,7 @@ function Hero(props) {
   return (
     <section className="pt-32 pb-16 px-4">
       <div className="container mx-auto text-center max-w-4xl">
-        <h1 className="text-4xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+        <h1 className="text-4xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-black">
           From idea to MVP
           <br />
           <span className="text-primary inline-block">launch in 7 days</span>

@@ -17,11 +17,11 @@ export function LandingPage() {
       {/* Latest Work Section */}
       <LatestWork />
 
-      {/* How It Works Section */}
-      <HowItWorks />
-
       {/* Features Section */}
       <Features />
+
+      {/* How It Works Section */}
+      <HowItWorks />
 
       {/* CTA Section */}
       <CTASection />
