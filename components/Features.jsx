@@ -67,7 +67,7 @@ function Features() {
               {comparisonData.map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-1"
+                    className="w-4 h-4 text-red-500 mr-2 flex-shrink-0 mt-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -95,7 +95,7 @@ function Features() {
               {comparisonData.map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-1"
+                    className="w-4 h-4 text-green-500 mr-2 flex-shrink-0 mt-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
