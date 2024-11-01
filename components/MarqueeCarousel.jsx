@@ -8,13 +8,21 @@ const MarqueeCarousel = ({ projects }) => {
   return (
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={3}
-      slidesPerView={3}
+      spaceBetween={16}
+      slidesPerView={1}
       loop={true}
       speed={2800}
       autoplay={{
         delay: 0,
         disableOnInteraction: false,
+      }}
+      breakpoints={{
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
       }}
       className="w-full"
     >
