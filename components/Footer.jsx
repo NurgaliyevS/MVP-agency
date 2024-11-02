@@ -86,12 +86,12 @@ function Footer(props) {
             <h4 className="font-bold mb-4 text-black">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-primary">
+                <Link href="/privacy-policy" className="text-sm hover:text-primary">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-primary">
+                <Link href="/tos" className="text-sm hover:text-primary">
                   Terms of Service
                 </Link>
               </li>
