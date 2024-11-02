@@ -24,10 +24,10 @@ export default function BlogIndex({ posts }) {
   return (
     <div className="mx-auto">
       <Head>
-        <title>PregnantMeal Blog</title>
+        <title>MVPAgency Blog</title>
         <meta name="description" content={customConfig.seo.description} />
         <meta name="keywords" content={customConfig.seo.keywords} />
-        <link rel="canonical" href={`https://pregnantmeal.com/blog`} />
+        <link rel="canonical" href={`https://mvpagency.com/blog`} />
       </Head>
       <BlogHeader />
       <main className="min-h-screen max-w-6xl mx-auto p-8">

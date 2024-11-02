@@ -9,7 +9,7 @@ export default function App({
   pageProps: { session, ...pageProps },
 }) {
   return (
-    // example as PregnantMeal.com without https://
+    // example as mvpagency.com without https://
     <PlausibleProvider domain={customConfig.domainName}>
       <Component {...pageProps} />
       <ToastContainer

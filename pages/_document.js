@@ -25,30 +25,30 @@ export default function Document() {
         <meta name="theme-color" content="#fafafa" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        {/* example as PregnantMeal without .com */}
+        {/* example as MVPAgency without .com */}
         <meta
           name="apple-mobile-web-app-title"
           content={customConfig.seo.applicationName}
         />
-        {/* example as PregnantMeal without .com */}
+        {/* example as MVPAgency without .com */}
         <meta
           name="application-name"
           content={customConfig.seo.applicationName}
         />
         <meta
           property="og:title"
-          // example as PregnantMeal - Monitor your website, and server
+          // example as MVPAgency - Monitor your website, and server
           content={customConfig.seo.og.title}
         />
         <meta
           property="og:description"
-          // example as PregnantMeal - Monitor your website, and server
+          // example as MVPAgency - Monitor your website, and server
           content={customConfig.seo.description}
         />
-        {/* example as https://pregnantmeal.com/ */}
+        {/* example as https://mvpagency.com/ */}
         <meta property="og:url" content={customConfig.domainWithHttps} />
         <meta property="og:type" content="website" />
-        {/* example as PregnantMeal */}
+        {/* example as MVPAgency */}
         <meta
           property="og:site_name"
           content={customConfig.seo.applicationName}
@@ -56,7 +56,7 @@ export default function Document() {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          // add to public og image and it will be as https://pregnantmeal.com/og-image.png
+          // add to public og image and it will be as https://mvpagency.com/og-image.png
           content={customConfig.seo.og.image}
         />
         <meta property="og:image:alt" content={customConfig.seo.og.imageAlt} />
@@ -73,7 +73,7 @@ export default function Document() {
         <meta name="twitter:creator" content="@tech_nurgaliyev" />
         <meta
           name="twitter:title"
-          // PregnantMeal - Monitor your website, and server
+          // MVPAgency - Monitor your website, and server
           content={customConfig.seo.og.title}
         />
         <meta
@@ -81,7 +81,7 @@ export default function Document() {
           // example as Start monitoring in 30 seconds. Get notified by email, and SMS. Monitor your website, and server.
           content={customConfig.seo.description}
         />
-        {/* example as https://pregnantmeal.com/twitter.png */}
+        {/* example as https://mvpagency.com/twitter.png */}
         <meta name="twitter:image" content={customConfig.seo.og.twitterImage} />
         <link
           rel="icon"

@@ -11,17 +11,17 @@ function BlogHeader() {
           <Link
             className="flex items-center gap-2 shrink-0 "
             href="/"
-            title="PregnantMeal.com home page"
+            title="mvpagency.com home page"
           >
             <Image
               src={"/company_related/logo.webp"}
-              alt="Uptime Friend logo"
+              alt="MVP Agency logo"
               className="w-5 h-5"
               priority={true}
               width={24}
               height={24}
             />
-            <span className="font-extrabold text-lg">PregnantMeal</span>
+            <span className="font-extrabold text-lg">MVPAgency</span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -53,7 +53,7 @@ function BlogHeader() {
           <Link
             className="link link-hover text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
             href="/blog"
-            title="PregnantMeal.com blog page"
+            title="mvpagency.com blog page"
           >
             <span className="font-extrabold text-lg">All Posts</span>
           </Link>
@@ -81,18 +81,18 @@ function BlogHeader() {
           <div className="flex items-center justify-between">
             <Link
               className="flex items-center gap-2 shrink-0 "
-              title="Uptime Friend - home page"
+              title="MVP Agency - home page"
               href="/"
             >
               <Image
                 src={"/company_related/logo.webp"}
-                alt="Uptime Friend logo"
+                alt="MVP Agency logo"
                 className="w-5 h-5"
                 priority={true}
                 width={24}
                 height={24}
               />
-              <span className="font-extrabold text-lg">PregnantMeal</span>
+              <span className="font-extrabold text-lg">MVPAgency</span>
             </Link>
             <button
               type="button"
@@ -124,7 +124,7 @@ function BlogHeader() {
                 <Link
                   className="link link-hover"
                   href="/blog"
-                  title="PregnantMeal.com blog page"
+                  title="MVPAgency.com blog page"
                 >
                   All Posts
                 </Link>
