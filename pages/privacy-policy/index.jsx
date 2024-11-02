@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Head from "next/head"; // Import Head component
+import Head from "next/head";
 import { customConfig } from "@/project.custom.config";
 
 export const metadata = {
@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
   return (
     <main className="max-w-xl mx-auto">
       <Head>
-        <title>{metadata.title}</title> {/* Add title tag */}
+        <title>{metadata.title}</title>
         <meta name="robots" content="index, follow" />
       </Head>
       <div className="p-5">
@@ -38,11 +38,11 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2024-08-08
+          {`Last Updated: November 2, 2024
 
-Thank you for visiting ${customConfig.seo.applicationName} ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website located at ${customConfig.domainWithHttps} (the "Website").
+Thank you for choosing ${customConfig.seo.applicationName} ("we," "us," or "our") for your MVP development needs. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website located at ${customConfig.domainWithHttps} (the "Website") or engage our services.
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+By accessing our Website or using our services, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use our Website or services.
 
 1. Information We Collect
 
@@ -50,33 +50,43 @@ By accessing or using the Website, you agree to the terms of this Privacy Policy
 
 We collect the following personal information from you:
 
-- **Name:** We collect your name to personalize your experience and communicate with you effectively.
-- **Email:** We collect your email address to send you important information regarding your orders, updates, and communication.
-- **Payment Information:** We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+- **Name and Contact Information:** We collect your name, email address, and phone number to communicate with you about your MVP project and provide our services effectively.
+- **Company Information:** If applicable, we collect information about your startup or company to better understand your MVP needs.
+- **Project Details:** We collect information related to your MVP project, including your ideas, requirements, and any other details you provide to us.
+- **Payment Information:** We collect payment details to process your payments securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
 
 2. Purpose of Data Collection
 
-We collect and use your personal data for the sole purpose of order processing and user communication. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
+We collect and use your personal data for the following purposes:
+- To provide our MVP development services
+- To communicate with you about your project
+- To improve our services and develop new features
+- To send you important updates about our company and services
+- To comply with legal obligations
 
-3. Data Sharing
+3. Data Protection
 
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
+We implement strict security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. This includes using encryption, secure servers, and regular security audits.
 
-4. Children's Privacy
+4. Data Sharing
 
-${customConfig.seo.applicationName} is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
+We do not sell, trade, or rent your personal information to third parties. We may share your information with trusted partners who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential.
 
-5. Updates to the Privacy Policy
+5. Your Rights
 
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and users will be notified as necessary.
+You have the right to access, correct, or delete your personal information. If you wish to exercise these rights or have any questions about your data, please contact us using the information provided below.
 
-6. Contact Information
+6. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes via email or through a prominent notice on our Website.
+
+7. Contact Information
 
 If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
 
-**Email:** nurgasab@gmail.com
+**Email:** ${customConfig.mailgun.forwardRepliesTo}
 
-By using ${customConfig.seo.applicationName}, you consent to the terms of this Privacy Policy.`}
+By using ${customConfig.seo.applicationName}'s services, you consent to the terms of this Privacy Policy.`}
         </pre>
       </div>
     </main>
