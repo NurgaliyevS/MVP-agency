@@ -3,9 +3,9 @@ const fs = require('fs');
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://mvpagency.com",
+  siteUrl: "https://mvpagency.org",
   generateRobotsTxt: true,
-  exclude: ["/admin", "/admin/*", "/blocked"],
+  exclude: [""],
   additionalPaths: async (config) => {
     const result = [];
     const postsDirectory = path.join(process.cwd(), "blog-posts");

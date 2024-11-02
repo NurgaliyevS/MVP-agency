@@ -11,7 +11,7 @@ function BlogHeader() {
           <Link
             className="flex items-center gap-2 shrink-0 "
             href="/"
-            title="mvpagency.com home page"
+            title="mvpagency.org home page"
           >
             <Image
               src={"/company_related/logo.webp"}
@@ -53,7 +53,7 @@ function BlogHeader() {
           <Link
             className="link link-hover text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
             href="/blog"
-            title="mvpagency.com blog page"
+            title="mvpagency.org blog page"
           >
             <span className="font-extrabold text-lg">All Posts</span>
           </Link>
@@ -124,7 +124,7 @@ function BlogHeader() {
                 <Link
                   className="link link-hover"
                   href="/blog"
-                  title="MVPAgency.com blog page"
+                  title="mvpagency.org blog page"
                 >
                   All Posts
                 </Link>

@@ -14,10 +14,10 @@ function Sabyr({ posts }) {
           name="description"
           content={`${customConfig.blog.author.name}, Author at MVPAgency's Blog`}
         />
-        <meta name="keywords" content={"mvpagency.com"} />
+        <meta name="keywords" content={"mvpagency.org"} />
         <link
           rel="canonical"
-          href={`https://mvpagency.com/blog/author/sabyr`}
+          href={`https://mvpagency.org/blog/author/sabyr`}
         />
         <meta
           property="og:title"
@@ -29,7 +29,7 @@ function Sabyr({ posts }) {
         />
         <meta
           property="og:url"
-          content={`https://mvpagency.com/blog/author/sabyr`}
+          content={`https://mvpagency.org/blog/author/sabyr`}
         />
         <meta property="og:type" content="website" />
       </Head>

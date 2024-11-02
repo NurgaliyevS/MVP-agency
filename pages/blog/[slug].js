@@ -113,7 +113,7 @@ export default function BlogPost({ post }) {
         <meta name="keywords" content={post.tags.join(", ")} />
         <link
           rel="canonical"
-          href={`https://mvpagency.com/blog/${post.slug}`}
+          href={`https://mvpagency.org/blog/${post.slug}`}
         />
         <meta
           property="og:title"
@@ -122,7 +122,7 @@ export default function BlogPost({ post }) {
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"
-          content={`https://mvpagency.com/blog/${post.slug}`}
+          content={`https://mvpagency.org/blog/${post.slug}`}
         />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />

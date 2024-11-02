@@ -45,7 +45,7 @@ export default function Document() {
           // example as MVPAgency - Monitor your website, and server
           content={customConfig.seo.description}
         />
-        {/* example as https://mvpagency.com/ */}
+        {/* example as https://mvpagency.org/ */}
         <meta property="og:url" content={customConfig.domainWithHttps} />
         <meta property="og:type" content="website" />
         {/* example as MVPAgency */}
@@ -56,7 +56,7 @@ export default function Document() {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          // add to public og image and it will be as https://mvpagency.com/og-image.png
+          // add to public og image and it will be as https://mvpagency.org/og-image.png
           content={customConfig.seo.og.image}
         />
         <meta property="og:image:alt" content={customConfig.seo.og.imageAlt} />
@@ -81,7 +81,7 @@ export default function Document() {
           // example as Start monitoring in 30 seconds. Get notified by email, and SMS. Monitor your website, and server.
           content={customConfig.seo.description}
         />
-        {/* example as https://mvpagency.com/twitter.png */}
+        {/* example as https://mvpagency.org/twitter.png */}
         <meta name="twitter:image" content={customConfig.seo.og.twitterImage} />
         <link
           rel="icon"

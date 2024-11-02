@@ -27,7 +27,7 @@ export default function BlogIndex({ posts }) {
         <title>MVPAgency Blog</title>
         <meta name="description" content={customConfig.seo.description} />
         <meta name="keywords" content={customConfig.seo.keywords} />
-        <link rel="canonical" href={`https://mvpagency.com/blog`} />
+        <link rel="canonical" href={`https://mvpagency.org/blog`} />
       </Head>
       <BlogHeader />
       <main className="min-h-screen max-w-6xl mx-auto p-8">
