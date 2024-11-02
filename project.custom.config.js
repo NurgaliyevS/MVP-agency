@@ -5,45 +5,44 @@ export const customConfig = {
     theme: "winter",
     main: themes[`[data-theme=winter"]`],
   },
-  // example as mvpagency.com without https://
   domainName: "mvpagency.com",
   mailgun: {
     subdomain: "mg",
-    fromNoReply: `MVPAgency <noreply@mg.mvpagency.com>`,
-    fromAdmin: `MVPAgency <admin@mg.mvpagency.com>`,
+    fromNoReply: `MVP Agency <noreply@mg.mvpagency.com>`,
+    fromAdmin: `MVP Agency <admin@mg.mvpagency.com>`,
     supportEmail: "support@mvpagency.com",
     forwardRepliesTo: "nurgasab@gmail.com",
     noreply: "noreply@mg.mvpagency.com"
   },
-  documentTitle: "Yummy Meals, Strong Baby - MVPAgency",
+  documentTitle: "Build Your MVP Fast - MVP Agency",
   domainWithHttps: "https://mvpagency.com",
   seo: {
     keywords:
-      "first trimester recipes, 7 day meal plan for pregnant woman, pregnancy dinner recipes first trimester, dinner ideas for first trimester, meal plans for pregnant moms",
+      "build mvp, minimum viable product, building an mvp for startups, mvp product, mvp for startups, build a minimum viable product, mvp builds, minimum viable product services",
     description:
-      "Yummy Meals, Strong Baby! Get personalized daily, weekly, and monthly meal plans for a healthy pregnancy. Eat smart and grow a happy baby with our easy-to-use food guide.",
+      "MVP Agency helps startups build Minimum Viable Products fast. Bring your idea to life.",
     themeColor: "#ffffff",
-    applicationName: "MVPAgency",
+    applicationName: "MVP Agency",
     og: {
-      title: "MVPAgency - Yummy Meals, Strong Baby!",
+      title: "MVP Agency - Build Your Minimum Viable Product Fast",
       url: "https://mvpagency.com",
       image: "https://mvpagency.com/company_related/og-image.webp",
       imageAlt:
-        "MVPAgency - Yummy Meals, Strong Baby! Get personalized daily, weekly, and monthly meal plans for a healthy pregnancy. Eat smart and grow a happy baby with our easy-to-use food guide.",
+        "MVP Agency helps startups build Minimum Viable Products fast. Bring your idea to life.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
       twitterImage: "https://mvpagency.com/company_related/og-image.webp",
     },
   },
   blog: {
-    title: "MVPAgency Blog",
+    title: "MVP Agency Blog",
     description:
-      "Foods to avoid during pregnancy, first trimester recipes, 7 day meal plan for pregnant woman, pregnancy food aversions, pregnancy dinner recipes first trimester, dinner ideas for first trimester, meal plans for pregnant moms",
+      "Learn about building MVPs, startup strategies, product development, and more. Get insights on minimum viable products, MVP for startups, and efficient product builds.",
     canonical: "https://mvpagency.com/blog",
     author: {
       name: "Sabyr Nurgaliyev",
       description:
-        "I am a software engineer and the husband of a pregnant woman. I wanted to create a platform that helps pregnant women because I know how hard it is to find the right information. My wife is pregnant, and I want to make sure she is eating the right food. I am building MVPAgency to help moms eat healthy and grow a happy baby.",
+        "I am a software engineer and entrepreneur with a passion for helping startups succeed. With years of experience in building MVPs and scaling products, I founded MVP Agency to assist startups in turning their ideas into reality quickly and efficiently.",
     },
   },
 };
