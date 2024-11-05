@@ -1,5 +1,5 @@
 ---
-title: "How to Build an MVP (not ai generated)"
+title: "How to Build an MVP"
 date: "2024-11-05"
 excerpt: "As an entrepreneur embarking on your startup journey, the concept of a Minimum Viable Product (MVP) is likely a familiar one"
 author: "Sabyr Nurgaliyev"
@@ -13,7 +13,7 @@ tags:
     "minimum viable product services",
   ]
 image: "/blog/mvp.png"
-alt: "How to Build an MVP (not ai generated)"
+alt: "How to Build an MVP"
 ---
 
 ## Introduction
@@ -169,4 +169,6 @@ Patenting your MVP can be a good idea if your product or technology is truly inn
 
 Building a successful MVP is a critical step in the startup journey. By understanding the different approaches and key considerations outlined in this guide, you can create a solid foundation for your business and position your startup for long-term success. Remember to focus on delivering value to your customers, gather feedback, and be willing to adapt and iterate as you learn and grow.
 
-- [MVPAgency](https://mvpagency.org/) - build mvp in 7 days
+- [Build MVP in 7 days](https://mvpagency.org/)
+- [Minimum Viable Product Build A Step-by-Step Guide to Build a Minimum Viable Product (MVP)](https://www.netsolutions.com/hub/minimum-viable-product/build)
+- [How to Build a Minimal Viable Product (MVP)](https://www.digitalocean.com/resources/articles/minimum-viable-product)
