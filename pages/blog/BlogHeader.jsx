@@ -8,20 +8,13 @@ function BlogHeader() {
     <header className="bg-slate-200">
       <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
         <div className="flex lg:flex-1">
-          <Link
-            className="flex items-center gap-2 shrink-0 "
-            href="/"
-            title="mvpagency.org home page"
-          >
-            <Image
-              src={"/company_related/favicon-96x96.png"}
-              alt="MVP Agency logo"
-              className="w-5 h-5"
-              priority={true}
-              width={24}
-              height={24}
+          <Link href="/" className="flex items-center space-x-2 lg:w-1/3">
+            <img
+              src="/company_related/favicon-192x192.png"
+              alt="MVP AGENCY"
+              className="w-8 h-8"
             />
-            <span className="font-extrabold text-lg">MVPAgency</span>
+            <div className="text-xl font-bold text-black">MVP AGENCY</div>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -60,15 +53,13 @@ function BlogHeader() {
         </div>
 
         <div className="hidden lg:flex lg:justify-end lg:flex-1">
-          <Link
-            href="#"
-            className="btn btn-primary md:btn-sm no-underline"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
+          <a
+            href="https://cal.com/sabyr-nurgaliyev/15min"
+            className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+            role="button"
           >
-            Get Started
-          </Link>
+            Book a Call
+          </a>
         </div>
       </nav>
 
@@ -79,20 +70,13 @@ function BlogHeader() {
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">
-            <Link
-              className="flex items-center gap-2 shrink-0 "
-              title="MVP Agency - home page"
-              href="/"
-            >
-              <Image
-                src={"/company_related/favicon-96x96.png"}
-                alt="MVP Agency logo"
-                className="w-5 h-5"
-                priority={true}
-                width={24}
-                height={24}
+            <Link href="/" className="flex items-center space-x-2 lg:w-1/3">
+              <img
+                src="/company_related/favicon-192x192.png"
+                alt="MVP AGENCY"
+                className="w-8 h-8"
               />
-              <span className="font-extrabold text-lg">MVPAgency</span>
+              <div className="text-xl font-bold text-black">MVP AGENCY</div>
             </Link>
             <button
               type="button"
@@ -132,15 +116,13 @@ function BlogHeader() {
             </div>
             <div className="divider"></div>
             <div className="flex flex-col">
-              <Link
-                href="#"
-                className="btn btn-primary md:btn-sm btn-full no-underline"
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
+              <a
+                href="https://cal.com/sabyr-nurgaliyev/15min"
+                className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+                role="button"
               >
-                Get Started
-              </Link>
+                Book a Call
+              </a>
             </div>
           </div>
         </div>
