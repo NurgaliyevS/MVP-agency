@@ -45,11 +45,11 @@ function Pricing() {
 
           <div className="p-6 mx-auto pt-3">
             <a
-              href="https://cal.com/sabyr-nurgaliyev/15min"
+              href="https://buy.stripe.com/7sI9DX38eaucdnWdQQ"
               className="btn btn-primary rounded-lg btn-block"
               role="button"
             >
-              Book a Call
+              Buy Now
             </a>
           </div>
         </div>
