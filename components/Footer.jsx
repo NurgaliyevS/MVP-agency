@@ -17,7 +17,7 @@ function Footer(props) {
               <h3 className="font-bold text-xl text-black">MVP AGENCY</h3>
             </div>
             <p className="text-sm opacity-70 pl-1">Let's work together!</p>
-            <nav className="flex gap-4 mt-3 justify-center lg:justify-start">
+            <nav className="flex gap-4 mt-3 justify-start">
               <Link
                 href="https://x.com/tech_nurgaliyev"
                 target="_blank"
@@ -80,13 +80,21 @@ function Footer(props) {
                   Pricing
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="text-sm hover:text-primary">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="font-bold mb-4 text-black">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy-policy" className="text-sm hover:text-primary">
+                <Link
+                  href="/privacy-policy"
+                  className="text-sm hover:text-primary"
+                >
                   Privacy Policy
                 </Link>
               </li>
