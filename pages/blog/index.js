@@ -70,15 +70,17 @@ export default function BlogIndex({ posts }) {
                   ))}
                 </div>
                 <div className="flex-1">
-                  <h2 className="mb-4 text-xl md:text-2xl font-bold line-clamp-2">
-                    <Link
-                      href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
-                      className="link link-hover hover:link-primary"
-                      title={post.title}
-                    >
-                      {post.title}
-                    </Link>
-                  </h2>
+                  <div className="h-20 mb-4"> {/* Fixed height container for title */}
+                    <h2 className="text-xl md:text-2xl font-bold line-clamp-2">
+                      <Link
+                        href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
+                        className="link link-hover hover:link-primary"
+                        title={post.title}
+                      >
+                        {post.title}
+                      </Link>
+                    </h2>
+                  </div>
                   <p className="text-base-content/80 mb-6 line-clamp-3">
                     {post.excerpt}
                   </p>
