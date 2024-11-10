@@ -40,17 +40,19 @@ const renderAst = (content) =>
         strong: (props) => <strong className="text-base-content" {...props} />,
         ol: (props) => (
           <ol
-            className="list-inside list-decimal text-base-content/90 leading-relaxed"
+            className="list-decimal text-base-content/90 leading-relaxed pl-5"
             {...props}
           />
         ),
         ul: (props) => (
           <ul
-            className="list-inside list-disc text-base-content/90 leading-relaxed"
+            className="list-disc text-base-content/90 leading-relaxed pl-5"
             {...props}
           />
         ),
-        li: (props) => <li className="list-item" {...props} />,
+        li: (props) => (
+          <li className="list-item pl-1 marker:mr-2">{props.children}</li>
+        ),
         img: (props) => {
           return (
             <img className={`rounded-xl mt-4`} {...props} loading="lazy" />
@@ -74,8 +76,8 @@ const renderAst = (content) =>
           );
         },
         table: (props) => (
-          <div className="overflow-x-auto my-4 text-base-content border rounded-xl">
-            <table className="table" {...props} />
+          <div className="w-full overflow-x-auto">
+            <table {...props}>{children}</table>
           </div>
         ),
         th: (props) => <th className="bg-base-200" {...props} />,
