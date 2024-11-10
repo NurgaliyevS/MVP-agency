@@ -8,6 +8,7 @@ import { format } from "date-fns";
 import BlogHeader from "./BlogHeader";
 import Image from "next/image";
 import { customConfig } from "@/project.custom.config";
+import { isDevelopment } from "@/components/isDevelopment";
 
 export default function BlogIndex({ posts }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -70,10 +71,16 @@ export default function BlogIndex({ posts }) {
                   ))}
                 </div>
                 <div className="flex-1">
-                  <div className="h-20 mb-4"> {/* Fixed height container for title */}
+                  <div className="h-20 mb-4">
+                    {" "}
+                    {/* Fixed height container for title */}
                     <h2 className="text-xl md:text-2xl font-bold line-clamp-2">
                       <Link
-                        href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
+                        href={
+                          isDevelopment()
+                            ? `/blog/${post.slug}`
+                            : `${customConfig.domainWithHttps}/blog/${post.slug}`
+                        }
                         className="link link-hover hover:link-primary"
                         title={post.title}
                       >
@@ -101,9 +108,7 @@ export default function BlogIndex({ posts }) {
                         className="w-8 h-8 rounded-full object-cover object-center"
                       />
                     </span>
-                    <span className="group-hover:underline">
-                      {post.author}
-                    </span>
+                    <span className="group-hover:underline">{post.author}</span>
                   </Link>
                   <span itemProp="datePublished">
                     {format(new Date(post.date), "MMMM d, yyyy")}
