@@ -48,20 +48,18 @@ export default function BlogIndex({ posts }) {
         <section className="grid lg:grid-cols-2 mb-24 md:mb-32 gap-8">
           {filteredPosts.map((post) => (
             <article
-              className="card bg-slate-200 rounded-2xl border border-slate-200"
+              className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
               key={post.slug}
             >
-              <figure>
+              <figure className="h-48">
                 <img
                   alt={post.alt}
                   src={post.image}
-                  width={600}
-                  height={338}
-                  className="aspect-video object-center object-cover"
+                  className="w-full h-full object-cover"
                 />
               </figure>
-              <div className="card-body">
-                <div className="flex flex-wrap gap-2">
+              <div className="card-body flex flex-col flex-1 p-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {post.tags.map((tag) => (
                     <span
                       className="badge badge-sm md:badge-md hover:badge-primary"
@@ -71,42 +69,43 @@ export default function BlogIndex({ posts }) {
                     </span>
                   ))}
                 </div>
-                <h2 className="mb-1 text-xl md:text-2xl font-bold">
-                  <Link
-                    href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
-                    className="link link-hover hover:link-primary"
-                    title={post.title}
-                  >
-                    {post.title}
-                  </Link>
-                </h2>
-
-                <div className="text-base-content/80 space-y-4">
-                  <p>{post.excerpt}</p>
-                  <div className="flex items-center gap-4 text-sm">
+                <div className="flex-1">
+                  <h2 className="mb-4 text-xl md:text-2xl font-bold line-clamp-2">
                     <Link
-                      href={`/blog/author/sabyr`}
-                      className="inline-flex items-center gap-2 group"
-                      title={`Post By ${post.author}`}
-                      rel="author"
+                      href={`${customConfig.domainWithHttps}/blog/${post.slug}`}
+                      className="link link-hover hover:link-primary"
+                      title={post.title}
                     >
-                      <span itemProp="author">
-                        <Image
-                          src={"/Sabyr_Nurgaliyev.webp"}
-                          alt={`Post By ${post.author}`}
-                          width={50}
-                          height={50}
-                          className="w-8 h-8 rounded-full object-cover object-center"
-                        />
-                      </span>
-                      <span className="group-hover:underline">
-                        {post.author}
-                      </span>
+                      {post.title}
                     </Link>
-                    <span itemProp="datePublished">
-                      {format(new Date(post.date), "MMMM d, yyyy")}
+                  </h2>
+                  <p className="text-base-content/80 mb-6 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 text-sm mt-auto">
+                  <Link
+                    href={`/blog/author/sabyr`}
+                    className="inline-flex items-center gap-2 group"
+                    title={`Post By ${post.author}`}
+                    rel="author"
+                  >
+                    <span itemProp="author">
+                      <Image
+                        src={"/Sabyr_Nurgaliyev.webp"}
+                        alt={`Post By ${post.author}`}
+                        width={50}
+                        height={50}
+                        className="w-8 h-8 rounded-full object-cover object-center"
+                      />
                     </span>
-                  </div>
+                    <span className="group-hover:underline">
+                      {post.author}
+                    </span>
+                  </Link>
+                  <span itemProp="datePublished">
+                    {format(new Date(post.date), "MMMM d, yyyy")}
+                  </span>
                 </div>
               </div>
             </article>
