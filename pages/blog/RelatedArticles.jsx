@@ -1,6 +1,6 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
 import { format } from "date-fns";
 
 const RelatedArticles = ({ currentPost, relatedPosts }) => {
@@ -13,16 +13,16 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
         {relatedPosts.map((post) => (
           <article
             key={post.slug}
-            className="flex flex-col bg-base-200 shadow-xl"
+            className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
           >
-            <figure className="h-56">
+            <figure className="h-48">
               <img
-                src={post.image}
                 alt={post.alt}
+                src={post.image}
                 className="w-full h-full object-cover"
               />
             </figure>
-            <div className="p-6 flex flex-col">
+            <div className="card-body flex flex-col p-6">
               <div className="flex flex-wrap gap-2 mb-4">
                 {post.tags.slice(0, 2).map((tag) => (
                   <span
@@ -33,29 +33,36 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
                   </span>
                 ))}
               </div>
-              <h3 className="text-lg font-bold mb-2 line-clamp-2">
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="link link-hover hover:link-primary"
-                >
-                  {post.title}
-                </Link>
-              </h3>
-              <p className="text-base-content/80 text-sm line-clamp-2">
+              <div className="mb-4">
+                <h3 className="text-xl md:text-2xl font-bold line-clamp-2">
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="link link-hover hover:link-primary"
+                    title={post.title}
+                  >
+                    {post.title}
+                  </Link>
+                </h3>
+              </div>
+              <p className="text-base-content/80 mb-6 line-clamp-3">
                 {post.excerpt}
               </p>
-              <div className="flex items-center gap-4 text-sm mt-10">
+              <div className="flex items-center gap-4 text-sm mt-auto">
                 <Link
                   href={`/blog/author/${post.author.toLowerCase()}`}
                   className="inline-flex items-center gap-2 group"
+                  title={`Post By ${post.author}`}
+                  rel="author"
                 >
-                  <Image
-                    src="/Sabyr_Nurgaliyev.webp"
-                    alt={`Post By ${post.author}`}
-                    width={32}
-                    height={32}
-                    className="rounded-full object-cover"
-                  />
+                  <span itemProp="author">
+                    <Image
+                      src="/Sabyr_Nurgaliyev.webp"
+                      alt={`Post By ${post.author}`}
+                      width={50}
+                      height={50}
+                      className="w-8 h-8 rounded-full object-cover object-center"
+                    />
+                  </span>
                   <span className="group-hover:underline">{post.author}</span>
                 </Link>
                 <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
