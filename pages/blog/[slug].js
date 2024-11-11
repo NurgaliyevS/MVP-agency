@@ -18,22 +18,27 @@ import BlogHeader from "./BlogHeader";
 
 const generateId = (text) => {
   // Handle cases where text might be a React element or non-string
-  if (typeof text !== 'string') {
+  if (typeof text !== "string") {
     // If text is an array (React children), try to extract string content
     if (Array.isArray(text)) {
-      text = text.map(child => 
-        typeof child === 'string' ? child : 
-        child?.props?.children ? child.props.children : ''
-      ).join('');
+      text = text
+        .map((child) =>
+          typeof child === "string"
+            ? child
+            : child?.props?.children
+            ? child.props.children
+            : ""
+        )
+        .join("");
     } else if (text?.props?.children) {
       // Handle React elements
       text = text.props.children;
     } else {
       // If we can't extract meaningful text, return empty string
-      return '';
+      return "";
     }
   }
-  
+
   // Convert to string explicitly and generate ID
   return String(text)
     .toLowerCase()
@@ -145,18 +150,80 @@ const renderAst = (content) =>
     })
     .processSync(content).result;
 
-export default function BlogPost({ post }) {
+const RelatedArticles = ({ currentPost, relatedPosts }) => {
+  if (relatedPosts.length === 0) return null;
+
+  return (
+    <section className="mt-16 border-t pt-12">
+      <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {relatedPosts.map((post) => (
+          <article key={post.slug} className="flex flex-col bg-base-200 shadow-xl">
+            <figure className="h-56">
+              <img
+                src={post.image}
+                alt={post.alt}
+                className="w-full h-full object-cover"
+              />
+            </figure>
+            <div className="p-6 flex flex-col">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {post.tags.slice(0, 2).map((tag) => (
+                  <span
+                    key={tag}
+                    className="badge badge-sm hover:badge-primary"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <h3 className="text-lg font-bold mb-2 line-clamp-2">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="link link-hover hover:link-primary"
+                >
+                  {post.title}
+                </Link>
+              </h3>
+              <p className="text-base-content/80 text-sm line-clamp-2">
+                {post.excerpt}
+              </p>
+              <div className="flex items-center gap-4 text-sm mt-10">
+                <Link
+                  href={`/blog/author/${post.author.toLowerCase()}`}
+                  className="inline-flex items-center gap-2 group"
+                >
+                  <Image
+                    src="/Sabyr_Nurgaliyev.webp"
+                    alt={`Post By ${post.author}`}
+                    width={32}
+                    height={32}
+                    className="rounded-full object-cover"
+                  />
+                  <span className="group-hover:underline">{post.author}</span>
+                </Link>
+                <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default function BlogPost({ post, relatedPosts }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": post.title,
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": {
+    headline: post.title,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
       "@type": "Person",
-      "name": post.author,
+      name: post.author,
     },
-    "description": post.excerpt,
+    description: post.excerpt,
   };
 
   return (
@@ -169,10 +236,7 @@ export default function BlogPost({ post }) {
           rel="canonical"
           href={`https://mvpagency.org/blog/${post.slug}`}
         />
-        <meta
-          property="og:title"
-          content={`${post.title} | MVPAgency Blog`}
-        />
+        <meta property="og:title" content={`${post.title} | MVPAgency Blog`} />
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:url"
@@ -265,6 +329,7 @@ export default function BlogPost({ post }) {
               {renderAst(post.contentHtml)}
             </section>
           </div>
+          <RelatedArticles currentPost={post} relatedPosts={relatedPosts} />
         </article>
       </main>
       <footer>
@@ -297,6 +362,37 @@ export async function getStaticProps({ params }) {
     .process(content);
   const contentHtml = processedContent.toString();
 
+  // Get all posts to find related ones
+  const filenames = fs.readdirSync(postsDirectory);
+  const allPosts = filenames
+    .filter((filename) => filename !== `${params.slug}.md`)
+    .map((filename) => {
+      const postPath = path.join(postsDirectory, filename);
+      const postContent = fs.readFileSync(postPath, "utf8");
+      const { data } = matter(postContent);
+      return {
+        slug: filename.replace(".md", ""),
+        title: data.title,
+        date: data.date,
+        excerpt: data.excerpt,
+        author: data.author,
+        tags: data.tags,
+        image: data.image,
+        alt: data.alt,
+      };
+    });
+
+  // Find related posts based on matching tags
+  const relatedPosts = allPosts
+    .map((post) => ({
+      ...post,
+      matchingTags: post.tags.filter((tag) => data.tags.includes(tag)).length,
+    }))
+    .filter((post) => post.matchingTags > 0)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .sort((a, b) => b.matchingTags - a.matchingTags)
+    .slice(0, 6); // Limit to 3 related posts
+
   return {
     props: {
       post: {
@@ -310,6 +406,7 @@ export async function getStaticProps({ params }) {
         alt: data.alt,
         contentHtml,
       },
+      relatedPosts,
     },
   };
 }
