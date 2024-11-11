@@ -4,6 +4,10 @@ import Image from "next/image";
 import { format } from "date-fns";
 
 const RelatedArticles = ({ currentPost, relatedPosts }) => {
+  if (!Array.isArray(relatedPosts) || relatedPosts.length === 0) {
+    return null;
+  }
+
   if (relatedPosts.length === 0) return null;
 
   return (

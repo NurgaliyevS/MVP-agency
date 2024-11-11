@@ -1,13 +1,17 @@
 import BlogHeader from "./BlogHeader";
 import RelatedArticles from "./RelatedArticles";
-import { renderAst } from "./renderAst";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { format } from "date-fns";
+import { renderAst } from "@/utls/renderAst";
 
 function BlogPostContent({ post, relatedPosts }) {
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -20,7 +24,7 @@ function BlogPostContent({ post, relatedPosts }) {
     },
     description: post.excerpt,
   };
-  
+
   return (
     <div className="mx-auto">
       <Head>
