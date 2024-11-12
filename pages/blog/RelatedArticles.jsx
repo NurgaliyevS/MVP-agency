@@ -7,7 +7,6 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
   if (!Array.isArray(relatedPosts) || relatedPosts.length === 0) {
     return null;
   }
-
   if (relatedPosts.length === 0) return null;
 
   return (
@@ -15,12 +14,15 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
       <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {relatedPosts.map((post) => (
-          <Link
-            href={`/blog/${post.slug}`}
-            title={post.title}
-            key={post.slug}
+          <article 
+            key={post.slug} 
+            className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
           >
-            <article className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full">
+            <Link
+              href={`/blog/${post.slug}`}
+              title={post.title}
+              className="flex flex-col h-full"
+            >
               <figure className="h-48">
                 <img
                   alt={post.alt}
@@ -41,24 +43,15 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
                 </div>
                 <div className="mb-4">
                   <h3 className="text-xl md:text-2xl font-bold line-clamp-2">
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="link link-hover hover:link-primary"
-                      title={post.title}
-                    >
-                      {post.title}
-                    </Link>
+                    {post.title}
                   </h3>
                 </div>
                 <p className="text-base-content/80 mb-6 line-clamp-3">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center gap-4 text-sm mt-auto">
-                  <Link
-                    href={`/blog/author/${post.author.toLowerCase()}`}
+                  <div
                     className="inline-flex items-center gap-2 group"
-                    title={`Post By ${post.author}`}
-                    rel="author"
                   >
                     <span itemProp="author">
                       <Image
@@ -70,12 +63,12 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
                       />
                     </span>
                     <span className="group-hover:underline">{post.author}</span>
-                  </Link>
+                  </div>
                   <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
                 </div>
               </div>
-            </article>
-          </Link>
+            </Link>
+          </article>
         ))}
       </div>
     </section>

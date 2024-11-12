@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { format } from "date-fns";
 import BlogHeader from "./BlogHeader";
-import Image from "next/image";
 import { customConfig } from "@/project.custom.config";
 import { isDevelopment } from "@/components/isDevelopment";
 
@@ -48,16 +48,19 @@ export default function BlogIndex({ posts }) {
         </section>
         <section className="grid lg:grid-cols-2 mb-24 md:mb-32 gap-8">
           {filteredPosts.map((post) => (
-            <Link
-              href={
-                isDevelopment()
-                  ? `/blog/${post.slug}`
-                  : `${customConfig.domainWithHttps}/blog/${post.slug}`
-              }
+            <article
               key={post.slug}
-              title={post.title}
+              className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
             >
-              <article className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full">
+              <Link
+                href={
+                  isDevelopment()
+                    ? `/blog/${post.slug}`
+                    : `${customConfig.domainWithHttps}/blog/${post.slug}`
+                }
+                className="flex flex-col h-full"
+                title={post.title}
+              >
                 <figure className="h-48">
                   <img
                     alt={post.alt}
@@ -76,35 +79,18 @@ export default function BlogIndex({ posts }) {
                       </span>
                     ))}
                   </div>
-                  <div className="">
+                  <div>
                     <div className="mb-4">
-                      {" "}
-                      {/* Fixed height container for title */}
                       <h2 className="text-xl md:text-2xl font-bold line-clamp-2">
-                        <Link
-                          href={
-                            isDevelopment()
-                              ? `/blog/${post.slug}`
-                              : `${customConfig.domainWithHttps}/blog/${post.slug}`
-                          }
-                          className="link link-hover hover:link-primary"
-                          title={post.title}
-                        >
-                          {post.title}
-                        </Link>
+                        {post.title}
                       </h2>
                     </div>
-                    <p className="text-base-content/80 mb-6 line-clamp-3">
+                    <p className="text-base-content/80 mb-3 line-clamp-3">
                       {post.excerpt}
                     </p>
                   </div>
                   <div className="flex items-center gap-4 text-sm mt-auto">
-                    <Link
-                      href={`/blog/author/sabyr`}
-                      className="inline-flex items-center gap-2 group"
-                      title={`Post By ${post.author}`}
-                      rel="author"
-                    >
+                    <div className="inline-flex items-center gap-2 group">
                       <span itemProp="author">
                         <Image
                           src={"/Sabyr_Nurgaliyev.webp"}
@@ -117,14 +103,14 @@ export default function BlogIndex({ posts }) {
                       <span className="group-hover:underline">
                         {post.author}
                       </span>
-                    </Link>
+                    </div>
                     <span itemProp="datePublished">
                       {format(new Date(post.date), "MMMM d, yyyy")}
                     </span>
                   </div>
                 </div>
-              </article>
-            </Link>
+              </Link>
+            </article>
           ))}
         </section>
       </main>
