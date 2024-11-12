@@ -48,74 +48,83 @@ export default function BlogIndex({ posts }) {
         </section>
         <section className="grid lg:grid-cols-2 mb-24 md:mb-32 gap-8">
           {filteredPosts.map((post) => (
-            <article
-              className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
+            <Link
+              href={
+                isDevelopment()
+                  ? `/blog/${post.slug}`
+                  : `${customConfig.domainWithHttps}/blog/${post.slug}`
+              }
               key={post.slug}
+              title={post.title}
             >
-              <figure className="h-48">
-                <img
-                  alt={post.alt}
-                  src={post.image}
-                  className="w-full h-full object-cover"
-                />
-              </figure>
-              <div className="card-body flex flex-col flex-1 p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {post.tags.map((tag) => (
-                    <span
-                      className="badge badge-sm md:badge-md hover:badge-primary"
-                      key={tag}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex-1">
-                  <div className="h-20 mb-4">
-                    {" "}
-                    {/* Fixed height container for title */}
-                    <h2 className="text-xl md:text-2xl font-bold line-clamp-2">
-                      <Link
-                        href={
-                          isDevelopment()
-                            ? `/blog/${post.slug}`
-                            : `${customConfig.domainWithHttps}/blog/${post.slug}`
-                        }
-                        className="link link-hover hover:link-primary"
-                        title={post.title}
+              <article className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full">
+                <figure className="h-48">
+                  <img
+                    alt={post.alt}
+                    src={post.image}
+                    className="w-full h-full object-cover"
+                  />
+                </figure>
+                <div className="card-body flex flex-col flex-1 p-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {post.tags.slice(0, 2).map((tag) => (
+                      <span
+                        className="badge badge-sm md:badge-md hover:badge-primary"
+                        key={tag}
                       >
-                        {post.title}
-                      </Link>
-                    </h2>
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-                  <p className="text-base-content/80 mb-6 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 text-sm mt-auto">
-                  <Link
-                    href={`/blog/author/sabyr`}
-                    className="inline-flex items-center gap-2 group"
-                    title={`Post By ${post.author}`}
-                    rel="author"
-                  >
-                    <span itemProp="author">
-                      <Image
-                        src={"/Sabyr_Nurgaliyev.webp"}
-                        alt={`Post By ${post.author}`}
-                        width={50}
-                        height={50}
-                        className="w-8 h-8 rounded-full object-cover object-center"
-                      />
+                  <div className="">
+                    <div className="mb-4">
+                      {" "}
+                      {/* Fixed height container for title */}
+                      <h2 className="text-xl md:text-2xl font-bold line-clamp-2">
+                        <Link
+                          href={
+                            isDevelopment()
+                              ? `/blog/${post.slug}`
+                              : `${customConfig.domainWithHttps}/blog/${post.slug}`
+                          }
+                          className="link link-hover hover:link-primary"
+                          title={post.title}
+                        >
+                          {post.title}
+                        </Link>
+                      </h2>
+                    </div>
+                    <p className="text-base-content/80 mb-6 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4 text-sm mt-auto">
+                    <Link
+                      href={`/blog/author/sabyr`}
+                      className="inline-flex items-center gap-2 group"
+                      title={`Post By ${post.author}`}
+                      rel="author"
+                    >
+                      <span itemProp="author">
+                        <Image
+                          src={"/Sabyr_Nurgaliyev.webp"}
+                          alt={`Post By ${post.author}`}
+                          width={50}
+                          height={50}
+                          className="w-8 h-8 rounded-full object-cover object-center"
+                        />
+                      </span>
+                      <span className="group-hover:underline">
+                        {post.author}
+                      </span>
+                    </Link>
+                    <span itemProp="datePublished">
+                      {format(new Date(post.date), "MMMM d, yyyy")}
                     </span>
-                    <span className="group-hover:underline">{post.author}</span>
-                  </Link>
-                  <span itemProp="datePublished">
-                    {format(new Date(post.date), "MMMM d, yyyy")}
-                  </span>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Link>
           ))}
         </section>
       </main>
