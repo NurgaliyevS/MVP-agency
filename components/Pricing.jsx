@@ -82,7 +82,7 @@ function Pricing() {
           <div className="p-6 mx-auto pt-3">
             <a
               href={`https://buy.stripe.com/7sI9DX38eaucdnWdQQ${isBlackFriday ? '?prefilled_promo_code=FRIDAYSALE2024' : ''}`}
-              className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-red-600 hover:bg-red-700' : ''}`}
+              className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-red-600 hover:bg-red-700 text-white' : ''}`}
               role="button"
             >
               {isBlackFriday ? 'Claim Your 50% OFF Now!' : 'Buy Now'}
