@@ -1,11 +1,28 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+
 function Pricing() {
+  const [isBlackFriday, setIsBlackFriday] = useState(false)
+  const originalPrice = 3000
+  const discountedPrice = 1500
+
   const features = [
     "7 days delivery",
     "1 core feature",
     "1 round of revisions",
     "Basic hosting setup",
     "Deploy & setup domain",
-  ];
+  ]
+
+  useEffect(() => {
+    const now = new Date()
+    const currentYear = now.getFullYear()
+    const blackFridayStart = new Date(currentYear, 10, 21) // November 24th (0-indexed month)
+    const monthEnd = new Date(currentYear, 11, 1) // December 1st (0-indexed month)
+
+    setIsBlackFriday(now >= blackFridayStart && now < monthEnd)
+  }, [])
 
   return (
     <section className="py-16 px-4" id="pricing">
@@ -13,11 +30,30 @@ function Pricing() {
         <h2 className="text-3xl font-bold text-center mb-12 text-black">
           Pricing
         </h2>
-        <div className="bg-white rounded-xl overflow-hidden w-full lg:w-1/2 mx-auto shadow-inner border border-gray-200">
+        <div className="bg-white rounded-xl overflow-hidden w-full lg:w-1/2 mx-auto shadow-lg border border-gray-200">
+          {isBlackFriday && (
+            <div className="bg-red-600 text-white p-4 text-center font-bold text-xl">
+              🎉 Black Friday Sale: 50% OFF! 🎉
+              <br />
+              <span className="text-sm font-normal">Valid until November 30th</span>
+            </div>
+          )}
           <div className="p-6 pb-5">
             <div className="flex flex-col gap-2">
               <h3 className="text-2xl font-semibold text-black">MVP</h3>
-              <p className="text-3xl text-black font-bold">$3,000</p>
+              <div className="flex items-center gap-2">
+                <p className="text-4xl text-black font-bold">
+                  ${isBlackFriday ? discountedPrice : originalPrice}
+                </p>
+                {isBlackFriday && (
+                  <p className="text-2xl text-gray-500 line-through">
+                    ${originalPrice}
+                  </p>
+                )}
+              </div>
+              {isBlackFriday && (
+                <p className="text-green-600 font-semibold">You save ${originalPrice - discountedPrice}!</p>
+              )}
               <span>Bring your own design</span>
             </div>
           </div>
@@ -45,17 +81,19 @@ function Pricing() {
 
           <div className="p-6 mx-auto pt-3">
             <a
+              // how to add discount wpWY3z2s
               href="https://buy.stripe.com/7sI9DX38eaucdnWdQQ"
-              className="btn btn-primary rounded-lg btn-block"
+              className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-red-600 hover:bg-red-700' : ''}`}
               role="button"
             >
-              Buy Now
+              {isBlackFriday ? 'Claim Your 50% OFF Now!' : 'Buy Now'}
             </a>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Pricing;
+export default Pricing
+
