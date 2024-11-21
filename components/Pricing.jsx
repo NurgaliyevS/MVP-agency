@@ -85,7 +85,7 @@ function Pricing() {
               className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-red-600 hover:bg-red-700 text-white' : ''}`}
               role="button"
             >
-              {isBlackFriday ? 'Claim Your 50% OFF Now!' : 'Buy Now'}
+              {isBlackFriday ? 'Get it now' : 'Buy Now'}
             </a>
           </div>
         </div>
