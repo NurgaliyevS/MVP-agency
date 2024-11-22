@@ -18,7 +18,7 @@ function Pricing() {
   useEffect(() => {
     const now = new Date()
     const currentYear = now.getFullYear()
-    const blackFridayStart = new Date(currentYear, 10, 21) // November 24th (0-indexed month)
+    const blackFridayStart = new Date(currentYear, 10, 21) // November 21st (0-indexed month)
     const monthEnd = new Date(currentYear, 11, 1) // December 1st (0-indexed month)
 
     setIsBlackFriday(now >= blackFridayStart && now < monthEnd)
@@ -32,7 +32,7 @@ function Pricing() {
         </h2>
         <div className="bg-white rounded-xl overflow-hidden w-full lg:w-1/2 mx-auto shadow-lg border border-gray-200">
           {isBlackFriday && (
-            <div className="bg-red-600 text-white p-4 text-center font-bold text-xl">
+            <div className="bg-green-600 text-white p-4 text-center font-bold text-xl">
               🎉 Black Friday Sale: 50% OFF! 🎉
               <br />
               <span className="text-sm font-normal">Valid until November 30th</span>
@@ -82,11 +82,16 @@ function Pricing() {
           <div className="p-6 mx-auto pt-3">
             <a
               href={`https://buy.stripe.com/7sI9DX38eaucdnWdQQ${isBlackFriday ? '?prefilled_promo_code=FRIDAYSALE2024' : ''}`}
-              className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-red-600 hover:bg-red-700 text-white' : ''}`}
+              className={`btn btn-primary rounded-lg btn-block ${isBlackFriday ? 'bg-green-600 hover:bg-green-700 text-white' : ''}`}
               role="button"
             >
-              {isBlackFriday ? 'Get it now' : 'Buy Now'}
+              {isBlackFriday ? 'Claim Your 50% OFF Now!' : 'Buy Now'}
             </a>
+            {isBlackFriday && (
+              <p className="text-sm text-center mt-2">
+                Use code <span className="font-bold">FRIDAYSALE2024</span> at checkout if not automatically applied
+              </p>
+            )}
           </div>
         </div>
       </div>
