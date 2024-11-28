@@ -1,48 +1,40 @@
 function Features() {
   const comparisonData = [
     {
-      traditional: "6-12 months of development time",
-      mvpAgency: "MVP ready in 7 days",
+      traditional: "3-6 months to build",
+      mvpAgency: "Done in 7 days",
     },
     {
       traditional: "$50,000+ for a basic MVP",
-      mvpAgency: "Fixed price starting at $3,000",
+      mvpAgency: "From $3,000",
     },
     {
       traditional: "Hiring 3-5 developers at $100k+/year each",
-      mvpAgency: "Experienced full-stack developer with 5+ years",
+      mvpAgency: "One expert developer",
     },
     {
       traditional: "Endless meetings and slow progress",
-      mvpAgency: "Weekly updates and rapid iterations",
+      mvpAgency: "Fast updates",
     },
     {
-      traditional: "Constant tech stack debates and changes",
-      mvpAgency: "Optimized, modern tech stack (Next.js, React)",
+      traditional: "Tech arguments",
+      mvpAgency: "Proven tools (Next.js, React)",
     },
     {
-      traditional: "Security vulnerabilities from inexperience",
-      mvpAgency: "Enterprise-grade security measures",
+      traditional: "Security risks",
+      mvpAgency: "Bank-level security",
     },
     {
-      traditional: "Scalability issues as users grow",
-      mvpAgency: "Built to scale to 100,000 of users",
+      traditional: "Crashes under load",
+      mvpAgency: "Handles big crowds",
     },
     {
-      traditional: "Painful deployment process taking days",
-      mvpAgency: "One-click Vercel deployment",
+      traditional: "Slow updates",
+      mvpAgency: "Quick updates",
     },
     {
-      traditional: "Limited support during critical times",
-      mvpAgency: "24/7 tech support for 30 days post-launch",
-    },
-    {
-      traditional: "Hidden costs and scope creep",
-      mvpAgency: "Transparent, all-inclusive pricing",
-    },
-    {
-      traditional: "Outdated tech by launch time",
-      mvpAgency: "Cutting-edge tech (AI integration ready)",
+      traditional: "Hidden costs",
+      mvpAgency: "Clear pricing",
     },
   ];
 
