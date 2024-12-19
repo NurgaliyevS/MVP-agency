@@ -2,11 +2,11 @@ function Features() {
   const comparisonData = [
     {
       traditional: "3-6 months to build",
-      mvpAgency: "Done in 7 days",
+      mvpAgency: "Launch in weeks",
     },
     {
-      traditional: "$50,000+ for a basic MVP",
-      mvpAgency: "From $3,000",
+      traditional: "$20,000+ for a basic MVP",
+      mvpAgency: "From $499 to $1497 for MVP",
     },
     {
       traditional: "Hiring 3-5 developers at $100k+/year each",
@@ -106,7 +106,7 @@ function Features() {
       <div className="text-center py-8 my-8">
         <a
           href="https://cal.com/sabyr-nurgaliyev/15min"
-          className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+          className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl text-white"
           role="button"
         >
           Book a Call
