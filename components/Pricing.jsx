@@ -14,7 +14,8 @@ function Pricing() {
         "Hosting setup",
         "Custom domain setup",
         "14 days tech support"
-      ]
+      ],
+      link: "https://buy.stripe.com/cN24jDdMSeKs83C6ou"
     },
     {
       name: "Lean MVP",
@@ -30,7 +31,8 @@ function Pricing() {
         "Hosting setup",
         "SEO optimization",
         "30 days tech support"
-      ]
+      ],
+      link: "https://buy.stripe.com/fZe3fz8sy1XGgA8eV1"
     },
     {
       name: "Growth MVP",
@@ -44,7 +46,8 @@ function Pricing() {
         "Performance optimization",
         "Advanced SEO setup",
         "Scale-ready architecture"
-      ]
+      ],
+      link: "https://buy.stripe.com/4gwdUd106gSA3Nm9AI"
     }
   ]
 
@@ -103,7 +106,7 @@ function Pricing() {
                 </ul>
                 <div className="mt-8">
                   <a
-                    href={`https://buy.stripe.com/7sI9DX38eaucdnWdQQ`}
+                    href={plan.link}
                     className={`w-full inline-block px-6 py-3.5 text-center text-white font-medium
                       ${plan.highlight 
                         ? 'btn btn-primary rounded-lg btn-block' 
