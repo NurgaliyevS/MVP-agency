@@ -18,7 +18,7 @@ function HowItWorks(props) {
               description: "Choose the essential feature for your MVP launch",
             },
             {
-              title: "Launch in 7 days",
+              title: "Launch in 2 weeks",
               description: "Get your product to market in record time",
             },
           ].map((step, index) => (
