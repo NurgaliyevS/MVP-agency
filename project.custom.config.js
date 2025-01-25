@@ -20,7 +20,7 @@ export const customConfig = {
     keywords:
       "build mvp, minimum viable product, building an mvp for startups, mvp product, mvp for startups, build a minimum viable product, mvp builds, minimum viable product services",
     description:
-      "MVP Agency helps startups build Minimum Viable Products fast. Bring your idea to life.",
+      "MVP Agency helps build digital products fast. Bring your idea to life.",
     themeColor: "#ffffff",
     applicationName: "MVP Agency",
     og: {
@@ -28,7 +28,7 @@ export const customConfig = {
       url: "https://mvpagency.org",
       image: "https://mvpagency.org/company_related/og-image.webp",
       imageAlt:
-        "MVP Agency helps startups build Minimum Viable Products fast. Bring your idea to life.",
+        "MVP Agency helps build digital products fast. Bring your idea to life.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
       twitterImage: "https://mvpagency.org/company_related/og-image.webp",
