@@ -28,6 +28,11 @@ export default function BlogIndex({ posts }) {
         <title>MVPAgency Blog</title>
         <meta name="description" content={customConfig.seo.description} />
         <meta name="keywords" content={customConfig.seo.keywords} />
+        <meta
+          name="description"
+          // Start monitoring in 30 seconds. Get notified by email, and SMS. Monitor your website, and server.
+          content={customConfig.seo.description}
+        />
         <link rel="canonical" href={`https://mvpagency.org/blog`} />
       </Head>
       <BlogHeader />
