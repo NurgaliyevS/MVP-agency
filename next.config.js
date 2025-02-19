@@ -6,12 +6,18 @@ const nextConfig = withPlausibleProxy()({
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "**",
-        port: "",
-        pathname: "**",
+        protocol: 'https',
+        hostname: 'mars-images.imgix.net',
+        port: '',
+        pathname: '/**'
       },
-    ],
+      {
+        protocol: 'https',
+        hostname: 'assets.seobotai.com',
+        port: '',
+        pathname: '/**'
+      }
+    ]
   },
 });
 
