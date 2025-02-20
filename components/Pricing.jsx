@@ -74,7 +74,7 @@ function Pricing() {
                       <span className="text-gray-500">one-time</span>
                     ) : null}
                   </div>
-                  <p className="text-gray-600 text-sm py-2 min-h-12">
+                  <p className="text-gray-600 text-sm py-2 h-14">
                     {plan.description}
                   </p>
                 </div>
