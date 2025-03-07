@@ -6,6 +6,7 @@ import Features from "./Features";
 import CTASection from "./CTASection";
 import Footer from "./Footer";
 import Pricing from "./Pricing";
+import Testimonials from "./Testimonials";
 
 export function LandingPage() {
   return (
@@ -26,6 +27,9 @@ export function LandingPage() {
 
       {/* How It Works Section */}
       <HowItWorks />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* CTA Section */}
       <CTASection />
