@@ -24,7 +24,7 @@ function HowItWorks(props) {
           ].map((step, index) => (
             <div
               key={index}
-              className="card bg-white text-center shadow-inner border border-gray-200 text-black"
+              className="card bg-white text-center rounded-xl shadow-md border border-gray-200"
             >
               <div className="card-body">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
