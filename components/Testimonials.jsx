@@ -5,7 +5,7 @@ function Testimonials() {
     {
       id: 1,
       text: "Outstanding experience with MVP Agency! We moved incredibly fast, and the communication was top-notch. The development process was smooth, and they handled API integration seamlessly. Highly recommend for anyone looking for a skilled, reliable agency.",
-      author: "Meal Plan Author",
+      author: "Meal Plan Generator",
       role: "Startup Founder"
     }
     // More testimonials can be added here in the future
