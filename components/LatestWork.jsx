@@ -9,7 +9,7 @@ const CaseStudyCard = ({ project }) => {
           <img
             src={project.image}
             alt={project.alt}
-            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
             <div className="p-4 text-white">
@@ -43,7 +43,7 @@ const LatestWork = () => {
     {
       id: 1,
       title: "Pregnant Meal",
-      image: "/latest-work/pregnantmeal.png",
+      image: "/latest-work/pregnantmeal-new.webp",
       alt: "Pregnant Meal Image",
       description:
         "A nutrition website designed for expecting mothers with personalized meal plans and health tracking features",
@@ -53,7 +53,7 @@ const LatestWork = () => {
     {
       id: 2,
       title: "Uptime Friend",
-      image: "/latest-work/uptimefriend.png",
+      image: "/latest-work/uptimefriend-new.webp",
       alt: "Uptime Friend Image",
       description:
         "Website monitoring service that alerts users when their websites go down, with detailed analytics and reporting",
@@ -63,7 +63,7 @@ const LatestWork = () => {
     {
       id: 3,
       title: "Weeealth",
-      image: "/latest-work/weeealth.png",
+      image: "/latest-work/weeealth-new.webp",
       alt: "Weeealth Image",
       description:
         "Personal finance management platform helping users track investments, set budgets, and achieve financial goals",
@@ -73,7 +73,7 @@ const LatestWork = () => {
     {
       id: 4,
       title: "Trip Planss",
-      image: "/latest-work/tripplanss.png",
+      image: "/latest-work/tripplanss-new.webp",
       alt: "Trip Planss Image",
       description:
         "Travel planning application that simplifies planning and booking trips",
@@ -83,7 +83,7 @@ const LatestWork = () => {
     {
       id: 5,
       title: "SubPage",
-      image: "/latest-work/subpage2.png",
+      image: "/latest-work/subpage-new.webp",
       alt: "SubPage Image",
       description:
         "Website builder platform focused on creating beautiful landing pages with no coding required",
@@ -93,7 +93,7 @@ const LatestWork = () => {
     {
       id: 6,
       title: "Environmental Job Boards",
-      image: "/latest-work/environmentaljobboards.png",
+      image: "/latest-work/environmentaljobboards-new.webp",
       alt: "Environmental Job Boards Image",
       description:
         "Job board connecting environmental professionals with sustainability-focused employers.",
