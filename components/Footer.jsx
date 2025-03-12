@@ -111,11 +111,31 @@ function Footer(props) {
               <li>
                 <Link
                   className="text-sm hover:text-primary"
-                  href="https://environmentaljobboards.com/"
+                  href="https://pregnantmeal.com/"
                   target="_blank"
-                  title="Environmental Job Boards - Home Page"
+                  title="Pregnant Meal - Home Page"
                 >
-                  Environmental Job Boards
+                  PregnantMeal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-sm hover:text-primary"
+                  href="https://redditagency.com/"
+                  target="_blank"
+                  title="Reddit Agency - Home Page"
+                >
+                  Reddit Agency
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-sm hover:text-primary"
+                  href="https://bestwebsitegames.com/"
+                  target="_blank"
+                  title="Best Website Games - Home Page"
+                >
+                  Best Website Games
                 </Link>
               </li>
               <li>
@@ -126,16 +146,6 @@ function Footer(props) {
                   title="Subpage.io - Home Page Builder"
                 >
                   SubPage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-sm hover:text-primary"
-                  href="https://pregnantmeal.com/"
-                  target="_blank"
-                  title="Pregnant Meal - Home Page"
-                >
-                  PregnantMeal
                 </Link>
               </li>
               <li>
@@ -167,6 +177,17 @@ function Footer(props) {
                   title="Weeealth - Home Page"
                 >
                   Weeealth
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="text-sm hover:text-primary"
+                  href="https://environmentaljobboards.com/"
+                  target="_blank"
+                  title="Environmental Job Boards - Home Page"
+                >
+                  Environmental Job Boards
                 </Link>
               </li>
             </ul>
