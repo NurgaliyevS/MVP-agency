@@ -34,10 +34,8 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(filePath, "utf8");
 
   const { data, content } = matter(fileContents);
-  
   // Process shortcodes in the content
   const processedContent = processShortcodes(content);
-  
   // Use unified with rehypeRaw to preserve HTML in markdown
   const processedHtml = await unified()
     .use(remarkParse)
@@ -46,7 +44,6 @@ export async function getStaticProps({ params }) {
     .use(rehypeRaw) // This preserves raw HTML
     .use(rehypeStringify)
     .process(processedContent);
-    
   const contentHtml = processedHtml.toString();
 
   // Get all posts to find related ones
@@ -68,9 +65,8 @@ export async function getStaticProps({ params }) {
         alt: data.alt,
       };
     });
-
   // Find related posts based on matching tags
-  const relatedPosts = allPosts
+  let relatedPosts = allPosts
     .map((post) => ({
       ...post,
       matchingTags: post.tags.filter((tag) => data.tags.includes(tag)).length,
@@ -79,6 +75,13 @@ export async function getStaticProps({ params }) {
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .sort((a, b) => b.matchingTags - a.matchingTags)
     .slice(0, 6); // Limit to 6 related posts
+
+  // If no related posts found, use the 6 latest posts instead
+  if (relatedPosts.length === 0) {
+    relatedPosts = allPosts
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 6);
+  }
 
   return {
     props: {
