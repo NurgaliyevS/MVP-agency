@@ -187,5 +187,6 @@ While the agency handles the technical aspects, your involvement is crucial for 
 Many MVP development agencies have experience helping startups prepare for fundraising. They can create compelling demos, provide technical documentation, and sometimes even make introductions to potential investors in their network.
 
 - [Build MVP in 14 days](https://mvpagency.org/)
-- [The Ultimate Guide to MVP Development](https://www.netguru.com/blog/mvp-development-guide)
-- [How to Choose the Right Development Partner](https://www.ycombinator.com/library/6f-how-to-work-with-software-development-agencies) 
+- [Building product](https://www.ycombinator.com/library/7s-building-product)
+- [How to plan an MVP](https://www.ycombinator.com/library/6f-how-to-plan-an-mvp)
+- [How to launch](https://www.ycombinator.com/library/6i-how-to-launch-again-and-again)
