@@ -250,4 +250,4 @@ Ready to start your MVP build? Remember that perfect is the enemy of good - focu
 - [How to Build a Minimum Viable Product And Save Your Budget](https://www.eleken.co/blog-posts/how-to-build-a-minimum-viable-product-and-save-your-budget)
 - [how to create MVP as fast as possible](https://www.reddit.com/r/SaaS/comments/1793f6i/how_to_create_mvp_as_fast_as_possible/)
 - [how-to-build-a-minimum-viable-product](https://www.cleveroad.com/blog/how-to-build-a-minimum-viable-product/)
-- [Build MVP in 7 days](https://mvpagency.org/)
+- [Build MVP in 14 days](https://mvpagency.org/)

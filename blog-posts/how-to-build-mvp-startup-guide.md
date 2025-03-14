@@ -201,6 +201,6 @@ Focus on solving one problem exceptionally well, gather feedback religiously, an
 The journey of a thousand miles begins with a single step - and your MVP is that crucial first step. Now get out there and start building!
 
 
-- [Build MVP in 7 days](https://mvpagency.org/)
+- [Build MVP in 14 days](https://mvpagency.org/)
 - [Minimum Viable Product Build A Step-by-Step Guide to Build a Minimum Viable Product (MVP)](https://www.netsolutions.com/hub/minimum-viable-product/build)
 - [How to Build a Minimal Viable Product (MVP)](https://www.digitalocean.com/resources/articles/minimum-viable-product)

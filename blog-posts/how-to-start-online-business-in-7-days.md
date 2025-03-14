@@ -1,5 +1,5 @@
 ---
-title: "How to start online business in 7 days ?"
+title: "How to start online business in 14 days ?"
 date: "2024-11-14"
 excerpt: "Easy to do now. There are several tips that I can give you to start your own digital business."
 author: "Sabyr Nurgaliyev"
@@ -13,7 +13,7 @@ tags:
     "minimum viable product services",
   ]
 image: "/blog/Online-Business.png"
-alt: "How to start online business in 7 days ?"
+alt: "How to start online business in 14 days ?"
 ---
 
 ### Easy to do now. 

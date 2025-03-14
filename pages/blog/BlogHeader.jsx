@@ -8,7 +8,10 @@ function BlogHeader() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl flex items-center justify-between px-4 md:px-8 py-4 mx-auto">
         <div className="flex lg:flex-1">
-          <Link href="/" className="flex items-center space-x-2 lg:w-1/3 transition-transform hover:scale-105 flex-1">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 lg:w-1/3 transition-transform hover:scale-105 flex-1"
+          >
             <img
               src="/company_related/favicon-192x192.png"
               alt="MVP AGENCY"
@@ -52,17 +55,17 @@ function BlogHeader() {
           </Link>
           <Link
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
-            href="/blog/categories"
-            title="Blog Categories"
+            href="/#pricing"
+            title="Pricing"
           >
-            <span className="font-bold text-lg">Categories</span>
+            <span className="font-bold text-lg">Pricing</span>
           </Link>
           <Link
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
-            href="/about"
-            title="About MVP Agency"
+            href="/#work"
+            title="Recent work"
           >
-            <span className="font-bold text-lg">About</span>
+            <span className="font-bold text-lg">Work</span>
           </Link>
         </div>
 
@@ -129,19 +132,19 @@ function BlogHeader() {
                 </Link>
                 <Link
                   className="text-gray-700 hover:text-gray-900 font-medium text-lg transition-colors"
-                  href="/blog/categories"
-                  title="Blog Categories"
+                  href="/#pricing"
+                  title="Pricing"
                   onClick={() => setIsOpen(false)}
                 >
-                  Categories
+                  Pricing
                 </Link>
                 <Link
                   className="text-gray-700 hover:text-gray-900 font-medium text-lg transition-colors"
-                  href="/about"
-                  title="About MVP Agency"
+                  href="/#work"
+                  title="Recent work"
                   onClick={() => setIsOpen(false)}
                 >
-                  About
+                  Work
                 </Link>
               </div>
             </div>

@@ -20,7 +20,7 @@ alt: "MVP Development Agency"
 
 In today's fast-paced startup ecosystem, bringing your innovative idea to market quickly and efficiently is crucial for success. This is where an MVP development agency becomes an invaluable partner in your entrepreneurial journey. A specialized MVP development agency offers the expertise, resources, and strategic guidance needed to transform your concept into a market-ready minimum viable product. In this comprehensive guide, we'll explore how partnering with an MVP development agency can accelerate your path to market validation and business growth.
 
-[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 7 days." url="https://mvpagency.org/contact" button_text="Schedule a Free Consultation"]
+[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 14 days." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule a Free Consultation"]
 
 ### What is an MVP Development Agency?
 
@@ -63,7 +63,7 @@ Building an in-house development team can be expensive and time-consuming, espec
 - Flexible engagement models
 - Prevention of expensive development mistakes
 
-[cta_button url="https://mvpagency.org/pricing" text="View Our Pricing Options"]
+[cta_button url="https://mvpagency.org#pricing" text="View Our Pricing Options"]
 
 ### 4. Comprehensive Skill Sets
 
@@ -113,7 +113,7 @@ Effective communication is essential for successful collaboration. Assess how th
 
 Compare pricing structures and engagement models to find an agency that fits your budget and project requirements. Some agencies offer fixed-price contracts, while others work on a time and materials basis. Consider which model makes the most sense for your specific situation.
 
-[cta_box title="Not sure which agency is right for you?" text="Let us show you how our approach differs from other agencies. Book a demo to see our process in action and discuss your specific project needs." url="https://mvpagency.org/book-demo" button_text="Book a Demo"]
+[cta_box title="Not sure which agency is right for you?" text="Let us show you how our approach differs from other agencies. Book a demo to see our process in action and discuss your specific project needs." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book a Demo"]
 
 ## The MVP Development Process with an Agency
 
@@ -187,6 +187,6 @@ While the agency handles the technical aspects, your involvement is crucial for 
 **Can an agency help with fundraising efforts?**
 Many MVP development agencies have experience helping startups prepare for fundraising. They can create compelling demos, provide technical documentation, and sometimes even make introductions to potential investors in their network.
 
-- [Build MVP in 7 days](https://mvpagency.org/)
+- [Build MVP in 14 days](https://mvpagency.org/)
 - [The Ultimate Guide to MVP Development](https://www.netguru.com/blog/mvp-development-guide)
 - [How to Choose the Right Development Partner](https://www.ycombinator.com/library/6f-how-to-work-with-software-development-agencies) 

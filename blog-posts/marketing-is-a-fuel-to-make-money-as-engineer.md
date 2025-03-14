@@ -40,6 +40,6 @@ Marketing is like finding a wife for your whole life. You are trying to find the
 Do marketing. Not selling.
 Find your best customer and suggest your solution. Make them run for you. They will feel happy. They will stand in line. They will wait even if you are not ready. They will wait for you.
 
-- [Build MVP in 7 days](https://mvpagency.org/)
+- [Build MVP in 14 days](https://mvpagency.org/)
 - [Minimum Viable Product Build A Step-by-Step Guide to Build a Minimum Viable Product (MVP)](https://www.netsolutions.com/hub/minimum-viable-product/build)
 - [How to Build a Minimal Viable Product (MVP)](https://www.digitalocean.com/resources/articles/minimum-viable-product)

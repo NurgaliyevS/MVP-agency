@@ -179,4 +179,4 @@ Take that first step today. Your idea deserves to be tested in the real world, a
 
 - [how to create MVP as fast as possible](https://www.reddit.com/r/SaaS/comments/1793f6i/how_to_create_mvp_as_fast_as_possible/)
 - [A Step-by-Step Guide to Build a Minimum Viable Product (MVP)](https://www.netsolutions.com/hub/minimum-viable-product/build)
-- [MVPAgency - Build MVP in 7 days](https://mvpagency.org/)
+- [MVPAgency - Build MVP in 14 days](https://mvpagency.org/)

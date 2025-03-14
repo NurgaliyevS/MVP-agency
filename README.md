@@ -61,7 +61,7 @@ alt: "MVP Development Agency"
 
 In today's fast-paced startup ecosystem, bringing your innovative idea to market quickly and efficiently is crucial for success.
 
-[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 7 days." url="https://mvpagency.org/contact" button_text="Schedule a Free Consultation"]
+[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 14 days." url="https://mvpagency.org/contact" button_text="Schedule a Free Consultation"]
 
 ### What is an MVP Development Agency?
 
