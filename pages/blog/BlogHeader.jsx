@@ -5,23 +5,23 @@ import { useState } from "react";
 function BlogHeader() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-slate-200">
-      <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <nav className="max-w-7xl flex items-center justify-between px-4 md:px-8 py-4 mx-auto">
         <div className="flex lg:flex-1">
-          <Link href="/" className="flex items-center space-x-2 lg:w-1/3">
+          <Link href="/" className="flex items-center space-x-2 lg:w-1/3 transition-transform hover:scale-105 flex-1">
             <img
               src="/company_related/favicon-192x192.png"
               alt="MVP AGENCY"
               className="w-8 h-8"
             />
-            <div className="text-xl font-bold text-black">MVP AGENCY</div>
+            <div className="text-xl font-bold text-gray-800">MVP AGENCY</div>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
             onClick={() => setIsOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -31,7 +31,7 @@ function BlogHeader() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 text-base-content"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -44,18 +44,32 @@ function BlogHeader() {
 
         <div className="hidden lg:flex lg:justify-center lg:gap-12 lg:items-center">
           <Link
-            className="link link-hover text-base-content/80 hover:text-base-content active:text-base-content focus:text-base-content duration-100"
+            className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
             href="/blog"
             title="mvpagency.org blog page"
           >
-            <span className="font-extrabold text-lg">All Posts</span>
+            <span className="font-bold text-lg">All Posts</span>
+          </Link>
+          <Link
+            className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
+            href="/blog/categories"
+            title="Blog Categories"
+          >
+            <span className="font-bold text-lg">Categories</span>
+          </Link>
+          <Link
+            className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
+            href="/about"
+            title="About MVP Agency"
+          >
+            <span className="font-bold text-lg">About</span>
           </Link>
         </div>
 
         <div className="hidden lg:flex lg:justify-end lg:flex-1">
           <a
             href="https://cal.com/sabyr-nurgaliyev/15min"
-            className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+            className="btn btn-primary btn-md lg:btn-lg px-8 rounded-full shadow-md hover:shadow-lg transition-shadow"
             role="button"
           >
             Book a Call
@@ -66,21 +80,21 @@ function BlogHeader() {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`relative z-50 ${isOpen ? "" : "hidden"}`}>
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-10 overflow-y-auto bg-base-200 sm:max-w-sm sm:ring-1 sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300`}
+          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-10 overflow-y-auto bg-white shadow-xl sm:max-w-sm sm:ring-1 sm:ring-gray-200 transform origin-right transition ease-in-out duration-300`}
         >
           {/* Your logo/name on small screens */}
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2 lg:w-1/3">
+            <Link href="/" className="flex items-center space-x-2">
               <img
                 src="/company_related/favicon-192x192.png"
                 alt="MVP AGENCY"
                 className="w-8 h-8"
               />
-              <div className="text-xl font-bold text-black">MVP AGENCY</div>
+              <div className="text-xl font-bold text-gray-800">MVP AGENCY</div>
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -104,21 +118,38 @@ function BlogHeader() {
           {/* Your links on small screens */}
           <div className="flow-root mt-6">
             <div className="py-4">
-              <div className="flex flex-col gap-y-4 items-start">
+              <div className="flex flex-col gap-y-6 items-start">
                 <Link
-                  className="link link-hover"
+                  className="text-gray-700 hover:text-gray-900 font-medium text-lg transition-colors"
                   href="/blog"
                   title="mvpagency.org blog page"
+                  onClick={() => setIsOpen(false)}
                 >
                   All Posts
                 </Link>
+                <Link
+                  className="text-gray-700 hover:text-gray-900 font-medium text-lg transition-colors"
+                  href="/blog/categories"
+                  title="Blog Categories"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Categories
+                </Link>
+                <Link
+                  className="text-gray-700 hover:text-gray-900 font-medium text-lg transition-colors"
+                  href="/about"
+                  title="About MVP Agency"
+                  onClick={() => setIsOpen(false)}
+                >
+                  About
+                </Link>
               </div>
             </div>
-            <div className="divider"></div>
+            <div className="border-t border-gray-200 my-6"></div>
             <div className="flex flex-col">
               <a
                 href="https://cal.com/sabyr-nurgaliyev/15min"
-                className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl"
+                className="btn btn-primary btn-md px-8 rounded-full shadow-md"
                 role="button"
               >
                 Book a Call
