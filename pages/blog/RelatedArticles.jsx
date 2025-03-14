@@ -7,64 +7,59 @@ const RelatedArticles = ({ currentPost, relatedPosts }) => {
   if (!Array.isArray(relatedPosts) || relatedPosts.length === 0) {
     return null;
   }
-  if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-16 border-t pt-12">
-      <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="related-posts">
+      <h2 className="related-posts-title">Related Articles</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {relatedPosts.map((post) => (
           <article 
             key={post.slug} 
-            className="card bg-slate-200 rounded-2xl border border-slate-200 flex flex-col h-full"
+            className="related-post-card bg-white shadow-sm overflow-hidden flex flex-col h-full"
           >
             <Link
               href={`/blog/${post.slug}`}
               title={post.title}
-              className="flex flex-col h-full"
+              className="flex flex-col h-full hover:no-underline"
             >
-              <figure className="h-48">
+              <figure className="h-48 overflow-hidden">
                 <img
-                  alt={post.alt}
+                  alt={post.alt || post.title}
                   src={post.image}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </figure>
-              <div className="card-body flex flex-col p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-col p-4 md:p-6">
+                <div className="flex flex-wrap gap-2 mb-3">
                   {post.tags.slice(0, 2).map((tag) => (
                     <span
                       key={tag}
-                      className="badge badge-sm hover:badge-primary"
+                      className="badge badge-sm bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-colors duration-200"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="mb-4">
-                  <h3 className="text-xl md:text-2xl font-bold line-clamp-2">
+                <div className="mb-3">
+                  <h3 className="text-lg md:text-xl font-bold line-clamp-2 text-gray-800 hover:text-primary transition-colors duration-200">
                     {post.title}
                   </h3>
                 </div>
-                <p className="text-base-content/80 mb-6 line-clamp-3">
+                <p className="text-gray-600 mb-4 line-clamp-2 text-sm leading-relaxed">
                   {post.excerpt}
                 </p>
-                <div className="flex items-center gap-4 text-sm mt-auto">
-                  <div
-                    className="inline-flex items-center gap-2 group"
-                  >
-                    <span itemProp="author">
-                      <Image
-                        src="/Sabyr_Nurgaliyev.webp"
-                        alt={`Post By ${post.author}`}
-                        width={50}
-                        height={50}
-                        className="w-8 h-8 rounded-full object-cover object-center"
-                      />
-                    </span>
-                    <span className="group-hover:underline">{post.author}</span>
+                <div className="flex items-center justify-between text-sm mt-auto pt-3 border-t border-gray-100">
+                  <div className="inline-flex items-center gap-2">
+                    <Image
+                      src="/Sabyr_Nurgaliyev.webp"
+                      alt={`Post By ${post.author}`}
+                      width={24}
+                      height={24}
+                      className="w-6 h-6 rounded-full object-cover object-center border border-white shadow-sm"
+                    />
+                    <span className="text-gray-700 text-xs md:text-sm">{post.author}</span>
                   </div>
-                  <span>{format(new Date(post.date), "MMM d, yyyy")}</span>
+                  <span className="text-gray-500 text-xs">{format(new Date(post.date), "MMM d, yyyy")}</span>
                 </div>
               </div>
             </Link>
