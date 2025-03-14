@@ -6,13 +6,12 @@ author: "Sabyr Nurgaliyev"
 tags:
   [
     "mvp development agency",
-    "minimum viable product agency",
-    "startup development",
-    "product development",
-    "mvp services",
-    "tech startup agency",
+    "agencymvp",
+    "agency mvp",
+    "mvp agency",
+    "mvpagency"
   ]
-image: "/blog/mvp-development-agency.png"
+image: "/blog/mvp-development-agency.jpg"
 alt: "MVP Development Agency"
 ---
 
@@ -39,7 +38,7 @@ MVP development agencies bring specialized knowledge and experience to the table
 - Guidance on feature prioritization and scope management
 - Technical expertise across multiple platforms and technologies
 
-![MVP Development Agency](/blog/mvp-development-agency.png)
+![MVP Development Agency](/blog/mvp-development-agency[2].jpg)
 
 ### 2. Faster Time-to-Market
 
