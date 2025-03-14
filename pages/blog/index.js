@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { format } from "date-fns";
-import BlogHeader from "./BlogHeader";
+import BlogHeader from "../../components/BlogHeader";
 import { customConfig } from "@/project.custom.config";
 import { isDevelopment } from "@/components/isDevelopment";
 

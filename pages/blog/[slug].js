@@ -10,7 +10,7 @@ import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import rehypeRaw from "rehype-raw";
 import { unified } from "unified";
-import BlogPostContent from "./BlogPostContent";
+import BlogPostContent from "../../components/BlogPostContent";
 import processShortcodes from "@/utls/processShortcodes";
 
 export async function getStaticPaths() {
