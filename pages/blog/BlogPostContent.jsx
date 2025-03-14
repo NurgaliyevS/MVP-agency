@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { format } from "date-fns";
-import { renderAst } from "@/utls/renderAst";
 
 function BlogPostContent({ post, relatedPosts }) {
   if (!post) {
@@ -125,7 +124,7 @@ function BlogPostContent({ post, relatedPosts }) {
                 width={700}
                 height={500}
               />
-              {renderAst(post.contentHtml)}
+              <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
             </section>
           </div>
           <RelatedArticles currentPost={post} relatedPosts={relatedPosts} />
