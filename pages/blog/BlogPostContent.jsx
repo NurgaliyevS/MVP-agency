@@ -139,13 +139,12 @@ function BlogPostContent({ post, relatedPosts }) {
                   <h3 className="font-semibold text-gray-800 mb-4 text-lg">Tags</h3>
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
-                      <Link 
+                      <span 
                         key={tag} 
-                        href={`/blog/tag/${tag.toLowerCase().replace(/ /g, '-')}`}
                         className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:bg-primary hover:text-white hover:border-primary transition-colors duration-200"
                       >
                         {tag}
-                      </Link>
+                      </span>
                     ))}
                   </div>
                 </div>
