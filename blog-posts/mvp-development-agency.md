@@ -154,7 +154,7 @@ Building a product that users actually want to use requires deep understanding o
 
 Launching too early or too late can impact your product's success. Agencies with market experience can help you time your launch strategically, considering factors like competitor movements, market trends, and user readiness.
 
-[cta_button url="https://mvpagency.org/services" text="Explore Our Services"]
+[cta_button url="https://mvpagency.org#pricing" text="Explore Our Services"]
 
 ## Conclusion
 
@@ -164,7 +164,7 @@ By leveraging the experience and capabilities of an MVP development agency, you 
 
 Whether you're a first-time entrepreneur or an established business exploring new opportunities, an MVP development agency can provide the support and expertise you need to navigate the challenging journey from concept to market-ready product.
 
-[cta_box title="Ready to start your MVP journey?" text="Don't wait to bring your idea to market. Our team can help you build, launch, and validate your MVP in record time." url="https://mvpagency.org/get-started" button_text="Get Started Today"]
+[cta_box title="Ready to start your MVP journey?" text="Don't wait to bring your idea to market. Our team can help you build, launch, and validate your MVP in record time." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Started Today"]
 
 ### FAQs
 
