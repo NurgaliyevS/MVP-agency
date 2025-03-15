@@ -1,6 +1,6 @@
 ---
 title: "MVP Development Agency"
-date: "2024-12-25"
+date: "2025-03-15"
 excerpt: "Discover how partnering with an MVP development agency can accelerate your startup's journey from concept to market-ready product"
 author: "Sabyr Nurgaliyev"
 tags:
