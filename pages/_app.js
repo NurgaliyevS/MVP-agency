@@ -2,16 +2,13 @@ import "@/styles/globals.css";
 import "@/styles/blog.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import PlausibleProvider from "next-plausible";
-import { customConfig } from "@/project.custom.config";
 
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }) {
   return (
-    // example as mvpagency.org without https://
-    <PlausibleProvider domain={customConfig.domainName}>
+    <>
       <Component {...pageProps} />
       <ToastContainer
         position="top-right"
@@ -24,6 +21,12 @@ export default function App({
         draggable
         pauseOnHover
       />
-    </PlausibleProvider>
+      <script
+        defer
+        data-website-id="67f0b449a804b6e8eff870b6"
+        data-domain="mvpagency.org"
+        src="https://datafa.st/js/script.js"
+      ></script>
+    </>
   );
 }
