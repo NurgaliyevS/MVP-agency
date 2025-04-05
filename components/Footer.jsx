@@ -111,6 +111,16 @@ function Footer(props) {
               <li>
                 <Link
                   className="text-sm hover:text-primary"
+                  href="https://www.redditscheduler.com/"
+                  target="_blank"
+                  title="RedditScheduler - Home Page"
+                >
+                  RedditScheduler
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-sm hover:text-primary"
                   href="https://pregnantmeal.com/"
                   target="_blank"
                   title="Pregnant Meal - Home Page"
