@@ -20,7 +20,7 @@ alt: "MVP Development Costs: Complete Breakdown for 2025"
     -   **Development & Testing:** $5,000–$100,000
 -   **Maintenance Costs:** Post-launch expenses range from **$400 to $1,000/month**.
 
-[cta_box title="Build your MVP within budget" text="Get a free cost estimate for your specific project needs." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Cost Estimate"]
+[cta_box title="Build your MVP within budget" text="Get a free cost estimate for your specific project needs." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Cost Estimate"]
 
 ### Quick Tip:
 
@@ -70,7 +70,7 @@ Team structure and location are among the most influential cost factors. In fact
 
 The growing popularity of hybrid teams (combining in-house and outsourced talent) reflects these cost differences, with 63% of startups now adopting this model [\[4\]](https://evnedev.com/blog/company/how-much-does-it-cost-to-build-an-mvp-in-2025/).
 
-[cta_box title="Control your MVP budget" text="Get expert cost optimization for your development project." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Cost-Saving Consultation"]
+[cta_box title="Control your MVP budget" text="Get expert cost optimization for your development project." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Cost-Saving Consultation"]
 
 ## Cost Breakdown by Development Stages
 
@@ -142,7 +142,7 @@ A hybrid model is gaining traction in 2025: startups keep a small, core in-house
 
 When choosing outsourcing partners, prioritize teams with proven industry experience, strong communication skills, and solid QA processes. This ensures you get the best results without overspending.
 
-[cta_box title="Optimize your MVP budget" text="Get expert cost-saving strategies for your development project" url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book Free Cost Analysis"]
+[cta_box title="Optimize your MVP budget" text="Get expert cost-saving strategies for your development project" url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Book Free Cost Analysis"]
 
 ## Examples of MVP Development Budgets
 
@@ -238,4 +238,4 @@ After launching your MVP, it's crucial to plan for the next steps, including:
 
 As highlighted in team cost comparisons, outsourcing remains a cost-efficient way to maintain quality. The real challenge is finding the right mix of resources, tools, and development strategies to create a product that meets market demands while staying within budget.
 
-[cta_box title="Budget your MVP effectively" text="Get expert cost analysis and optimization strategies for your project." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Free Cost Consultation"]
+[cta_box title="Budget your MVP effectively" text="Get expert cost analysis and optimization strategies for your project." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Free Cost Consultation"]

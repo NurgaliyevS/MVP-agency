@@ -30,7 +30,7 @@ Launching an MVP (Minimum Viable Product) is about delivering a focused version 
 
 This checklist ensures your MVP is stable, user-friendly, and ready to generate actionable insights for future growth.
 
-[cta_box title="Launch your MVP with confidence" text="Get expert help implementing this 8-step checklist and go live faster." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book Free Launch Consultation"]
+[cta_box title="Launch your MVP with confidence" text="Get expert help implementing this 8-step checklist and go live faster." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Book Free Launch Consultation"]
 
 ## The MVP Launch Checklist: 15 Mistakes to Avoid
 
@@ -97,7 +97,7 @@ Bring in users who align with your Step 6 marketing personas to:
 
 Let users interact naturally with the product to gather meaningful insights about how your MVP performs in real-world scenarios.
 
-[cta_box title="Need help with your MVP launch?" text="Expert guidance on your pre-launch checklist." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Free Launch Review"]
+[cta_box title="Need help with your MVP launch?" text="Expert guidance on your pre-launch checklist." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Free Launch Review"]
 
 ## 3: Optimize Performance and Security
 
@@ -191,7 +191,7 @@ Numbers are important, but so is hearing directly from users. Combine these thre
 
 The data and feedback you gather here will guide your next steps, including marketing strategies (Step 6) and refining your product after launch (Step 8).
 
-[cta_box title="Need help with your MVP launch?" text="Expert guidance on implementing this checklist efficiently." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Free Strategy Call"]
+[cta_box title="Need help with your MVP launch?" text="Expert guidance on implementing this checklist efficiently." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Free Strategy Call"]
 
 ## 6: Develop a Marketing Strategy
 
@@ -310,7 +310,7 @@ Preparing for an MVP launch can be overwhelming, especially when you're trying t
 
 Don't risk a failed launch after all your hard work. Let our experienced team help you navigate the final steps to a successful MVP release.
 
-[**Schedule Your Free Launch Readiness Assessment →**](https://cal.com/sabyr-nurgaliyev/15min)
+[**Schedule Your Free Launch Readiness Assessment →**](https://cal.com/sabyr-nurgaliyev/mvp-agency)
 
 ## Conclusion
 
@@ -352,4 +352,4 @@ Each phase connects directly to the checklist. For example, the Testing & Valida
 - [MVPAgency](https://mvpagency.org) - Focused MVP development
 - [How to Build an MVP? Step-By-Step Guide to Creating a Successful Product](https://syndicode.com/blog/how-to-build-an-mvp/)
 
-[cta_box title="Ready for takeoff?" text="Expert guidance on your 8-step MVP launch." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Launch Support"]
+[cta_box title="Ready for takeoff?" text="Expert guidance on your 8-step MVP launch." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Launch Support"]

@@ -12,7 +12,7 @@ alt: "Build MVP Guide"
 
 Building a Minimum Viable Product (MVP) is the crucial first step in transforming your business idea into reality. This comprehensive guide will walk you through the essential steps to build an MVP that validates your concept while minimizing time and resource investment.
 
-[cta_box title="Ready to Build Your MVP?" text="Turn your idea into a working product in just 14 days. Our experienced team will guide you through the entire MVP development process." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Free Strategy Call"]
+[cta_box title="Ready to Build Your MVP?" text="Turn your idea into a working product in just 14 days. Our experienced team will guide you through the entire MVP development process." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Free Strategy Call"]
 
 ### Understanding MVP Fundamentals
 
@@ -125,7 +125,7 @@ Your launch strategy should include:
 - Miro for wireframing
 - InVision for prototyping
 
-[cta_box title="Looking for the Right Tools?" text="Skip the technical hassle. Our team has the expertise and tools to build your MVP efficiently and effectively." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Discuss Your Project"]
+[cta_box title="Looking for the Right Tools?" text="Skip the technical hassle. Our team has the expertise and tools to build your MVP efficiently and effectively." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Discuss Your Project"]
 
 ## Measuring MVP Success
 

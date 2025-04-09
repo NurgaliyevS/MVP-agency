@@ -71,7 +71,7 @@ function BlogHeader() {
 
         <div className="hidden lg:flex lg:justify-end lg:flex-1">
           <a
-            href="https://cal.com/sabyr-nurgaliyev/15min"
+            href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
             className="btn btn-primary btn-md lg:btn-lg px-8 rounded-full shadow-md hover:shadow-lg transition-shadow"
             role="button"
           >
@@ -151,7 +151,7 @@ function BlogHeader() {
             <div className="border-t border-gray-200 my-6"></div>
             <div className="flex flex-col">
               <a
-                href="https://cal.com/sabyr-nurgaliyev/15min"
+                href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
                 className="btn btn-primary btn-md px-8 rounded-full shadow-md"
                 role="button"
               >

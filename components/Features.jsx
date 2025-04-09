@@ -105,7 +105,7 @@ function Features() {
       </div>
       <div className="text-center py-8 my-8">
         <a
-          href="https://cal.com/sabyr-nurgaliyev/15min"
+          href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
           className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl text-white"
           role="button"
         >

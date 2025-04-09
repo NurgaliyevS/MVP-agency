@@ -11,7 +11,7 @@ function CTASection(props) {
           Get started with MVP AGENCY today!
         </p>
         <a
-          href="https://cal.com/sabyr-nurgaliyev/15min"
+          href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
           className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl text-white"
           role="button"
         >

@@ -19,7 +19,7 @@ alt: "MVP Development Agency"
 
 In today's fast-paced startup ecosystem, bringing your innovative idea to market quickly and efficiently is crucial for success. This is where an MVP development agency becomes an invaluable partner in your entrepreneurial journey. A specialized MVP development agency offers the expertise, resources, and strategic guidance needed to transform your concept into a market-ready minimum viable product. In this comprehensive guide, we'll explore how partnering with an MVP development agency can accelerate your path to market validation and business growth.
 
-[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 14 days." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule a Free Consultation"]
+[cta_box title="Ready to bring your idea to life?" text="Don't let your brilliant concept remain just an idea. Our team of experts can help you build a market-ready MVP in just 14 days." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule a Free Consultation"]
 
 ### What is an MVP Development Agency?
 
@@ -112,7 +112,7 @@ Effective communication is essential for successful collaboration. Assess how th
 
 Compare pricing structures and engagement models to find an agency that fits your budget and project requirements. Some agencies offer fixed-price contracts, while others work on a time and materials basis. Consider which model makes the most sense for your specific situation.
 
-[cta_box title="Not sure which agency is right for you?" text="Let us show you how our approach differs from other agencies. Book a demo to see our process in action and discuss your specific project needs." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book a Demo"]
+[cta_box title="Not sure which agency is right for you?" text="Let us show you how our approach differs from other agencies. Book a demo to see our process in action and discuss your specific project needs." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Book a Demo"]
 
 ## The MVP Development Process with an Agency
 
@@ -164,7 +164,7 @@ By leveraging the experience and capabilities of an MVP development agency, you 
 
 Whether you're a first-time entrepreneur or an established business exploring new opportunities, an MVP development agency can provide the support and expertise you need to navigate the challenging journey from concept to market-ready product.
 
-[cta_box title="Ready to start your MVP journey?" text="Don't wait to bring your idea to market. Our team can help you build, launch, and validate your MVP in record time." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Started Today"]
+[cta_box title="Ready to start your MVP journey?" text="Don't wait to bring your idea to market. Our team can help you build, launch, and validate your MVP in record time." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Started Today"]
 
 ### FAQs
 

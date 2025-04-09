@@ -12,7 +12,7 @@ alt: "Build MVP Guide"
 
 In today's fast-paced startup environment, knowing how to build MVP (Minimum Viable Product) efficiently can make the difference between success and failure. This comprehensive guide will show you how to transform your idea into a working product that validates your business hypothesis while minimizing time and resource investment.
 
-[cta_box title="Turn your idea into an MVP" text="Get your product to market in just 14 days with our expert development team." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book Free Call"]
+[cta_box title="Turn your idea into an MVP" text="Get your product to market in just 14 days with our expert development team." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Book Free Call"]
 
 ### Understanding MVP Development Fundamentals
 
@@ -52,7 +52,7 @@ Focus on essential features that:
 - Can be developed quickly
 - Enable meaningful feedback
 
-[cta_box title="Stuck on feature prioritization?" text="Get a focused MVP roadmap in days, not weeks." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Book Strategy Call"]
+[cta_box title="Stuck on feature prioritization?" text="Get a focused MVP roadmap in days, not weeks." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Book Strategy Call"]
 
 ### 4. Development Approach
 
@@ -110,7 +110,7 @@ Prepare for a successful launch:
 - Data-driven decisions
 - Continuous improvement
 
-[cta_box title="Need help building your MVP?" text="Our team can help you launch faster with focused development." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Free Consultation"]
+[cta_box title="Need help building your MVP?" text="Our team can help you launch faster with focused development." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Free Consultation"]
 
 ## Common MVP Development Challenges
 
@@ -198,4 +198,4 @@ Remember that an MVP is just the beginning of your product journey. Use the insi
 - [MVP Launch Checklist: 8 Steps Before Going Live](/blog/mvp-launch-checklist-8-steps-before-going-live)
 - [MVP Development Costs: Complete Breakdown for 2025](/blog/mvp-development-costs-complete-breakdown-for-2025) 
 
-[cta_box title="Need help building your MVP?" text="Our team can turn your concept into a working MVP in 8-12 weeks." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Get Started"]
+[cta_box title="Need help building your MVP?" text="Our team can turn your concept into a working MVP in 8-12 weeks." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Get Started"]

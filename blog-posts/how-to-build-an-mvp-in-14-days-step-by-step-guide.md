@@ -19,7 +19,7 @@ Building a Minimum Viable Product (MVP) in just 14 days is possible by focusing 
 
 This process ensures you launch quickly, validate your idea, and gather actionable insights - all within two weeks.
 
-[cta_box title="Build your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Consultation"]
+[cta_box title="Build your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Consultation"]
 
 ## Days 1-2: Define the Problem and Plan the MVP
 
@@ -79,7 +79,7 @@ Since time is limited, prioritize quick, actionable feedback. Aim to complete te
 
 With an updated prototype in hand, you’ll be ready to move forward with developing the core features of your MVP.
 
-[cta_box title="Launch your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Strategy Call"]
+[cta_box title="Launch your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Strategy Call"]
 
 ## How to Build an MVP: Step-by-Step Guide
 
@@ -179,4 +179,4 @@ The 14-day MVP process highlights three essential pillars for success:
 
 Your MVP is just the starting point. Building a successful product requires a continuous commitment to understanding user needs and adapting your solution to meet them. Keep iterating, and you'll be on the path to achieving product-market fit.
 
-[cta_box title="Launch your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/15min" button_text="Schedule Free Consultation"]
+[cta_box title="Launch your MVP in 14 days" text="Get expert guidance on rapid MVP development." url="https://cal.com/sabyr-nurgaliyev/mvp-agency" button_text="Schedule Free Consultation"]

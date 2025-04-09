@@ -23,7 +23,7 @@ function Header() {
             Pricing
           </Link>
           <Link
-            href="https://cal.com/sabyr-nurgaliyev/15min"
+            href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
             className="link link-hover"
           >
             Book a Call
@@ -61,7 +61,7 @@ function Header() {
               Pricing
             </Link>
             <Link
-              href="https://cal.com/sabyr-nurgaliyev/15min"
+              href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
               className="text-base hover:text-primary"
             >
               Book a Call

@@ -153,7 +153,7 @@ function BlogPostContent({ post, relatedPosts }) {
                   <h3 className="font-semibold text-blue-800 mb-3 text-lg">Need Help?</h3>
                   <p className="text-sm text-blue-700 mb-4">Book a free consultation to discuss your MVP development needs.</p>
                   <a
-                    href="https://cal.com/sabyr-nurgaliyev/15min"
+                    href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
                     className="btn btn-primary btn-sm w-full"
                     role="button"
                   >

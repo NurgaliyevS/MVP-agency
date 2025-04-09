@@ -32,7 +32,7 @@ function Pricing() {
         "IT Infrastructure management",
         "Improving planning",
       ],
-      link: "https://cal.com/sabyr-nurgaliyev/15min",
+      link: "https://cal.com/sabyr-nurgaliyev/mvp-agency",
       label: "Contact Us"
     },
   ];
