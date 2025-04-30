@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
+// Custom hook to get window width
+function useWindowWidth() {
+  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  return width;
+}
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const windowWidth = useWindowWidth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +36,16 @@ function Header() {
           ${isScrolled ? "" : "mx-auto"}
         `}
         style={{
-          width: isScrolled ? '600px' : '100%',
-          maxWidth: isScrolled ? '600px' : '100vw',
+          width: isScrolled
+            ? windowWidth < 768
+              ? '90vw'
+              : '600px'
+            : '100%',
+          maxWidth: isScrolled
+            ? windowWidth < 768
+              ? '90vw'
+              : '600px'
+            : '100vw',
           transform: isScrolled ? 'translate3d(0, 20px, 0) scale(0.9)' : 'none',
           transformOrigin: '50% 50% 0px',
           marginTop: isScrolled ? '0' : '2rem',
