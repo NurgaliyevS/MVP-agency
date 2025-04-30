@@ -12,8 +12,9 @@ function Hero(props) {
         <div className="max-w-3xl mx-auto mb-8"></div>
         <a
           href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-          className="btn btn-primary btn-md lg:btn-lg px-8 rounded-3xl text-white"
+          className="btn btn-primary btn-md lg:btn-lg px-12 py-2 rounded-full text-white"
           role="button"
+          target="_blank"
         >
           Book a Call
         </a>
