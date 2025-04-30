@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero(props) {
   return (
-    <section className="pt-32 pb-16 px-4">
+    <section className="mt-36 mb-16 px-4">
       <div className="container mx-auto text-center max-w-4xl">
         <h1 className="text-4xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-black">
           From idea to MVP
