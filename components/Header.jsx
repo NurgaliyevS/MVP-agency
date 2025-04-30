@@ -74,13 +74,13 @@ function Header() {
             </Link>
             <Link
               href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-              className={`btn btn-primary rounded-3xl text-white ${
-                isScrolled ? "btn-sm h-11" : "btn-md"
+              className={`btn rounded-3xl ${
+                isScrolled ? "btn-sm h-11 btn-primary text-white" : "btn-md btn-neutral text-white"
               }`}
               role="button"
               target="_blank"
             >
-              Book a Call
+              Let's chat
             </Link>
           </nav>
         </div>
