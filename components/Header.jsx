@@ -34,9 +34,9 @@ function Header() {
         }}
       >
         <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 justify-center md:justify-start w-full md:w-auto">
             <img src="/company_related/favicon-192x192.png" alt="MVP AGENCY" className="w-8 h-8" />
-            <div className="text-xl font-bold text-black">MVP AGENCY</div>
+            <div className="text-xl font-bold text-black text-center md:text-left">MVP AGENCY</div>
           </Link>
           <nav className="hidden md:flex justify-center space-x-8">
             <Link href="#work" className="link link-hover">
