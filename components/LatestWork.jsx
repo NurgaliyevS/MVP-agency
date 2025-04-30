@@ -41,6 +41,15 @@ const CaseStudyCard = ({ project }) => {
 const LatestWork = () => {
   const projects = [
     {
+      id: 0,
+      title: "Post Content",
+      image: "/latest-work/post-content-new.webp",
+      alt: "Post Content Image",
+      description: "Double Reddit Results While You Sleep. Schedule Reddit posts that drive traffic to your website",
+      tags: ["Reddit", "Content", "Marketing", "SaaS"],
+      url: "https://post-content.com?ref=mvpagency.org",
+    },
+    {
       id: 1,
       title: "Pregnant Meal",
       image: "/latest-work/pregnantmeal-new.webp",
