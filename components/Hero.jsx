@@ -7,7 +7,7 @@ function Hero(props) {
         <h1 className="text-4xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-black">
           From idea to MVP
           <br />
-          <span className="text-primary inline-block">launch in 2 weeks</span>
+          <span className="text-primary inline-block">launch in weeks</span>
         </h1>
         <div className="max-w-3xl mx-auto mb-8"></div>
         <a
