@@ -74,7 +74,9 @@ function Header() {
             </Link>
             <Link
               href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-              className="btn btn-primary rounded-3xl text-white"
+              className={`btn btn-primary rounded-3xl text-white ${
+                isScrolled ? "btn-sm h-11" : "btn-md"
+              }`}
               role="button"
               target="_blank"
             >
