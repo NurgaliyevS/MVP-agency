@@ -1,74 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="w-full transition-colors duration-300 bg-transparent pt-4">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2 lg:w-1/4">
-          <img src="/company_related/favicon-192x192.png" alt="MVP AGENCY" className="w-8 h-8" />
-          <div className="text-xl font-bold text-black">MVP AGENCY</div>
-        </Link>
-        <nav className="hidden md:flex items-center justify-center space-x-8 lg:w-1/2">
-          <Link href="#work" className="link link-hover">
-            Work
+    <header
+      className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-transparent transition-all duration-300"
+      style={{ pointerEvents: 'none' }}
+    >
+      <div
+        className={`transition-all duration-300
+          ${isScrolled ? "bg-white shadow-lg rounded-full" : "bg-transparent"}
+          flex items-center justify-between"
+          ${isScrolled ? "" : "mx-auto"}
+        `}
+        style={{
+          width: isScrolled ? '600px' : '100%',
+          maxWidth: isScrolled ? '600px' : '100vw',
+          transform: isScrolled ? 'translate3d(0, 20px, 0) scale(0.9)' : 'none',
+          transformOrigin: '50% 50% 0px',
+          marginTop: isScrolled ? '0' : '2rem',
+          pointerEvents: 'auto',
+          transition: 'all 0.4s cubic-bezier(0.4,0,0.2,1)',
+        }}
+      >
+        <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/company_related/favicon-192x192.png" alt="MVP AGENCY" className="w-8 h-8" />
+            <div className="text-xl font-bold text-black">MVP AGENCY</div>
           </Link>
-          <Link href="#pricing" className="link link-hover">
-            Pricing
-          </Link>
-          <Link
-            href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-            className="link link-hover"
-          >
-            Book a Call
-          </Link>
-        </nav>
-        <div className="lg:w-1/4"></div>
-        <div className="md:hidden">
-          <button
-            className="text-black"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-            )}
-          </button>
-        </div>
-      </div>
-      {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
-          <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link href="#work" className="text-base hover:text-primary">
+          <nav className="hidden md:flex justify-center space-x-8">
+            <Link href="#work" className="link link-hover">
               Work
             </Link>
-            <Link href="#pricing" className="text-base hover:text-primary">
+            <Link href="#pricing" className="link link-hover">
               Pricing
             </Link>
             <Link
               href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-              className="text-base hover:text-primary"
+              className="link link-hover"
             >
               Book a Call
             </Link>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
