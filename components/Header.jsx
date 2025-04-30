@@ -3,11 +3,13 @@ import Link from "next/link";
 
 // Custom hook to get window width
 function useWindowWidth() {
-  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1200
+  );
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
   return width;
 }
@@ -27,7 +29,7 @@ function Header() {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-transparent transition-all duration-300"
-      style={{ pointerEvents: 'none' }}
+      style={{ pointerEvents: "none" }}
     >
       <div
         className={`transition-all duration-300
@@ -36,29 +38,34 @@ function Header() {
           ${isScrolled ? "" : "mx-auto"}
         `}
         style={{
-          width: isScrolled
-            ? windowWidth < 768
-              ? '90vw'
-              : '600px'
-            : '100%',
+          width: isScrolled ? (windowWidth < 768 ? "90vw" : "600px") : "100%",
           maxWidth: isScrolled
             ? windowWidth < 768
-              ? '90vw'
-              : '600px'
-            : '100vw',
-          transform: isScrolled ? 'translate3d(0, 20px, 0) scale(0.9)' : 'none',
-          transformOrigin: '50% 50% 0px',
-          marginTop: isScrolled ? '0' : '2rem',
-          pointerEvents: 'auto',
-          transition: 'all 0.4s cubic-bezier(0.4,0,0.2,1)',
+              ? "90vw"
+              : "600px"
+            : "100vw",
+          transform: isScrolled ? "translate3d(0, 20px, 0) scale(0.9)" : "none",
+          transformOrigin: "50% 50% 0px",
+          marginTop: isScrolled ? "0" : "2rem",
+          pointerEvents: "auto",
+          transition: "all 0.4s cubic-bezier(0.4,0,0.2,1)",
         }}
       >
-        <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
-          <Link href="/" className="flex items-center space-x-2 justify-center md:justify-start w-full md:w-auto">
-            <img src="/company_related/favicon-192x192.png" alt="MVP AGENCY" className="w-8 h-8" />
-            <div className="text-xl font-bold text-black text-center md:text-left">MVP AGENCY</div>
+        <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-3 h-16">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 justify-center md:justify-start w-full md:w-auto"
+          >
+            <img
+              src="/company_related/favicon-192x192.png"
+              alt="MVP AGENCY"
+              className="w-8 h-8"
+            />
+            <div className="text-xl font-bold text-black text-center md:text-left">
+              MVP AGENCY
+            </div>
           </Link>
-          <nav className="hidden md:flex justify-center space-x-8">
+          <nav className="hidden md:flex justify-center space-x-8 items-center">
             <Link href="#work" className="link link-hover">
               Work
             </Link>
@@ -67,7 +74,9 @@ function Header() {
             </Link>
             <Link
               href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-              className="link link-hover"
+              className="btn btn-primary rounded-3xl text-white"
+              role="button"
+              target="_blank"
             >
               Book a Call
             </Link>
@@ -79,4 +88,3 @@ function Header() {
 }
 
 export default Header;
-
