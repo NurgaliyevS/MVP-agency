@@ -12,7 +12,7 @@ function Testimonials() {
   ];
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" id="reviews">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-black">
           What Our Clients Say

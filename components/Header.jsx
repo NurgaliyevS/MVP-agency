@@ -72,6 +72,9 @@ function Header() {
             <Link href="#pricing" className="link link-hover">
               Pricing
             </Link>
+            <Link href="#reviews" className="link link-hover">
+              Reviews
+            </Link>
             <Link
               href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
               className={`btn rounded-3xl ${
