@@ -45,7 +45,8 @@ const LatestWork = () => {
       title: "Post Content",
       image: "/latest-work/post-content-new.webp",
       alt: "Post Content Image",
-      description: "Double Reddit Results While You Sleep. Schedule Reddit posts that drive traffic to your website",
+      description:
+        "Double Reddit Results While You Sleep. Schedule Reddit posts that drive traffic to your website",
       tags: ["Reddit", "Content", "Marketing", "SaaS"],
       url: "https://post-content.com?ref=mvpagency.org",
     },
@@ -113,21 +114,24 @@ const LatestWork = () => {
 
   return (
     <section className="py-20" id="work">
-      <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-4 text-gray-900">
-            Case Studies
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our recent projects and discover how we've helped businesses
-            achieve their goals through innovative digital solutions
-          </p>
-        </div>
+      <div className="py-4">
+        <div className="container mx-auto px-4">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              Case Studies
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore our recent projects and discover how we've helped
+              businesses achieve their goals through innovative digital
+              solutions
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <CaseStudyCard key={project.id} project={project} />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <CaseStudyCard key={project.id} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
