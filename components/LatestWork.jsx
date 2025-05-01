@@ -117,10 +117,10 @@ const LatestWork = () => {
       <div className="py-4">
         <div className="container mx-auto px-4">
           <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-gray-900">
               Case Studies
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base lg:text-xl text-gray-600 max-w-3xl mx-auto">
               Explore our recent projects and discover how we've helped
               businesses achieve their goals through innovative digital
               solutions

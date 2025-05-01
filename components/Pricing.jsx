@@ -42,7 +42,7 @@ function Pricing() {
       <div className="py-8 px-4">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12 flex-col">
-            <h2 className="text-3xl font-bold mb-4 text-black flex-col fle">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black flex-col flex">
               Simple, Transparent Pricing
             </h2>
             <p className="text-gray-600">
@@ -64,11 +64,11 @@ function Pricing() {
                 )}
                 <div className="p-6 pb-3">
                   <div className="flex flex-col gap-6">
-                    <h3 className="text-2xl font-semibold text-black">
+                    <h3 className="text-xl lg:text-2xl font-semibold text-black">
                       {plan.name}
                     </h3>
                     <div className="flex items-baseline gap-2">
-                      <p className="text-4xl font-bold text-black">
+                      <p className="text-2xl lg:text-4xl font-bold text-black">
                         {plan.price ? "$" + plan.price : "Contact Us"}
                       </p>
                       {plan.price ? (

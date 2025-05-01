@@ -41,13 +41,13 @@ function Features() {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-black">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-12 text-black">
           Why MVP Agency?
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div className="bg-white rounded-xl overflow-hidden shadow-inner border border-gray-200">
             <div className="bg-red-600 text-white p-6">
-              <h3 className="text-2xl font-bold mb-2 text-center line-through">
+              <h3 className="text-xl lg:text-2xl font-bold mb-2 text-center line-through">
                 Traditional Approach
               </h3>
             </div>
@@ -75,7 +75,7 @@ function Features() {
           </div>
           <div className="bg-white rounded-xl overflow-hidden shadow-inner border border-gray-200">
             <div className="bg-green-600 text-white p-6">
-              <h3 className="text-2xl font-bold mb-2 text-center">
+              <h3 className="text-xl lg:text-2xl font-bold mb-2 text-center">
                 With MVP Agency
               </h3>
             </div>
