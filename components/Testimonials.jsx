@@ -95,9 +95,9 @@ function Testimonials() {
 
   return (
     <section className="py-16 bg-white" id="reviews">
-      <div className="px-8 py-4">
+      <div className="px-8 pt-8 pb-4">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-4">
+          <h2 className="text-2xl lg:text-3xl font-bold text-center mb-4">
             What Our Clients Say
           </h2>
           <p className="text-center text-gray-600 mb-12">
@@ -109,7 +109,6 @@ function Testimonials() {
             <Swiper
               modules={[Autoplay]}
               spaceBetween={32}
-              slidesPerView={3}
               loop={true}
               speed={5000}
               autoplay={{
