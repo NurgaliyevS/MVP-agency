@@ -10,6 +10,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "axios": "^1.7.2",
     "daisyui": "^4.12.10",
     "date-fns": "^3.6.0",

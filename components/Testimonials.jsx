@@ -1,7 +1,7 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import React, { useEffect } from "react";
+import Splide from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 function StarRating() {
   return (
@@ -93,6 +93,41 @@ function Testimonials() {
     },
   ];
 
+  useEffect(() => {
+    const splide = new Splide('.splide', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      perPage: 3,
+      gap: '2rem',
+      arrows: false,
+      pagination: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        rewind: false,
+      },
+      breakpoints: {
+        640: {
+          perPage: 1,
+        },
+        768: {
+          perPage: 2,
+        },
+        1024: {
+          perPage: 3,
+        },
+      },
+    });
+
+    splide.mount({ AutoScroll });
+
+    return () => {
+      splide.destroy();
+    };
+  }, []);
+
   return (
     <section className="py-16 bg-white" id="reviews">
       <div className="px-8 pt-8 pb-4">
@@ -106,36 +141,17 @@ function Testimonials() {
           </p>
 
           <div className="max-w-7xl mx-auto">
-            <Swiper
-              modules={[Autoplay]}
-              spaceBetween={32}
-              loop={true}
-              speed={5000}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-                waitForTransition: false,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
-              className="testimonials-swiper"
-            >
-              {testimonials.map((testimonial) => (
-                <SwiperSlide key={testimonial.id}>
-                  <TestimonialCard testimonial={testimonial} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <div className="splide">
+              <div className="splide__track">
+                <ul className="splide__list">
+                  {testimonials.map((testimonial) => (
+                    <li className="splide__slide" key={testimonial.id}>
+                      <TestimonialCard testimonial={testimonial} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
