@@ -29,50 +29,119 @@ export default function MVPDevelopmentServices() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">
-            Our MVP development solutions
+      {/* #fafafa as bg */}
+      <section className="py-16 px-4 bg-[#fafafa]">
+        <div className="container mx-auto max-w-3xl text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight">
+            MVP Development Services
           </h2>
-          <p className="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
-            With our extensive knowledge and experience, we provide high-quality
-            MVP development services, allowing you to test your product and
-            gather valuable feedback easily. Our developers are proficient in
-            multiple programming languages, such as Python, Java, Ruby, and
-            Node.js. We are also an MVP app development company, so we are
-            experts in using popular API frameworks, including Django REST
-            Framework, Swagger, and Express.js.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Our custom MVP software development is a great way for
+            startups to materialize their ideas and create a product with
+            minimal risk.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col items-center">
-              <div className="rounded-full bg-primary/10 p-4 mb-4">
-                <span className="text-3xl text-primary">
-                  <i className="fa-solid fa-mobile"></i>
-                </span>
-              </div>
-              <h3 className="text-xl lg:text-2xl font-bold mb-2 text-black">
-                MVP App Development Services
-              </h3>
-              <p className="text-gray-600">
-                Fully customized MVP app development for Android and iOS,
-                optimized for a wider audience and more feedback.
-              </p>
+        </div>
+        <div className="space-y-4 max-w-3xl mx-auto">
+          {/* Accordion Item 1 */}
+          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
+            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </span>
+              Minimum Viable Product Development
+            </summary>
+            <div className="mt-3 text-gray-600 text-left">
+              We help you launch a lean, market-ready MVP to validate your
+              business idea quickly and cost-effectively.
             </div>
-            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col items-center">
-              <div className="rounded-full bg-primary/10 p-4 mb-4">
-                <span className="text-3xl text-primary">
-                  <i className="fa-solid fa-desktop"></i>
-                </span>
-              </div>
-              <h3 className="text-xl lg:text-2xl font-bold mb-2 text-black">
-                MVP Web Development Services
-              </h3>
-              <p className="text-gray-600">
-                Test your solutions, validate market demands, and optimize for
-                maximum profit with our web MVP services.
-              </p>
+          </details>
+          {/* Accordion Item 2 */}
+          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
+            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
+                  />
+                </svg>
+              </span>
+              Custom MVP Software Development
+            </summary>
+            <div className="mt-3 text-gray-600 text-left">
+              Tailored MVP solutions to fit your unique business requirements,
+              industry, and target audience.
             </div>
-          </div>
+          </details>
+          {/* Accordion Item 3 */}
+          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
+            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 10h2l1 2h13a1 1 0 010 2H6l-1 2H3"
+                  />
+                </svg>
+              </span>
+              Agile MVP Developing Process
+            </summary>
+            <div className="mt-3 text-gray-600 text-left">
+              We use agile methodologies to iterate quickly, gather feedback,
+              and adapt your MVP to market needs.
+            </div>
+          </details>
+          {/* Accordion Item 4 */}
+          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
+            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
+                  />
+                </svg>
+              </span>
+              Technologies That Fit Your Needs
+            </summary>
+            <div className="mt-3 text-gray-600 text-left">
+              We select the best technologies and frameworks to ensure your MVP
+              is scalable, secure, and future-proof.
+            </div>
+          </details>
         </div>
       </section>
 
@@ -133,7 +202,7 @@ export default function MVPDevelopmentServices() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 px-4 bg-primary/5">
+      <section className="py-16 px-4 bg-[#fafafa]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
             How it works
