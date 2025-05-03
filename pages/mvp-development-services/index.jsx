@@ -459,11 +459,11 @@ export default function MVPDevelopmentServices() {
       <Testimonials />
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 max-w-3xl mx-auto">
+      <section className="py-16 px-4">
         <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
-          MVP Development FAQs
+          Frequently Asked Questions
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-3xl mx-auto">
           <details className="bg-white rounded-xl shadow-inner border border-gray-200 p-4">
             <summary className="text-lg font-medium cursor-pointer">
               How long does it take to develop an MVP with MVP Agency?
