@@ -406,11 +406,10 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-users"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Extensive Talent Pool
+                Efficient & Economical Approach
               </h3>
               <p className="text-gray-600 text-center">
-                Access to excellent MVP developers with great technical skills
-                and high work ethic.
+                A balanced approach between quality and time-to-market.
               </p>
             </div>
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -418,7 +417,7 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-user-gear"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Custom Individual Approach
+                Individual Approach
               </h3>
               <p className="text-gray-600 text-center">
                 We customize our services to your particular needs and goals.
@@ -429,11 +428,10 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-dollar-sign"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Cost-Effective Services
+                Validate Your Idea Quickly
               </h3>
               <p className="text-gray-600 text-center">
-                Get cost-effective, scalable outsourcing without compromising
-                quality.
+                MVP allows you to test your product with a real audience.
               </p>
             </div>
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -444,8 +442,7 @@ export default function MVPDevelopmentServices() {
                 Knowledge and Experience
               </h3>
               <p className="text-gray-600 text-center">
-                We stay up-to-date with MVP development tools and trends for
-                modern solutions.
+                We use the latest tools and technologies to develop your MVP.
               </p>
             </div>
           </div>
