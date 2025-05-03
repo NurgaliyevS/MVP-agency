@@ -12,7 +12,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaCloud, FaShieldAlt, FaMoneyCheckAlt } from "react-icons/fa";
 
 const solutionsItems = [
   {
@@ -222,20 +222,10 @@ export default function MVPDevelopmentServices() {
             industry insights to your project.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Construction */}
+            {/* SaaS */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M9 12h6" />
-                  <path d="M12 9v6" />
-                </svg>
+                <FaCloud className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">SaaS</h3>
               <p className="text-gray-600 text-base">
@@ -246,17 +236,7 @@ export default function MVPDevelopmentServices() {
             {/* Insurance */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <rect x="4" y="4" width="16" height="16" rx="4" />
-                  <path d="M8 12h8" />
-                  <path d="M12 8v8" />
-                </svg>
+                <FaShieldAlt className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Insurance
@@ -269,18 +249,7 @@ export default function MVPDevelopmentServices() {
             {/* FinTech */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <rect x="3" y="7" width="18" height="13" rx="2" />
-                  <path d="M16 3v4" />
-                  <path d="M8 3v4" />
-                  <path d="M3 11h18" />
-                </svg>
+                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">FinTech</h3>
               <p className="text-gray-600 text-base">
