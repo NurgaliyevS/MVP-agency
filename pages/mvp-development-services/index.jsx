@@ -12,7 +12,12 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import { FaChevronDown, FaCloud, FaShieldAlt, FaMoneyCheckAlt } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaCloud,
+  FaShieldAlt,
+  FaMoneyCheckAlt,
+} from "react-icons/fa";
 
 const solutionsItems = [
   {
@@ -261,41 +266,130 @@ export default function MVPDevelopmentServices() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* MVP Development Process Section */}
       <section className="py-16 px-4 bg-[#fafafa]">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
-            How it works
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight text-center">
+            What is the MVP Development Process Like?
           </h2>
-          <ol className="list-decimal list-inside space-y-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            <li>
-              <span className="font-semibold text-black">
-                Initial MVP Assessment:
-              </span>{" "}
-              Evaluate your goals and needs during a discovery call.
-            </li>
-            <li>
-              <span className="font-semibold text-black">
-                Professional MVP Developer Matching:
-              </span>{" "}
-              Connect with developers specializing in your required
-              technologies.
-            </li>
-            <li>
-              <span className="font-semibold text-black">
-                Smooth Onboarding Process:
-              </span>{" "}
-              We manage onboarding to fit your systems and workflows.
-            </li>
-            <li>
-              <span className="font-semibold text-black">
-                Constant MVP Development Support:
-              </span>{" "}
-              Ongoing support and clear communication throughout the process.
-            </li>
-          </ol>
-          <div className="text-center mt-10">
-            <CTAButton />
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            The process is iterative. The precise steps may vary depending on
+            the project, but the general workflow usually looks like this:
+          </p>
+          <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
+            {/* Stepper */}
+            <div className="flex flex-row md:flex-col items-center md:items-stretch md:w-24 w-full md:justify-start justify-center self-stretch">
+              <div className="relative flex flex-col items-center w-full h-full my-2">
+                {[1, 2, 3, 4, 5].map((num, idx) => (
+                  <div key={num} className="flex flex-col items-center w-full">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-white font-bold text-lg z-10 shadow-md">
+                      {num}
+                    </div>
+                    {idx < 4 && (
+                      <div className="w-1 h-12 bg-blue-300 mx-auto"></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Steps Accordion */}
+            <div className="flex-1 w-full">
+              <Accordion allowZeroExpanded className="w-full">
+                <AccordionItem
+                  uuid="step1"
+                  className="bg-white rounded-2xl shadow-sm mb-4"
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                      <span className="font-bold text-xl text-gray-800">
+                        Step 1: Discovery Phase
+                      </span>
+                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel className="px-8 pb-6 pt-0">
+                    You{" "}
+                    <a
+                      href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
+                      className="text-blue-500"
+                    >
+                      Book a call
+                    </a>{" "}
+                    with us to discuss your MVP development needs. We work with
+                    you to understand your vision, goals, and requirements for
+                    the MVP.
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem
+                  uuid="step2"
+                  className="bg-white rounded-2xl shadow-sm mb-4"
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                      <span className="font-bold text-xl text-gray-800">
+                        Step 2: Feature Prioritization
+                      </span>
+                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel className="px-8 pb-6 pt-0">
+                    We identify and prioritize the core features that will
+                    deliver the most value to your users.
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem
+                  uuid="step3"
+                  className="bg-white rounded-2xl shadow-sm mb-4"
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                      <span className="font-bold text-xl text-gray-800">
+                        Step 3: Development
+                      </span>
+                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel className="px-8 pb-6 pt-0">
+                    Our team develops your MVP using agile, iterative methods
+                    for rapid progress.
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem
+                  uuid="step4"
+                  className="bg-white rounded-2xl shadow-sm mb-4"
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                      <span className="font-bold text-xl text-gray-800">
+                        Step 4: User Testing
+                      </span>
+                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel className="px-8 pb-6 pt-0">
+                    Gather feedback from real users to validate assumptions and
+                    identify improvements.
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem
+                  uuid="step5"
+                  className="bg-white rounded-2xl shadow-sm mb-4"
+                >
+                  <AccordionItemHeading>
+                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                      <span className="font-bold text-xl text-gray-800">
+                        Step 5: Launch and Iteration
+                      </span>
+                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel className="px-8 pb-6 pt-0">
+                    Launch your MVP and continue to iterate based on user
+                    feedback and market needs.
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </div>
         </div>
       </section>
