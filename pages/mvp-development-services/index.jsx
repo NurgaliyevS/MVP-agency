@@ -464,35 +464,77 @@ export default function MVPDevelopmentServices() {
           Frequently Asked Questions
         </h2>
         <div className="space-y-4 max-w-3xl mx-auto">
-          <details className="bg-white rounded-xl shadow-inner border border-gray-200 p-4">
-            <summary className="text-lg font-medium cursor-pointer">
-              How long does it take to develop an MVP with MVP Agency?
-            </summary>
-            <p className="text-gray-600 mt-2">
-              The timeline varies by project complexity and requirements.
-              Typically, a functional MVP can be delivered within a few weeks,
-              but more complex products may take a few months. We'll provide an
-              estimate after a discovery session.
-            </p>
-          </details>
-          <details className="bg-white rounded-xl shadow-inner border border-gray-200 p-4">
-            <summary className="text-lg font-medium cursor-pointer">
-              How does MVP Agency ensure the quality of the MVP?
-            </summary>
-            <p className="text-gray-600 mt-2">
-              We use comprehensive testing procedures and continuous feedback to
-              ensure quality and address issues early.
-            </p>
-          </details>
-          <details className="bg-white rounded-xl shadow-inner border border-gray-200 p-4">
-            <summary className="text-lg font-medium cursor-pointer">
-              How much does it cost to develop an MVP with MVP Agency?
-            </summary>
-            <p className="text-gray-600 mt-2">
-              Costs depend on project scope and requirements. Contact us for a
-              tailored quote.
-            </p>
-          </details>
+          <Accordion allowZeroExpanded className="w-full">
+            <AccordionItem
+              uuid="faq1"
+              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                  How much does MVP development cost?
+                  <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-6 pb-5 pt-0">
+                <p className="text-gray-600">
+                  We provide a fixed price for MVP development. Because we trust
+                  our clients and provide real results.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem
+              uuid="faq2"
+              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                  Do you offer MVP development services for enterprises?
+                  <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-6 pb-5 pt-0">
+                <p className="text-gray-600">
+                  Yes, we do it. We discuss the project in detail and provide a
+                  custom help for your business.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem
+              uuid="faq3"
+              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                  How long does it take to develop MVP software?
+                  <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-6 pb-5 pt-0">
+                <p className="text-gray-600">
+                  We execute in weeks not months. We focus on one project at a
+                  time.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem
+              uuid="faq4"
+              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                  How do you differ from other MVP development agencies?
+                  <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-6 pb-5 pt-0">
+                <p className="text-gray-600">
+                  We don't just develop MVPs. We build our own products. We
+                  understand the market and the needs of the users.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
@@ -500,13 +542,8 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">
-            Ready to scale your team?
+            GOT A PROJECT ?
           </h2>
-          <p className="text-base-content/70 mb-8">
-            Carry out your MVP project seamlessly with MVP Agency. Test your
-            product efficiently, collect feedback, and ensure your MVP meets
-            quality and security requirements.
-          </p>
           <CTAButton />
         </div>
       </section>
