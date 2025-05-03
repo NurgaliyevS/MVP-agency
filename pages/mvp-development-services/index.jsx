@@ -5,6 +5,141 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 import CTAButton from "@/components/CTAButton";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import { FaChevronDown } from "react-icons/fa";
+
+const solutionsItems = [
+  {
+    uuid: "mvp-dev",
+    heading: (
+      <div className="flex items-center gap-4">
+        <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+          <svg
+            className="w-7 h-7 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+        </span>
+        <span className="font-semibold text-lg text-gray-800">
+          Minimum Viable Product Development
+        </span>
+      </div>
+    ),
+    content: (
+      <div className="mt-3 text-gray-600 text-left">
+        We help you launch a lean, market-ready MVP to validate your business
+        idea quickly and cost-effectively.
+      </div>
+    ),
+  },
+  {
+    uuid: "custom-mvp",
+    heading: (
+      <div className="flex items-center gap-4">
+        <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+          <svg
+            className="w-7 h-7 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
+            />
+          </svg>
+        </span>
+        <span className="font-semibold text-lg text-gray-800">
+          Custom MVP Software Development
+        </span>
+      </div>
+    ),
+    content: (
+      <div className="mt-3 text-gray-600 text-left">
+        We create custom MVP solutions based on your unique requirements. 
+      </div>
+    ),
+  },
+  {
+    uuid: "agile-mvp",
+    heading: (
+      <div className="flex items-center gap-4">
+        <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+          <svg
+            className="w-7 h-7 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 10h2l1 2h13a1 1 0 010 2H6l-1 2H3"
+            />
+          </svg>
+        </span>
+        <span className="font-semibold text-lg text-gray-800">
+          Agile MVP Developing Process
+        </span>
+      </div>
+    ),
+    content: (
+      <div className="mt-3 text-gray-600 text-left">
+        We use agile methodologies to iterate quickly, gather feedback, and
+        adapt your MVP to market needs.
+      </div>
+    ),
+  },
+  {
+    uuid: "tech-fit",
+    heading: (
+      <div className="flex items-center gap-4">
+        <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+          <svg
+            className="w-7 h-7 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
+            />
+          </svg>
+        </span>
+        <span className="font-semibold text-lg text-gray-800">
+          Technologies That Fit Your Needs
+        </span>
+      </div>
+    ),
+    content: (
+      <div className="mt-3 text-gray-600 text-left">
+        We select the best technologies and frameworks to ensure your MVP is
+        scalable, secure, and future-proof.
+      </div>
+    ),
+  },
+];
+
 export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
@@ -36,113 +171,43 @@ export default function MVPDevelopmentServices() {
             MVP Development Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our custom MVP software development is a great way for
-            startups to materialize their ideas and create a product with
-            minimal risk.
+            Our custom MVP software development is a great way for startups to
+            materialize their ideas and create a product with minimal risk.
           </p>
         </div>
-        <div className="space-y-4 max-w-3xl mx-auto">
-          {/* Accordion Item 1 */}
-          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
-            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-              </span>
-              Minimum Viable Product Development
-            </summary>
-            <div className="mt-3 text-gray-600 text-left">
-              We help you launch a lean, market-ready MVP to validate your
-              business idea quickly and cost-effectively.
-            </div>
-          </details>
-          {/* Accordion Item 2 */}
-          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
-            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
-                  />
-                </svg>
-              </span>
-              Custom MVP Software Development
-            </summary>
-            <div className="mt-3 text-gray-600 text-left">
-              Tailored MVP solutions to fit your unique business requirements,
-              industry, and target audience.
-            </div>
-          </details>
-          {/* Accordion Item 3 */}
-          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
-            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 10h2l1 2h13a1 1 0 010 2H6l-1 2H3"
-                  />
-                </svg>
-              </span>
-              Agile MVP Developing Process
-            </summary>
-            <div className="mt-3 text-gray-600 text-left">
-              We use agile methodologies to iterate quickly, gather feedback,
-              and adapt your MVP to market needs.
-            </div>
-          </details>
-          {/* Accordion Item 4 */}
-          <details className="bg-white rounded-2xl shadow-sm px-6 py-4 flex items-center group">
-            <summary className="flex items-center gap-4 cursor-pointer w-full text-lg font-semibold text-gray-800">
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-                <svg
-                  className="w-7 h-7 text-blue-500"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
-                  />
-                </svg>
-              </span>
-              Technologies That Fit Your Needs
-            </summary>
-            <div className="mt-3 text-gray-600 text-left">
-              We select the best technologies and frameworks to ensure your MVP
-              is scalable, secure, and future-proof.
-            </div>
-          </details>
-        </div>
+        <Accordion allowZeroExpanded className="w-full max-w-3xl mx-auto">
+          {solutionsItems.map((item) => (
+            <AccordionItem
+              key={item.uuid}
+              uuid={item.uuid}
+              className="bg-white rounded-2xl shadow-sm mb-4"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
+                  <div className="flex items-center gap-4">
+                    <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
+                      {item.heading.props.children[0].props.children}
+                    </span>
+                    <span className="font-bold text-xl text-gray-800">
+                      {item.heading.props.children[1].props.children}
+                    </span>
+                  </div>
+                  {/* Arrow icon, rotate if expanded */}
+                  <span
+                    className="ml-4 transition-transform duration-200"
+                    aria-hidden="true"
+                    data-accordion-arrow
+                  >
+                    <FaChevronDown className="w-5 h-5 text-gray-400" />
+                  </span>
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="px-8 pb-6 pt-0">
+                {item.content}
+              </AccordionItemPanel>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </section>
 
       {/* Services Offered Section */}
