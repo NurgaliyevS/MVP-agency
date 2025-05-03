@@ -1,5 +1,5 @@
 import React from "react";
-
+import CTAButton from "./CTAButton";
 function Hero(props) {
   return (
     <section className="mt-36 mb-16 px-4">
@@ -10,14 +10,7 @@ function Hero(props) {
           <span className="text-primary inline-block">launch in weeks</span>
         </h1>
         <div className="max-w-3xl mx-auto mb-8"></div>
-        <a
-          href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-          className="btn btn-primary btn-md lg:btn-lg px-12 py-2 rounded-full text-white"
-          role="button"
-          target="_blank"
-        >
-          Book a Call
-        </a>
+        <CTAButton />
         <p className="text-sm text-base-content/70 mt-4">
           No commitment, learn how we can help you launch faster
         </p>

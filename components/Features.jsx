@@ -1,3 +1,5 @@
+import CTAButton from "./CTAButton";
+
 function Features() {
   const comparisonData = [
     {
@@ -104,14 +106,7 @@ function Features() {
         </div>
       </div>
       <div className="text-center py-8 my-8">
-        <a
-          href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
-          className="btn btn-primary btn-md lg:btn-lg px-12 py-2 rounded-full text-white"
-          role="button"
-          target="_blank"
-        >
-          Book a Call
-        </a>
+        <CTAButton />
       </div>
     </section>
   );
