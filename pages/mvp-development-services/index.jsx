@@ -72,7 +72,7 @@ const solutionsItems = [
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        We create custom MVP solutions based on your unique requirements. 
+        We create custom MVP solutions based on your unique requirements.
       </div>
     ),
   },
@@ -168,7 +168,7 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4 bg-[#fafafa]">
         <div className="container mx-auto max-w-3xl text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight">
-            MVP Development Services
+            Our MVP Development Solutions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Our custom MVP software development is a great way for startups to
@@ -211,55 +211,81 @@ export default function MVPDevelopmentServices() {
       </section>
 
       {/* Services Offered Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
-            MVP development services offered by MVP Agency
+      <section className="py-16 px-4 bg-[#fafafa]">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight text-center">
+            Expertise in Niche Industries
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6">
-              <h4 className="font-semibold text-lg mb-1 text-black">
-                Web-Based MVP Development
-              </h4>
-              <p className="text-gray-600">
-                Build web-based MVPs accessible via browser, using the latest
-                tools for responsive, scalable, user-friendly products.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            As an MVP development agency, we developed products for various
+            industries. Our experience in these domains allows us to bring
+            industry insights to your project.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Construction */}
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9 12h6" />
+                  <path d="M12 9v6" />
+                </svg>
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">SaaS</h3>
+              <p className="text-gray-600 text-base">
+                We build not just MVPs, but complete SaaS products that solve
+                real-world problems.
               </p>
             </div>
-            <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6">
-              <h4 className="font-semibold text-lg mb-1 text-black">
-                Mobile MVP Development
-              </h4>
-              <p className="text-gray-600">
-                Create intuitive mobile MVPs for iOS and Android, gathering
-                feedback from mobile users.
+            {/* Insurance */}
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <path d="M8 12h8" />
+                  <path d="M12 8v8" />
+                </svg>
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">
+                Insurance
+              </h3>
+              <p className="text-gray-600 text-base">
+                MVPs for insurance companies to develop real relationships with
+                customers.
               </p>
             </div>
-            <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6">
-              <h4 className="font-semibold text-lg mb-1 text-black">
-                Software MVP Development
-              </h4>
-              <p className="text-gray-600">
-                Develop software-based MVPs to demonstrate core functionality
-                and assess market potential.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6">
-              <h4 className="font-semibold text-lg mb-1 text-black">
-                MVP Prototyping
-              </h4>
-              <p className="text-gray-600">
-                Interactive prototypes to visualize and test user experience
-                before full-scale development.
-              </p>
-            </div>
-            <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 md:col-span-2">
-              <h4 className="font-semibold text-lg mb-1 text-black">
-                MVP Testing and Iteration
-              </h4>
-              <p className="text-gray-600">
-                Gather feedback, analyze data, and iterate to ensure your final
-                product meets user needs.
+            {/* FinTech */}
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                <svg
+                  className="w-7 h-7 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="7" width="18" height="13" rx="2" />
+                  <path d="M16 3v4" />
+                  <path d="M8 3v4" />
+                  <path d="M3 11h18" />
+                </svg>
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">FinTech</h3>
+              <p className="text-gray-600 text-base">
+                We help FinTech startups launch secure, scalable MVPs for
+                payments, analytics, and more.
               </p>
             </div>
           </div>
