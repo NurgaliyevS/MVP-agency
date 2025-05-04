@@ -4,7 +4,7 @@ function Pricing() {
   const plans = [
     {
       name: "Growth MVP",
-      price: 2499,
+      price: 3000,
       description: "Everything you need to launch your MVP fast",
       features: [
         "Web application development",
@@ -15,7 +15,7 @@ function Pricing() {
         "SEO Optimization",
         "Branding and UI/UX",
       ],
-      link: "https://buy.stripe.com/4gwdUd106gSA3Nm9AI",
+      link: "https://buy.stripe.com/bIY3fzaAG59S4Rq14i",
       label: "Buy now",
     },
     {
