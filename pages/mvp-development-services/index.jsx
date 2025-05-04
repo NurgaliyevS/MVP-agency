@@ -278,7 +278,8 @@ export default function MVPDevelopmentServices() {
           </p>
           <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
             {/* Stepper */}
-            <div className="flex flex-row md:flex-col items-center md:items-stretch md:w-24 w-full md:justify-start justify-center self-stretch">
+            {/* hide on mobile */}
+            <div className="hidden md:flex flex-row md:flex-col items-center md:items-stretch md:w-24 w-full md:justify-start justify-center self-stretch">
               <div className="relative flex flex-col items-center w-full h-full my-2">
                 {[1, 2, 3, 4, 5].map((num, idx) => (
                   <div key={num} className="flex flex-col items-center w-full">
@@ -463,20 +464,20 @@ export default function MVPDevelopmentServices() {
         <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
           Frequently Asked Questions
         </h2>
-        <div className="space-y-4 max-w-3xl mx-auto">
+        <div className="space-y-2 md:space-y-4 w-full max-w-full md:max-w-3xl mx-auto">
           <Accordion allowZeroExpanded className="w-full">
             <AccordionItem
               uuid="faq1"
-              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+              className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
             >
               <AccordionItemHeading>
-                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
                   How much does MVP development cost?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 pb-5 pt-0">
-                <p className="text-gray-600">
+              <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
+                <p className="text-gray-600 text-base md:text-lg">
                   We provide a fixed price for MVP development. Because we trust
                   our clients and provide real results.
                 </p>
@@ -484,16 +485,16 @@ export default function MVPDevelopmentServices() {
             </AccordionItem>
             <AccordionItem
               uuid="faq2"
-              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+              className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
             >
               <AccordionItemHeading>
-                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
                   Do you offer MVP development services for enterprises?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 pb-5 pt-0">
-                <p className="text-gray-600">
+              <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
+                <p className="text-gray-600 text-base md:text-lg">
                   Yes, we do it. We discuss the project in detail and provide a
                   custom help for your business.
                 </p>
@@ -501,34 +502,33 @@ export default function MVPDevelopmentServices() {
             </AccordionItem>
             <AccordionItem
               uuid="faq3"
-              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+              className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
             >
               <AccordionItemHeading>
-                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
                   How long does it take to develop MVP software?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 pb-5 pt-0">
-                <p className="text-gray-600">
+              <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
+                <p className="text-gray-600 text-base md:text-lg">
                   We execute in weeks not months. We focus on one project at a
                   time.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
-
             <AccordionItem
               uuid="faq4"
-              className="bg-white rounded-xl shadow-inner border border-gray-200 mb-4"
+              className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
             >
               <AccordionItemHeading>
-                <AccordionItemButton className="text-lg font-medium cursor-pointer flex items-center justify-between w-full px-6 py-5 focus:outline-none">
+                <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
                   How do you differ from other MVP development agencies?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
-              <AccordionItemPanel className="px-6 pb-5 pt-0">
-                <p className="text-gray-600">
+              <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
+                <p className="text-gray-600 text-base md:text-lg">
                   We don't just develop MVPs. We build our own products. We
                   understand the market and the needs of the users.
                 </p>
