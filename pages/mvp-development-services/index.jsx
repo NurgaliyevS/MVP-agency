@@ -154,11 +154,11 @@ export default function MVPDevelopmentServices() {
         <link rel="canonical" href="https://mvpagency.org/mvp-development-services" />
         <meta
           name="description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach."
+          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
         />
         <meta
           property="og:description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach."
+          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
         />
         <meta
           property="og:title"
