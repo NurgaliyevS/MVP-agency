@@ -60,7 +60,21 @@ function Footer(props) {
             </nav>
           </div>
           <div>
-            <h4 className="font-bold mb-4 text-black">Quick Links</h4>
+            <h4 className="font-bold mb-4 text-black">Services</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/mvp-development-services"
+                  className="text-sm hover:text-primary"
+                >
+                  MVP Development Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold mb-4 text-black">Company</h4>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -85,11 +99,6 @@ function Footer(props) {
                   Blog
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4 text-black">Legal</h4>
-            <ul className="space-y-2">
               <li>
                 <Link
                   href="/privacy-policy"
