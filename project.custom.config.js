@@ -12,7 +12,7 @@ export const customConfig = {
     fromAdmin: `MVP Agency <admin@mg.mvpagency.org>`,
     supportEmail: "support@mvpagency.org",
     forwardRepliesTo: "nurgasab@gmail.com",
-    noreply: "noreply@mg.mvpagency.org"
+    noreply: "noreply@mg.mvpagency.org",
   },
   documentTitle: "Build Your MVP Fast - MVP Agency",
   domainWithHttps: "https://mvpagency.org",
@@ -20,15 +20,15 @@ export const customConfig = {
     keywords:
       "build mvp, minimum viable product, building an mvp for startups, mvp product, mvp for startups, build a minimum viable product, mvp builds, minimum viable product services",
     description:
-      "MVP Agency helps build digital products fast. Bring your idea to life.",
+      "Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach.",
     themeColor: "#ffffff",
     applicationName: "MVP Agency",
     og: {
-      title: "MVP Agency - Build Your Minimum Viable Product Fast",
+      title: "MVP Development Services - MVP Agency",
       url: "https://mvpagency.org",
       image: "https://mvpagency.org/company_related/og-image.webp",
       imageAlt:
-        "MVP Agency helps build digital products fast. Bring your idea to life.",
+        "Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach.",
       content: "https://x.com/tech_nurgaliyev",
       twitterSite: "@tech_nurgaliyev",
       twitterImage: "https://mvpagency.org/company_related/og-image.webp",

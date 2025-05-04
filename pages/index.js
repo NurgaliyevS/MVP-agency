@@ -13,6 +13,16 @@ export default function Home() {
           // Start monitoring in 30 seconds. Get notified by email, and SMS. Monitor your website, and server.
           content={customConfig.seo.description}
         />
+        <meta
+          property="og:description"
+          // example as MVPAgency - Monitor your website, and server
+          content={customConfig.seo.description}
+        />
+        <meta
+          property="og:title"
+          // example as MVPAgency - Monitor your website, and server
+          content={customConfig.seo.og.title}
+        />
       </Head>
       <div className="mx-auto">
         <LandingPage />

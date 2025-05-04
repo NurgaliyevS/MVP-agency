@@ -9,11 +9,6 @@ export default function Document() {
       className="scroll-smooth"
     >
       <Head>
-        <meta
-          name="keywords"
-          // website monitoring, web monitoring, site downtime, website monitoring tools, website uptime monitoring, website monitoring services, site monitoring, server uptime, uptime web hosting, uptime robot alternative
-          content={customConfig.seo.keywords}
-        />
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -29,16 +24,6 @@ export default function Document() {
         <meta
           name="application-name"
           content={customConfig.seo.applicationName}
-        />
-        <meta
-          property="og:title"
-          // example as MVPAgency - Monitor your website, and server
-          content={customConfig.seo.og.title}
-        />
-        <meta
-          property="og:description"
-          // example as MVPAgency - Monitor your website, and server
-          content={customConfig.seo.description}
         />
         {/* example as https://mvpagency.org/ */}
         <meta property="og:url" content={customConfig.domainWithHttps} />

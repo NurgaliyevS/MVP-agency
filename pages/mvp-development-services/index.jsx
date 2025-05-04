@@ -18,6 +18,7 @@ import {
   FaShieldAlt,
   FaMoneyCheckAlt,
 } from "react-icons/fa";
+import Head from "next/head";
 
 const solutionsItems = [
   {
@@ -148,6 +149,22 @@ const solutionsItems = [
 export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
+      <Head>
+        <title>MVP Development Services - MVP Agency</title>
+        <link rel="canonical" href="https://mvpagency.org/mvp-development-services" />
+        <meta
+          name="description"
+          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach."
+        />
+        <meta
+          property="og:description"
+          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster with a focused, agile approach."
+        />
+        <meta
+          property="og:title"
+          content="MVP Development Services"
+        />
+      </Head>
       <Header />
 
       {/* Hero Section */}
