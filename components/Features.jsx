@@ -8,7 +8,7 @@ function Features() {
     },
     {
       traditional: "$20,000+ for a basic MVP",
-      mvpAgency: "From $2499 for MVP",
+      mvpAgency: "From $3000 for MVP",
     },
     {
       traditional: "Hiring 3-5 developers at $100k+/year each",
