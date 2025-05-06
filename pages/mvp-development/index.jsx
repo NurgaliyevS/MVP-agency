@@ -157,7 +157,7 @@ export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
       <Head>
-        <title>MVP Development Agency - MVP Agency</title>
+        <title>MVP Software Development Services - MVP Agency</title>
         <link
           rel="canonical"
           href="https://mvpagency.org/mvp-development"
