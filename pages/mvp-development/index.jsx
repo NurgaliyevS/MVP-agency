@@ -14,9 +14,12 @@ import {
 } from "react-accessible-accordion";
 import {
   FaChevronDown,
-  FaCloud,
-  FaShieldAlt,
-  FaMoneyCheckAlt,
+  FaChartLine,
+  FaShoppingCart,
+  FaUserTie,
+  FaUserFriends,
+  FaBuilding,
+  FaLightbulb,
 } from "react-icons/fa";
 import Head from "next/head";
 
@@ -68,7 +71,7 @@ const solutionsItems = [
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
+              d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
             />
           </svg>
         </span>
@@ -154,20 +157,20 @@ export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
       <Head>
-        <title>MVP Development Services - MVP Agency</title>
+        <title>MVP Development Agency - MVP Agency</title>
         <link
           rel="canonical"
-          href="https://mvpagency.org/mvp-development-services"
+          href="https://mvpagency.org/mvp-development"
         />
         <meta
           name="description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
+          content="We are a software and MVP development agency. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
         />
         <meta
           property="og:description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
+          content="We are a software and MVP development agency. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
         />
-        <meta property="og:title" content="MVP Development Services" />
+        <meta property="og:title" content="MVP Development Agency" />
       </Head>
       <Header />
 
@@ -197,8 +200,8 @@ export default function MVPDevelopmentServices() {
             Custom MVP Software Development Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Avoid feature overload. Focus on what matters most. Focus on what
-            matters most. Here's how we can help you.
+            Avoid feature overload. Focus on what matters most. Here's how we
+            can help you.
           </p>
         </div>
         <Accordion allowZeroExpanded className="w-full max-w-3xl mx-auto">
@@ -214,13 +217,13 @@ export default function MVPDevelopmentServices() {
                     <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
                       {item.heading.props.children[0].props.children}
                     </span>
-                    <span className="font-bold text-xl text-gray-800">
+                    <span className="font-bold text-xl text-gray-800 flex items-center">
                       {item.heading.props.children[1].props.children}
                     </span>
                   </div>
                   {/* Arrow icon, rotate if expanded */}
                   <span
-                    className="ml-4 transition-transform duration-200"
+                    className="ml-4 transition-transform duration-200 flex items-center"
                     aria-hidden="true"
                     data-accordion-arrow
                   >
@@ -250,7 +253,7 @@ export default function MVPDevelopmentServices() {
             {/* SaaS */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaCloud className="w-7 h-7 text-blue-500" />
+                <FaChartLine className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Finance</h3>
               <p className="text-gray-600 text-base">
@@ -258,10 +261,10 @@ export default function MVPDevelopmentServices() {
                 problems in their industry.
               </p>
             </div>
-            {/* Insurance */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaShieldAlt className="w-7 h-7 text-blue-500" />
+                {/* a nice icon for e-commerce */}
+                <FaShoppingCart className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 E-commerce
@@ -271,10 +274,9 @@ export default function MVPDevelopmentServices() {
                 more.
               </p>
             </div>
-            {/* FinTech */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaUserTie className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">B2B SaaS</h3>
               <p className="text-gray-600 text-base">
@@ -296,22 +298,22 @@ export default function MVPDevelopmentServices() {
             with individual approach.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* SaaS */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaCloud className="w-7 h-7 text-blue-500" />
+                {/* a nice icon for small businesses */}
+                <FaUserFriends className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Small Businesses
               </h3>
               <p className="text-gray-600 text-base">
-                Focus on cost, time-to-market, and product-market fit.
+                We focus on cost, time-to-market, and product-market fit.
               </p>
             </div>
-            {/* Insurance */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaShieldAlt className="w-7 h-7 text-blue-500" />
+                {/* a nice icon for mid/large enterprises */}
+                <FaBuilding className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Mid/Large Enterprises
@@ -320,10 +322,10 @@ export default function MVPDevelopmentServices() {
                 We focus on safety, security, scalability and UI/UX.
               </p>
             </div>
-            {/* FinTech */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                {/* a nice icon for startups */}
+                <FaLightbulb className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Startups</h3>
               <p className="text-gray-600 text-base">
