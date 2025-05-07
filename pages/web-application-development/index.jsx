@@ -216,20 +216,23 @@ export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
       <Head>
-        <title>MVP Development Services - MVP Agency</title>
+        <title>Web Application Development Services - MVP Agency</title>
         <link
           rel="canonical"
-          href="https://mvpagency.org/mvp-development-services"
+          href="https://mvpagency.org/web-application-development"
         />
         <meta
           name="description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
+          content="Build fast, lean, and secure web applications that scale with your business. We use the latest technologies and frameworks to develop your web application."
         />
         <meta
           property="og:description"
-          content="Validate your ideas quickly with an MVP that focuses on market. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
+          content="Build fast, lean, and secure web applications that scale with your business. We use the latest technologies and frameworks to develop your web application."
         />
-        <meta property="og:title" content="MVP Development Services" />
+        <meta
+          property="og:title"
+          content="Web Application Development Services"
+        />
       </Head>
       <Header />
 
