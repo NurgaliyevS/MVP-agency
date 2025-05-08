@@ -16,7 +16,9 @@ import {
   FaCloud,
   FaShieldAlt,
   FaMoneyCheckAlt,
-  FaTruck,
+  FaUserFriends,
+  FaBuilding,
+  FaLightbulb,
 } from "react-icons/fa";
 import Head from "next/head";
 
@@ -41,15 +43,15 @@ const solutionsItems = [
           </svg>
         </span>
         <span className="font-semibold text-lg text-gray-800">
-          Custom web app development services
+          Application Support and Maintenance Services
         </span>
       </div>
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        From 0 to 1, we help you build a web application that solve real-world
-        problems. We support you with the every step of the way, from the
-        initial idea to the final product.
+        Regular maintenance and support services to keep your software running
+        24/7. Do not rely on notifications from your users, we will fix them
+        before they arrive.
       </div>
     ),
   },
@@ -73,14 +75,14 @@ const solutionsItems = [
           </svg>
         </span>
         <span className="font-semibold text-lg text-gray-800">
-          Frontend web app development services
+          Web app and website maintenance services
         </span>
       </div>
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        Customer experience starts with the frontend. We build a beautiful and
-        user-friendly frontend that is simple and converts.
+        Do not wait for 404 errors, downtime or slow performance. Instead, we
+        will fix them before they bother your users.
       </div>
     ),
   },
@@ -104,19 +106,20 @@ const solutionsItems = [
           </svg>
         </span>
         <span className="font-semibold text-lg text-gray-800">
-          Backend web app development services
+          IT infrastructure and network maintenance services
         </span>
       </div>
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        The backend is the engine of your web application. We build a reliable
-        and scalable backend that is easy to maintain and grow.
+        Do you want to sleep well at night? We will monitor your IT
+        infrastructure and network 24/7 and fix issues before they impact your
+        business.
       </div>
     ),
   },
   {
-    uuid: "cms-dev",
+    uuid: "tech-fit",
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
@@ -135,19 +138,20 @@ const solutionsItems = [
           </svg>
         </span>
         <span className="font-semibold text-lg text-gray-800">
-          CMS development services
+          Web app and website security audits services
         </span>
       </div>
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        We build a content management system that is easy to manage and update.
-        It allows you to control the content of your web application.
+        Errors and vulnerabilities cost you money. We will audit your web app
+        and website and let you know if there are any issues and help you to
+        solve them.
       </div>
     ),
   },
   {
-    uuid: "saas-dev",
+    uuid: "legacy-refactoring",
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
@@ -161,51 +165,19 @@ const solutionsItems = [
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
             />
           </svg>
         </span>
         <span className="font-semibold text-lg text-gray-800">
-          SaaS development services
+          Software updates and legacy refactoring services
         </span>
       </div>
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        Niche industries require niche solutions. We build a SaaS product that
-        is fit for your needs.
-      </div>
-    ),
-  },
-
-  {
-    uuid: "internal-tools",
-    heading: (
-      <div className="flex items-center gap-4">
-        <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
-            />
-          </svg>
-        </span>
-        <span className="font-semibold text-lg text-gray-800">
-          Internal tools development services
-        </span>
-      </div>
-    ),
-    content: (
-      <div className="mt-3 text-gray-600 text-left">
-        If you don't want to rely on third-party tools, we can build a custom
-        internal tool that is tailored to your needs.
+        Legacy code is a pain. We will refactor your legacy code to ensure your
+        business is always up to date.
       </div>
     ),
   },
@@ -215,23 +187,20 @@ export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
       <Head>
-        <title>Web Application Development Services - MVP Agency</title>
+        <title>IT Maintenance and Support Services - MVP Agency</title>
         <link
           rel="canonical"
-          href="https://mvpagency.org/web-application-development"
+          href="https://mvpagency.org/maintenance-and-support"
         />
         <meta
           name="description"
-          content="Build fast, lean, and secure web applications that scale with your business. We use the latest technologies and frameworks to develop your web application."
+          content="We provide IT maintenance and support services for your software. We help you to prevent unexpected issues and downtime. And sleep well at night."
         />
         <meta
           property="og:description"
-          content="Build fast, lean, and secure web applications that scale with your business. We use the latest technologies and frameworks to develop your web application."
+          content="We provide IT maintenance and support services for your software. We help you to prevent unexpected issues and downtime. And sleep well at night.    "
         />
-        <meta
-          property="og:title"
-          content="Web Application Development Services"
-        />
+        <meta property="og:title" content="IT Maintenance and Support Services" />
       </Head>
       <Header />
 
@@ -239,13 +208,12 @@ export default function MVPDevelopmentServices() {
       <section className="mt-36 mb-16 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-4xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-black">
-            Web Application Development Services
+            IT Maintenance and Support Services
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8">
-            Build fast, lean, and secure web applications that scale with your
-            business. We use the latest technologies and frameworks to develop
-            your web application. We focus on the customers and their needs, and
-            we deliver a product that is easy to use and navigate.
+            We ensure your IT infrastructure is always up and running, with
+            regular maintenance and updates. Anytime you need help, we're here
+            to help. Avoid unexpected downtime and issues with your business.
           </p>
           <CTAButton />
           <p className="text-sm text-base-content/70 mt-4">
@@ -259,11 +227,12 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4 bg-[#fafafa]">
         <div className="container mx-auto max-w-3xl text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight">
-            Our Web Application Development Services
+            Software Maintenance and Support Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Custom web application development services are designed to help you
-            create a web application that solve real-world problems.
+            Our maintenance and support services, prevent issues before they
+            happen. We offer services from maintaince, monitoring, to legacy
+            refactoring and network performance optimization.
           </p>
         </div>
         <Accordion allowZeroExpanded className="w-full max-w-3xl mx-auto">
@@ -305,11 +274,10 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4 bg-[#fafafa]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight text-center">
-            Industries we serve
+            Industries expertise
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            Expertise in various industries allows us to bring industry insights
-            to your project.
+            With more insights, we provide better services for your business.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* SaaS */}
@@ -317,24 +285,23 @@ export default function MVPDevelopmentServices() {
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
                 <FaCloud className="w-7 h-7 text-blue-500" />
               </span>
-              <h3 className="font-bold text-lg mb-2 text-gray-800">
-                SaaS & Cloud Services
-              </h3>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">SaaS</h3>
               <p className="text-gray-600 text-base">
-                We build web apps for SaaS companies to solve real-world
-                problems with software.
+                Software audits, maintenance and support services for SaaS
+                companies.
               </p>
             </div>
+            {/* Insurance */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaTruck className="w-7 h-7 text-blue-500" />
+                <FaShieldAlt className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
-                Logistics & Supply Chain
+                Insurance
               </h3>
               <p className="text-gray-600 text-base">
-                We build web apps for logistics companies to manage their
-                operations, from inventory to shipping.
+                We focus on government regulations and compliance. We help you
+                to build secure and reliable software.
               </p>
             </div>
             {/* FinTech */}
@@ -342,12 +309,10 @@ export default function MVPDevelopmentServices() {
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
                 <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
               </span>
-              <h3 className="font-bold text-lg mb-2 text-gray-800">
-                Finance & Accounting
-              </h3>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">FinTech</h3>
               <p className="text-gray-600 text-base">
-                We build web apps from trading platforms, banking systems, to
-                credit analysis tools.
+                We focus on speed and security. We help you to maintain and
+                support your software.
               </p>
             </div>
           </div>
@@ -358,22 +323,23 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4 bg-[#fafafa]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight text-center">
-            What is the Web Application Development Process Like?
+            How we provide maintenance and support services
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            We move fast and deliver results. We value your time and money.
+            We deliver high quality maintenance and support services.The process
+            consists of the following steps:
           </p>
           <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center">
             {/* Stepper */}
             {/* hide on mobile */}
             <div className="hidden md:flex flex-row md:flex-col items-center md:items-stretch md:w-24 w-full md:justify-start justify-center self-stretch">
               <div className="relative flex flex-col items-center w-full h-full my-2">
-                {[1, 2, 3, 4, 5].map((num, idx) => (
+                {[1, 2, 3, 4].map((num, idx) => (
                   <div key={num} className="flex flex-col items-center w-full">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-500 text-white font-bold text-lg z-10 shadow-md">
                       {num}
                     </div>
-                    {idx < 4 && (
+                    {idx < 3 && (
                       <div className="w-1 h-12 bg-blue-300 mx-auto"></div>
                     )}
                   </div>
@@ -390,7 +356,7 @@ export default function MVPDevelopmentServices() {
                   <AccordionItemHeading>
                     <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
                       <span className="font-bold text-xl text-gray-800">
-                        Step 1: Consultation
+                        Step 1: Requirements gathering
                       </span>
                       <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                     </AccordionItemButton>
@@ -403,8 +369,9 @@ export default function MVPDevelopmentServices() {
                     >
                       schedule a call
                     </a>{" "}
-                    with us to discuss your web app development needs. We will
-                    help you to execute your idea.
+                    with us to discuss your maintenance and support needs. We
+                    work with you to understand your problems, goals, and
+                    requirements for the maintenance and support.
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -414,14 +381,19 @@ export default function MVPDevelopmentServices() {
                   <AccordionItemHeading>
                     <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
                       <span className="font-bold text-xl text-gray-800">
-                        Step 2: Design & Prototyping
+                        Step 2: Software maintenance and support services plan
                       </span>
                       <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel className="px-8 pb-6 pt-0">
-                    We design and prototype the web app to make sure it's easy
-                    to use.
+                    We will create a plan to maintain and support your software.
+                    The plan will include the following:
+                    <ul>
+                      <li>Regular maintenance and updates</li>
+                      <li>Regular security audits</li>
+                      <li>Regular performance audits</li>
+                    </ul>
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -431,14 +403,13 @@ export default function MVPDevelopmentServices() {
                   <AccordionItemHeading>
                     <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
                       <span className="font-bold text-xl text-gray-800">
-                        Step 3: Web App Development
+                        Step 3: Execution and monitoring
                       </span>
                       <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel className="px-8 pb-6 pt-0">
-                    We develop the web app using the latest technologies and
-                    frameworks.
+                    We will execute the plan and monitor the progress.
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem
@@ -448,30 +419,15 @@ export default function MVPDevelopmentServices() {
                   <AccordionItemHeading>
                     <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
                       <span className="font-bold text-xl text-gray-800">
-                        Step 4: Deployment & Maintenance
+                        Step 4: Reporting and updates
                       </span>
                       <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel className="px-8 pb-6 pt-0">
-                    We deploy the web app and provide maintenance services.
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem
-                  uuid="step5"
-                  className="bg-white rounded-2xl shadow-sm mb-4"
-                >
-                  <AccordionItemHeading>
-                    <AccordionItemButton className="flex items-center justify-between w-full px-8 py-6 focus:outline-none">
-                      <span className="font-bold text-xl text-gray-800">
-                        Step 5: Continuous Improvement
-                      </span>
-                      <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel className="px-8 pb-6 pt-0">
-                    We launch the web app and continue to iterate based on user
-                    feedback and market needs.
+                    We communicate with you regularly about the progress of the
+                    maintenance and support. We will provide all the details of
+                    our work.
                   </AccordionItemPanel>
                 </AccordionItem>
               </Accordion>
@@ -484,7 +440,7 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-black text-center">
-            Why choose MVP Agency for your custom web app development?
+            Custom Software Maintenance and Support Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -492,10 +448,11 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-users"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Problem-solving approach
+                Reliable Work
               </h3>
               <p className="text-gray-600 text-center">
-                We don't create problems, we solve them.
+                We will fix issues and make your software more reliable to
+                prevent unexpected downtime.
               </p>
             </div>
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -503,10 +460,11 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-user-gear"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                End-to-end partnership
+                Custom services
               </h3>
               <p className="text-gray-600 text-center">
-                We are not just a development agency, we are your partner.
+                Each project is unique. We deliver custom services to meet your
+                needs.
               </p>
             </div>
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -514,11 +472,10 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-dollar-sign"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Transparency
+                Fast response
               </h3>
               <p className="text-gray-600 text-center">
-                We update you on the progress of the project and provide a
-                detailed report.
+                If you have an issue, we will fix it quickly.
               </p>
             </div>
             <div className="bg-white rounded-xl shadow-inner border border-gray-200 p-6 flex flex-col items-center">
@@ -526,10 +483,61 @@ export default function MVPDevelopmentServices() {
                 <i className="fa-solid fa-lightbulb"></i>
               </span>
               <h3 className="font-semibold text-xl mb-2 text-black">
-                Market-driven approach
+                Monitor and improve
               </h3>
               <p className="text-gray-600 text-center">
-                We build web apps that are market-driven and user-friendly.
+                We automate logs and monitor your software to prevent issues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-[#fafafa]">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-800 tracking-tight text-center">
+            We provide software maintenance & support services for
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            From small businesses to large enterprises and startups, we provide
+            custom software maintenance & support services to prevent unexpected
+            downtime, critical errors and issues.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                {/* a nice icon for small businesses */}
+                <FaUserFriends className="w-7 h-7 text-blue-500" />
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">
+                Small Businesses
+              </h3>
+              <p className="text-gray-600 text-base">
+                We focus on lean and simple solutions to deliver stable and
+                reliable software.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                {/* a nice icon for mid/large enterprises */}
+                <FaBuilding className="w-7 h-7 text-blue-500" />
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">
+                Mid/Large Enterprises
+              </h3>
+              <p className="text-gray-600 text-base">
+                We focus on stability and growth. We help you to scale your
+                software and improve your business.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
+                {/* a nice icon for startups */}
+                <FaLightbulb className="w-7 h-7 text-blue-500" />
+              </span>
+              <h3 className="font-bold text-lg mb-2 text-gray-800">Startups</h3>
+              <p className="text-gray-600 text-base">
+                We optimize for time and scale to prevent unexpected issues.
               </p>
             </div>
           </div>
@@ -555,14 +563,14 @@ export default function MVPDevelopmentServices() {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  How much does it cost to create a custom web application?
+                  How much does MVP development cost?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
                 <p className="text-gray-600 text-base md:text-lg">
-                  We provide a fixed price for web app development. Because we
-                  trust our clients and provide real results.
+                  We provide a fixed price for maintenance and support services.
+                  Because we trust our clients and provide real results.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -572,13 +580,14 @@ export default function MVPDevelopmentServices() {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  How long does it take to develop a web application?
+                  Why is it critical to maintain and support my software?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
                 <p className="text-gray-600 text-base md:text-lg">
-                  We execute in weeks not months. We value your time and money.
+                  They help you to prevent unexpected issues and downtime. And
+                  sleep well at night.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -588,14 +597,14 @@ export default function MVPDevelopmentServices() {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  How soon can you start working on my project?
+                  How long does it take to maintain and support my software?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
                 <p className="text-gray-600 text-base md:text-lg">
-                  We start working on your project as soon as you sign the
-                  contract.
+                  We execute in weeks not months. We focus on one project at a
+                  time.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -605,14 +614,15 @@ export default function MVPDevelopmentServices() {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  Can your team collaborate with my internal team?
+                  How do you differ from other maintenance and support services?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
                 <p className="text-gray-600 text-base md:text-lg">
-                  Yes, we would love to share our expertise with your team. We
-                  can work as an extension of your team.
+                  We don't just maintain and support software. We build our own
+                  products. We understand the market and the needs of the users.
+                  We know where the issues are and how to fix them.
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
@@ -624,7 +634,7 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">
-            Ready to build your web application?
+            GOT A SOFTWARE PROBLEM ?
           </h2>
           <CTAButton />
         </div>

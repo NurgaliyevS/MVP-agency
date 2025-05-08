@@ -78,13 +78,21 @@ function Footer(props) {
                   MVP Software Development Services
                 </Link>
               </li>
-
               <li>
                 <Link
                   href="/web-application-development"
                   className="text-sm hover:text-primary"
                 >
                   Web Application Development Services
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/maintenance-and-support"
+                  className="text-sm hover:text-primary"
+                >
+                  IT Maintenance and Support Services
                 </Link>
               </li>
             </ul>
