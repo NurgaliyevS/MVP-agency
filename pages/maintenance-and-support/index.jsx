@@ -563,7 +563,7 @@ export default function MVPDevelopmentServices() {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  How much does MVP development cost?
+                  How much does maintenance and support cost?
                   <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
                 </AccordionItemButton>
               </AccordionItemHeading>
