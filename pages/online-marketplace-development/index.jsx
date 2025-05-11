@@ -20,6 +20,11 @@ import {
   FaUserFriends,
   FaBuilding,
   FaLightbulb,
+  FaShoppingCart,
+  FaCar,
+  FaHome,
+  FaCouch,
+  FaTruck,
 } from "react-icons/fa";
 import Head from "next/head";
 
@@ -257,7 +262,7 @@ export default function MVPDevelopmentServices() {
             {/* SaaS */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaCloud className="w-7 h-7 text-blue-500" />
+                <FaShoppingCart className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 E-commerce
@@ -271,7 +276,7 @@ export default function MVPDevelopmentServices() {
             {/* Insurance */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaShieldAlt className="w-7 h-7 text-blue-500" />
+                <FaCar className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Automotive
@@ -285,7 +290,7 @@ export default function MVPDevelopmentServices() {
             {/* FinTech */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaShieldAlt className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Insurance
@@ -299,7 +304,7 @@ export default function MVPDevelopmentServices() {
 
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaHome className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">Rental</h3>
               <p className="text-gray-600 text-base">
@@ -311,7 +316,7 @@ export default function MVPDevelopmentServices() {
 
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaCouch className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Furniture
@@ -326,7 +331,7 @@ export default function MVPDevelopmentServices() {
 
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaTruck className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 Logistics
