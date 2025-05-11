@@ -66,6 +66,7 @@ function Footer(props) {
                 <Link
                   href="/mvp-development-services"
                   className="text-sm hover:text-primary"
+                  title="MVP Development Services"
                 >
                   MVP Development Services
                 </Link>
@@ -74,6 +75,7 @@ function Footer(props) {
                 <Link
                   href="/mvp-development"
                   className="text-sm hover:text-primary"
+                  title="MVP Software Development Services"
                 >
                   MVP Software Development Services
                 </Link>
@@ -82,6 +84,7 @@ function Footer(props) {
                 <Link
                   href="/web-application-development"
                   className="text-sm hover:text-primary"
+                  title="Web Application Development Services"
                 >
                   Web Application Development Services
                 </Link>
@@ -91,8 +94,18 @@ function Footer(props) {
                 <Link
                   href="/maintenance-and-support"
                   className="text-sm hover:text-primary"
+                  title="IT Maintenance and Support Services"
                 >
                   IT Maintenance and Support Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/online-marketplace-development"
+                  className="text-sm hover:text-primary"
+                  title="Online Marketplace Development Services"
+                >
+                  Online Marketplace Development Services
                 </Link>
               </li>
             </ul>
@@ -105,22 +118,35 @@ function Footer(props) {
                 <Link
                   href="mailto:nurgasab@gmail.com"
                   className="text-sm hover:text-primary"
+                  title="Contact"
                 >
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="#work" className="text-sm hover:text-primary">
+                <Link
+                  href="#work"
+                  className="text-sm hover:text-primary"
+                  title="Work"
+                >
                   Work
                 </Link>
               </li>
               <li>
-                <Link href="#pricing" className="text-sm hover:text-primary">
+                <Link
+                  href="#pricing"
+                  className="text-sm hover:text-primary"
+                  title="Pricing"
+                >
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm hover:text-primary">
+                <Link
+                  href="/blog"
+                  className="text-sm hover:text-primary"
+                  title="Blog"
+                >
                   Blog
                 </Link>
               </li>
@@ -128,12 +154,17 @@ function Footer(props) {
                 <Link
                   href="/privacy-policy"
                   className="text-sm hover:text-primary"
+                  title="Privacy Policy"
                 >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/tos" className="text-sm hover:text-primary">
+                <Link
+                  href="/tos"
+                  className="text-sm hover:text-primary"
+                  title="Terms of Service"
+                >
                   Terms of Service
                 </Link>
               </li>
