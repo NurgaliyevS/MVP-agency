@@ -17,6 +17,13 @@ import {
   FaCloud,
   FaShieldAlt,
   FaMoneyCheckAlt,
+  FaCode,
+  FaExchangeAlt,
+  FaServer,
+  FaTools,
+  FaLock,
+  FaShoppingCart,
+  FaChartLine
 } from "react-icons/fa";
 import Head from "next/head";
 
@@ -26,19 +33,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
+          <FaCode className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Custom SaaS Development
@@ -58,19 +53,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
-            />
-          </svg>
+          <FaExchangeAlt className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           SaaS Migration & Integration
@@ -89,19 +72,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 10h2l1 2h13a1 1 0 010 2H6l-1 2H3"
-            />
-          </svg>
+          <FaServer className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           API Development & Integration
@@ -121,19 +92,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
-            />
-          </svg>
+          <FaTools className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Custom SaaS Features
@@ -153,19 +112,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
-            />
-          </svg>
+          <FaLock className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           SaaS Security Services & Maintenance
@@ -283,10 +230,10 @@ export default function MVPDevelopmentServices() {
             challenges and needs of industry-specific businesses.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* SaaS */}
+            {/* E-Commerce */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaCloud className="w-7 h-7 text-blue-500" />
+                <FaShoppingCart className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">
                 E-Commerce
@@ -313,7 +260,7 @@ export default function MVPDevelopmentServices() {
             {/* FinTech */}
             <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col items-start">
               <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 mb-4">
-                <FaMoneyCheckAlt className="w-7 h-7 text-blue-500" />
+                <FaChartLine className="w-7 h-7 text-blue-500" />
               </span>
               <h3 className="font-bold text-lg mb-2 text-gray-800">FinTech</h3>
               <p className="text-gray-600 text-base">
