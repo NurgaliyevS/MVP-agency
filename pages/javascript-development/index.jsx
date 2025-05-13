@@ -597,23 +597,6 @@ export default function MVPDevelopmentServices() {
               </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem
-              uuid="faq3"
-              className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
-            >
-              <AccordionItemHeading>
-                <AccordionItemButton className="text-base md:text-lg font-medium cursor-pointer flex items-center justify-between w-full px-2 md:px-6 py-4 md:py-5 focus:outline-none">
-                  How long does it take to maintain and support my software?
-                  <FaChevronDown className="w-5 h-5 text-gray-400 ml-4" />
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
-                <p className="text-gray-600 text-base md:text-lg">
-                  We execute in weeks not months. We focus on one project at a
-                  time.
-                </p>
-              </AccordionItemPanel>
-            </AccordionItem>
-            <AccordionItem
               uuid="faq4"
               className="bg-white rounded-lg md:rounded-xl shadow-inner border border-gray-200 mb-2 md:mb-4"
             >
@@ -643,16 +626,18 @@ export default function MVPDevelopmentServices() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
-                <p className="text-gray-600 text-base md:text-lg">
-                  We provide support, including:
-                  <ul className="list-disc pl-5">
-                    <li>Bug fixes</li>
-                    <li>Feature updates</li>
-                    <li>Performance improvements</li>
-                    <li>Security updates</li>
-                    <li>Maintenance</li>
-                  </ul>
-                </p>
+                <div className="text-gray-600 text-base md:text-lg">
+                  We provide ongoing support and maintenance to help you keep
+                  your JavaScript application running. We also help you with updates
+                  and new features.
+                </div>
+                <ul className="list-disc pl-5 mt-4 text-gray-600 text-base md:text-lg">
+                  <li>Bug fixes</li>
+                  <li>Feature updates</li>
+                  <li>Performance improvements</li>
+                  <li>Security updates</li>
+                  <li>Maintenance</li>
+                </ul>
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
