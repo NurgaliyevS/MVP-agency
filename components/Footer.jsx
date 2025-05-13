@@ -117,6 +117,15 @@ function Footer(props) {
                   SaaS Development Services
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/javascript-development"
+                  className="text-sm hover:text-primary"
+                  title="JavaScript Development Services"
+                >
+                  JavaScript Development Services
+                </Link>
+              </li>
             </ul>
           </div>
 
