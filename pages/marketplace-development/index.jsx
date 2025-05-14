@@ -185,22 +185,22 @@ export default function MVPDevelopmentServices() {
   return (
     <main className="bg-white mx-auto min-h-screen">
       <Head>
-        <title>IT Maintenance and Support Services - MVP Agency</title>
+        <title>Online Marketplace Development Services - MVP Agency</title>
         <link
           rel="canonical"
-          href="https://mvpagency.org/maintenance-and-support"
+          href="https://mvpagency.org/marketplace-development"
         />
         <meta
           name="description"
-          content="We provide IT maintenance and support services for your software. We help you to prevent unexpected issues and downtime. And sleep well at night."
+          content="We provide online marketplace development services for your business. We help you to automate your business processes and improve your customer experience."
         />
         <meta
           property="og:description"
-          content="We provide IT maintenance and support services for your software. We help you to prevent unexpected issues and downtime. And sleep well at night.    "
+          content="We provide online marketplace development services for your business. We help you to automate your business processes and improve your customer experience."
         />
         <meta
           property="og:title"
-          content="IT Maintenance and Support Services"
+          content="Online Marketplace Development Services"
         />
       </Head>
       <Header />
