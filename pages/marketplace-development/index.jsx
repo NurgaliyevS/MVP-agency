@@ -594,7 +594,7 @@ export default function MVPDevelopmentServices() {
       <section className="py-16 px-4">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-black">
-            GOT A SOFTWARE PROBLEM ?
+            GOT A MARKETPLACE IDEA ?
           </h2>
           <CTAButton />
         </div>
