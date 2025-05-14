@@ -19,6 +19,11 @@ import {
   FaUserFriends,
   FaBuilding,
   FaLightbulb,
+  FaStore,
+  FaRocket,
+  FaMobileAlt,
+  FaGlobe,
+  FaTools,
 } from "react-icons/fa";
 import Head from "next/head";
 
@@ -28,19 +33,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
+          <FaStore className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Custom Marketplace Development
@@ -59,19 +52,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4"
-            />
-          </svg>
+          <FaRocket className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Marketplace MVP Development
@@ -90,19 +71,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 10h2l1 2h13a1 1 0 010 2H6l-1 2H3"
-            />
-          </svg>
+          <FaMobileAlt className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Mobile marketplace development
@@ -121,19 +90,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m0-4V4a4 4 0 014-4h0a4 4 0 014 4v6m-4 4v4"
-            />
-          </svg>
+          <FaGlobe className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Marketplace web app development
@@ -153,19 +110,7 @@ const solutionsItems = [
     heading: (
       <div className="flex items-center gap-4">
         <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-400 bg-white">
-          <svg
-            className="w-7 h-7 text-blue-500"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-            />
-          </svg>
+          <FaTools className="w-7 h-7 text-blue-500" />
         </span>
         <span className="font-semibold text-lg text-gray-800">
           Marketplace software maintenance and support
