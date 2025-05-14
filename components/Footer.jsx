@@ -126,6 +126,15 @@ function Footer(props) {
                   JavaScript Development Services
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/marketplace-development"
+                  className="text-sm hover:text-primary"
+                  title="Online Marketplace Development"
+                >
+                  Online Marketplace Development
+                </Link>
+              </li>
             </ul>
           </div>
 
