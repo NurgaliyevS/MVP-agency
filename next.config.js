@@ -94,6 +94,11 @@ const nextConfig = withPlausibleProxy()({
         source: '/blog/build-mvp-startup-innovation-strategy',
         destination: '/blog/build-mvp-startup-innovation-blueprint',
         permanent: true,
+      },
+      {
+        source: '/blog/mvp-user-testing-methodology',
+        destination: '/',
+        permanent: true,
       }
     ];
   },
