@@ -207,6 +207,5 @@ Remember that an MVP is just the beginning of your product journey. Use the insi
 ### Related Articles:
 - [MVP Development Agency Guide](/blog/mvp-development-agency)
 - [MVP Launch Checklist](/blog/mvp-launch-checklist-8-steps-before-going-live)
-- [MVP Development Costs](/blog/mvp-development-costs-complete-breakdown-for-2025)
 
 [cta_box title="Struggling with MVP features?" text="Get a focused feature roadmap in days, not weeks." url="https://mvpagency.org#pricing" button_text="See Pricing"]

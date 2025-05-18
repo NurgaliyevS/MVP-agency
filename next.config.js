@@ -94,7 +94,12 @@ const nextConfig = withPlausibleProxy()({
         source: '/blog/minimum-viable-product-development-guide',
         destination: '/mvp-development',
         permanent: true,
-      }
+      },
+      {
+        source: '/blog/mvp-development-costs-complete-breakdown-for-2025',
+        destination: '/mvp-development',
+        permanent: true,
+      },
     ];
   },
 });
