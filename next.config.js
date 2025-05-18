@@ -36,6 +36,16 @@ const nextConfig = withPlausibleProxy()({
         permanent: true,
       },
       {
+        source: '/blog/building-mvp-startup-guide-2024',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/building-lean-mvp-process',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
         source: '/blog/building-mvp-startup-guide',
         destination: '/blog/build-mvp',
         permanent: true,
