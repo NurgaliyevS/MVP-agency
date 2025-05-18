@@ -32,6 +32,7 @@ function Sabyr({ posts }) {
           content={`https://mvpagency.org/blog/author/sabyr`}
         />
         <meta property="og:type" content="website" />
+        <meta name="robots" content="noindex, follow" />
       </Head>
 
       <BlogHeader />
