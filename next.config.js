@@ -49,7 +49,22 @@ const nextConfig = withPlausibleProxy()({
         source: '/build-mvp',
         destination: '/blog/build-mvp',
         permanent: true,
-      }
+      },
+      {
+        source: '/blog/mvp-development-agency',
+        destination: '/mvp-development',
+        permanent: true,
+      },
+      {
+        source: '/blog/build-mvp-startup-development-strategy',
+        destination: '/mvp-development',
+        permanent: true,
+      },
+      {
+        source: '/blog/minimum-viable-product-development-methods',
+        destination: '/mvp-development',
+        permanent: true,
+      },
     ];
   },
 });

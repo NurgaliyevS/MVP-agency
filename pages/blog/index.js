@@ -33,6 +33,7 @@ export default function BlogIndex({ posts }) {
           content={customConfig.seo.description}
         />
         <link rel="canonical" href={`https://mvpagency.org/blog`} />
+        <meta name="robots" content="noindex, follow" />
       </Head>
       <BlogHeader />
       <main className="min-h-screen max-w-6xl mx-auto p-8">
