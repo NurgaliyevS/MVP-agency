@@ -75,6 +75,26 @@ const nextConfig = withPlausibleProxy()({
         destination: '/mvp-development',
         permanent: true,
       },
+      {
+        source: '/blog/build-mvp-2025-guide',
+        destination: '/blog/mvp-innovation-roadmap',
+        permanent: true,
+      },
+      {
+        source: '/blog/build-mvp-startup-innovation-roadmap',
+        destination: '/blog/mvp-innovation-roadmap',
+        permanent: true,
+      },
+      {
+        source: '/blog/minimum-viable-product-development-methods',
+        destination: '/blog/mvp-innovation-roadmap',
+        permanent: true,
+      },
+      {
+        source: '/blog/building-lean-mvp-process',
+        destination: '/blog/mvp-innovation-roadmap',
+        permanent: true,
+      }
     ];
   },
 });
