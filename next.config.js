@@ -13,6 +13,45 @@ const nextConfig = withPlausibleProxy()({
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/build-mvp-startup-guide',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/building-lean-mvp-process',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-build-an-mvp',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-build-mvp-startup-guide',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/building-mvp-startup-guide',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/blog/building-mvp-guide',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      },
+      {
+        source: '/build-mvp',
+        destination: '/blog/build-mvp',
+        permanent: true,
+      }
+    ];
+  },
 });
 
 module.exports = nextConfig;
