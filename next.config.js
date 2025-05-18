@@ -86,13 +86,13 @@ const nextConfig = withPlausibleProxy()({
         permanent: true,
       },
       {
-        source: '/blog/minimum-viable-product-development-methods',
+        source: '/blog/building-lean-mvp-process',
         destination: '/blog/mvp-innovation-roadmap',
         permanent: true,
       },
       {
-        source: '/blog/building-lean-mvp-process',
-        destination: '/blog/mvp-innovation-roadmap',
+        source: '/blog/build-mvp-startup-innovation-strategy',
+        destination: '/blog/build-mvp-startup-innovation-blueprint',
         permanent: true,
       }
     ];
