@@ -200,7 +200,12 @@ export default function MVPDevelopmentServices() {
           property="og:description"
           content="We provide IT maintenance and support services for your software. We help you to prevent unexpected issues and downtime. And sleep well at night.    "
         />
-        <meta property="og:title" content="IT Maintenance and Support Services" />
+        <meta
+          property="og:title"
+          content="IT Maintenance and Support Services"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 

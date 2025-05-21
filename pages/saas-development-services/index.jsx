@@ -147,6 +147,8 @@ export default function MVPDevelopmentServices() {
           content="SaaS development services to build, launch, and scale your software product. Turn your ideas into scalable, revenue-generating and cloud-based solutions."
         />
         <meta property="og:title" content="SaaS Development Company" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 

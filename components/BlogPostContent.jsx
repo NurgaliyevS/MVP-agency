@@ -46,6 +46,8 @@ function BlogPostContent({ post, relatedPosts }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <BlogHeader />
       <main className="min-h-screen max-w-6xl mx-auto p-4 md:p-8">
@@ -81,7 +83,10 @@ function BlogPostContent({ post, relatedPosts }) {
                   {tag}
                 </span>
               ))}
-              <span itemProp="datePublished" className="text-gray-600 text-sm md:text-base">
+              <span
+                itemProp="datePublished"
+                className="text-gray-600 text-sm md:text-base"
+              >
                 {format(new Date(post.date), "MMMM d, yyyy")}
               </span>
             </div>
@@ -93,7 +98,7 @@ function BlogPostContent({ post, relatedPosts }) {
               {post.excerpt}
             </p>
           </section>
-          
+
           <div className="mb-10">
             <Image
               alt={post.alt || post.title}
@@ -104,18 +109,19 @@ function BlogPostContent({ post, relatedPosts }) {
               priority
             />
           </div>
-          
+
           <div className="flex flex-col-reverse md:flex-row gap-8 mt-8 md:mt-12">
             <section className="w-full md:w-3/4">
-              <div className="blog-content prose prose-lg max-w-none" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+              <div
+                className="blog-content prose prose-lg max-w-none"
+                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+              />
             </section>
-            
+
             <aside className="md:w-1/4 shrink-0 mb-8 md:mb-0">
               <div className="md:sticky md:top-24 space-y-6 md:space-y-8">
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-100">
-                  <p className="text-gray-600 text-sm mb-4">
-                    Posted by
-                  </p>
+                  <p className="text-gray-600 text-sm mb-4">Posted by</p>
                   <div className="flex items-center gap-3">
                     <Image
                       src={"/Sabyr_Nurgaliyev.webp"}
@@ -134,13 +140,15 @@ function BlogPostContent({ post, relatedPosts }) {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="bg-gray-50 p-5 rounded-lg border border-gray-100">
-                  <h3 className="font-semibold text-gray-800 mb-4 text-lg">Tags</h3>
+                  <h3 className="font-semibold text-gray-800 mb-4 text-lg">
+                    Tags
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
-                      <span 
-                        key={tag} 
+                      <span
+                        key={tag}
                         className="px-3 py-1.5 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:bg-primary hover:text-white hover:border-primary transition-colors duration-200"
                       >
                         {tag}
@@ -148,10 +156,15 @@ function BlogPostContent({ post, relatedPosts }) {
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="bg-blue-50 p-5 rounded-lg border border-blue-100">
-                  <h3 className="font-semibold text-blue-800 mb-3 text-lg">Need Help?</h3>
-                  <p className="text-sm text-blue-700 mb-4">Book a free consultation to discuss your MVP development needs.</p>
+                  <h3 className="font-semibold text-blue-800 mb-3 text-lg">
+                    Need Help?
+                  </h3>
+                  <p className="text-sm text-blue-700 mb-4">
+                    Book a free consultation to discuss your MVP development
+                    needs.
+                  </p>
                   <a
                     href="https://cal.com/sabyr-nurgaliyev/mvp-agency"
                     className="btn btn-primary btn-sm w-full"
@@ -163,7 +176,7 @@ function BlogPostContent({ post, relatedPosts }) {
               </div>
             </aside>
           </div>
-          
+
           <div className="mt-16">
             <RelatedArticles currentPost={post} relatedPosts={relatedPosts} />
           </div>

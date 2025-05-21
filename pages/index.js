@@ -23,6 +23,8 @@ export default function Home() {
           // example as MVPAgency - Monitor your website, and server
           content={customConfig.seo.og.title}
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <div className="mx-auto">
         <LandingPage />

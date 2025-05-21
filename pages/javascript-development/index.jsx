@@ -198,10 +198,9 @@ export default function MVPDevelopmentServices() {
           property="og:description"
           content="We provide JavaScript development services to help you build and maintain your web, mobile and desktop applications."
         />
-        <meta
-          property="og:title"
-          content="JavaScript Development Services"
-        />
+        <meta property="og:title" content="JavaScript Development Services" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 
@@ -628,8 +627,8 @@ export default function MVPDevelopmentServices() {
               <AccordionItemPanel className="px-2 md:px-6 pb-4 md:pb-5 pt-0">
                 <div className="text-gray-600 text-base md:text-lg">
                   We provide ongoing support and maintenance to help you keep
-                  your JavaScript application running. We also help you with updates
-                  and new features.
+                  your JavaScript application running. We also help you with
+                  updates and new features.
                 </div>
                 <ul className="list-disc pl-5 mt-4 text-gray-600 text-base md:text-lg">
                   <li>Bug fixes</li>

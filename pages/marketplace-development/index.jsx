@@ -147,6 +147,8 @@ export default function MVPDevelopmentServices() {
           property="og:title"
           content="Online Marketplace Development Services"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 

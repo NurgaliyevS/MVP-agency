@@ -10,8 +10,6 @@ export default function Document() {
     >
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
         <meta name="theme-color" content="#fafafa" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

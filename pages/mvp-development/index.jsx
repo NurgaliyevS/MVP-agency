@@ -158,10 +158,7 @@ export default function MVPDevelopmentServices() {
     <main className="bg-white mx-auto min-h-screen">
       <Head>
         <title>MVP Software Development Services - MVP Agency</title>
-        <link
-          rel="canonical"
-          href="https://mvpagency.org/mvp-development"
-        />
+        <link rel="canonical" href="https://mvpagency.org/mvp-development" />
         <meta
           name="description"
           content="We are a software and MVP development agency. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
@@ -171,6 +168,8 @@ export default function MVPDevelopmentServices() {
           content="We are a software and MVP development agency. We deliver functional MVPs that avoid unexpected delays and costs, helping you launch faster."
         />
         <meta property="og:title" content="MVP Development Agency" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 

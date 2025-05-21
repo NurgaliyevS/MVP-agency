@@ -47,10 +47,10 @@ const solutionsItems = [
     ),
     content: (
       <div className="mt-3 text-gray-600 text-left">
-        We build online marketplaces based on your business idea. We work closely with you and
-        with the users. The most essintial part is to build a product that
-        solves a problem and is easy to use. And then we scale it based on
-        customers needs.
+        We build online marketplaces based on your business idea. We work
+        closely with you and with the users. The most essintial part is to build
+        a product that solves a problem and is easy to use. And then we scale it
+        based on customers needs.
       </div>
     ),
   },
@@ -134,7 +134,12 @@ export default function MVPDevelopmentServices() {
           property="og:description"
           content="We build online marketplaces based on your business idea. We work closely with you and with the users."
         />
-        <meta property="og:title" content="Online Marketplace Development Services" />
+        <meta
+          property="og:title"
+          content="Online Marketplace Development Services"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 

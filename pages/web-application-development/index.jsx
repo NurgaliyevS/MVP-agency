@@ -232,6 +232,9 @@ export default function MVPDevelopmentServices() {
           property="og:title"
           content="Web Application Development Services"
         />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
       </Head>
       <Header />
 
