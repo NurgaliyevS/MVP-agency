@@ -71,16 +71,6 @@ const LatestWork = () => {
       url: "https://uptimefriend.com?ref=mvpagency.org",
     },
     {
-      id: 3,
-      title: "Weeealth",
-      image: "/latest-work/weeealth-new.webp",
-      alt: "Weeealth Image",
-      description:
-        "Personal finance management platform helping users track investments, set budgets, and achieve financial goals",
-      tags: ["Investing", "Budgeting", "Finance"],
-      url: "https://weeealth.com?ref=mvpagency.org",
-    },
-    {
       id: 4,
       title: "Trip Planss",
       image: "/latest-work/tripplanss-new.webp",

@@ -274,17 +274,6 @@ function Footer(props) {
               <li>
                 <Link
                   className="text-sm hover:text-primary"
-                  href="http://weeealth.com/"
-                  target="_blank"
-                  title="Weeealth - Home Page"
-                >
-                  Weeealth
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  className="text-sm hover:text-primary"
                   href="https://environmentaljobboards.com/"
                   target="_blank"
                   title="Environmental Job Boards - Home Page"
