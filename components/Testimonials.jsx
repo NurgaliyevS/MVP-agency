@@ -63,21 +63,21 @@ function Testimonials() {
     },
     {
       id: 4,
-      name: "Andri",
-      image: "/reviews/Andri.webp",
-      text: "Outstanding experience with MVP Agency! We moved incredibly fast and communication were top-notch. They kept me updated at every step, ensuring the project stayed on track and met all requirements. They also handled an API integration seamlessly, adding even more value to the project. If you're looking for a skilled, reliable, and fast-moving partner, I highly recommend MVP Agency. Looking forward to working together again!",
-    },
-    {
-      id: 5,
       name: "Jainil",
       image: "/reviews/Jainil.webp",
       text: "The best tool to get traffic on reddit. Great product sabyr!",
     },
     {
-      id: 6,
+      id: 5,
       name: "Saurav-Kumar",
       image: "/reviews/Saurav-Kumar.webp",
       text: "Great product to schedule on Reddit, grow that Karma and make an audience",
+    },
+    {
+      id: 6,
+      name: "Andri",
+      image: "/reviews/Andri.webp",
+      text: "Outstanding experience with MVP Agency! We moved incredibly fast and communication were top-notch. They kept me updated at every step, ensuring the project stayed on track and met all requirements. They also handled an API integration seamlessly, adding even more value to the project. If you're looking for a skilled, reliable, and fast-moving partner, I highly recommend MVP Agency. Looking forward to working together again!",
     },
     {
       id: 7,
@@ -99,8 +99,13 @@ function Testimonials() {
     },
   ];
 
+  // Split testimonials into two arrays
+  const firstHalf = testimonials.slice(0, Math.ceil(testimonials.length / 2));
+  const secondHalf = testimonials.slice(Math.ceil(testimonials.length / 2));
+
   useEffect(() => {
-    const splide = new Splide('.splide', {
+    // First carousel - moving right
+    const splideRight = new Splide('.splide-right', {
       type: 'loop',
       drag: 'free',
       focus: 'center',
@@ -110,8 +115,8 @@ function Testimonials() {
       pagination: false,
       autoScroll: {
         speed: 1,
-        pauseOnHover: true,
-        pauseOnFocus: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
         rewind: false,
       },
       breakpoints: {
@@ -127,10 +132,40 @@ function Testimonials() {
       },
     });
 
-    splide.mount({ AutoScroll });
+    // Second carousel - moving left
+    const splideLeft = new Splide('.splide-left', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      perPage: 3,
+      gap: '2rem',
+      arrows: false,
+      pagination: false,
+      autoScroll: {
+        speed: -1, // Negative speed for left movement
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        rewind: false,
+      },
+      breakpoints: {
+        640: {
+          perPage: 1,
+        },
+        768: {
+          perPage: 2,
+        },
+        1024: {
+          perPage: 3,
+        },
+      },
+    });
+
+    splideRight.mount({ AutoScroll });
+    splideLeft.mount({ AutoScroll });
 
     return () => {
-      splide.destroy();
+      splideRight.destroy();
+      splideLeft.destroy();
     };
   }, []);
 
@@ -146,11 +181,25 @@ function Testimonials() {
             businesses that use our apps.
           </p>
 
-          <div className="max-w-7xl mx-auto">
-            <div className="splide">
+          <div className="max-w-7xl mx-auto space-y-8">
+            {/* First carousel - moving right */}
+            <div className="splide splide-right">
               <div className="splide__track">
                 <ul className="splide__list">
-                  {testimonials.map((testimonial) => (
+                  {firstHalf.map((testimonial) => (
+                    <li className="splide__slide" key={testimonial.id}>
+                      <TestimonialCard testimonial={testimonial} />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Second carousel - moving left */}
+            <div className="splide splide-left">
+              <div className="splide__track">
+                <ul className="splide__list">
+                  {secondHalf.map((testimonial) => (
                     <li className="splide__slide" key={testimonial.id}>
                       <TestimonialCard testimonial={testimonial} />
                     </li>
