@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Splide from '@splidejs/splide';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import '@splidejs/splide/dist/css/splide.min.css';
+import Splide from "@splidejs/splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
 
 function StarRating() {
   return (
@@ -22,7 +22,7 @@ function StarRating() {
 
 function TestimonialCard({ testimonial }) {
   return (
-    <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm h-[300px] flex flex-col">
+    <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm h-[420px] flex flex-col">
       <div className="flex items-center gap-4 mb-6">
         <img
           src={testimonial.image}
@@ -34,7 +34,7 @@ function TestimonialCard({ testimonial }) {
           <StarRating />
         </div>
       </div>
-      <p className="text-gray-600 text-base leading-relaxed line-clamp-6 overflow-hidden">
+      <p className="text-gray-600 text-base leading-relaxed">
         {testimonial.text}
       </p>
     </div>
@@ -63,30 +63,36 @@ function Testimonials() {
     },
     {
       id: 4,
+      name: "Andri",
+      image: "/reviews/Andri.webp",
+      text: "Outstanding experience with MVP Agency! We moved incredibly fast and communication were top-notch. They kept me updated at every step, ensuring the project stayed on track and met all requirements. They also handled an API integration seamlessly, adding even more value to the project. If you're looking for a skilled, reliable, and fast-moving partner, I highly recommend MVP Agency. Looking forward to working together again!",
+    },
+    {
+      id: 5,
       name: "Jainil",
       image: "/reviews/Jainil.webp",
       text: "The best tool to get traffic on reddit. Great product sabyr!",
     },
     {
-      id: 5,
+      id: 6,
       name: "Saurav-Kumar",
       image: "/reviews/Saurav-Kumar.webp",
       text: "Great product to schedule on Reddit, grow that Karma and make an audience",
     },
     {
-      id: 6,
+      id: 7,
       name: "Thomy",
       image: "/reviews/Thomy.webp",
       text: "Incredible tool! Recommended to anyone looking to improve their marketing on Reddit!",
     },
     {
-      id: 7,
+      id: 8,
       name: "Nic Polotnianko",
       image: "/reviews/Nic-Polotnianko.webp",
       text: "Product is solid",
     },
     {
-      id: 8,
+      id: 9,
       name: "Soyal",
       image: "/reviews/Soyal.webp",
       text: "If you need to post a lot on Reddit, you will save a lot of your time using this tool!",
@@ -104,8 +110,8 @@ function Testimonials() {
       pagination: false,
       autoScroll: {
         speed: 1,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+        pauseOnHover: true,
+        pauseOnFocus: true,
         rewind: false,
       },
       breakpoints: {
