@@ -98,6 +98,7 @@ export default function Document() {
           href="/company_related/apple-icon-60x60.png"
         />
         <meta name="msvalidate.01" content="667FC59B6E7F1A9C1701FAD9D499CCA8" />
+        <script src="https://widget.senja.io/widget/996e0f1f-884e-47e6-ad49-cfa018c4ab58/platform.js" type="text/javascript" async></script>
       </Head>
       <body>
         <Main />
